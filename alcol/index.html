@@ -3,42 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alcolici Premium - La Nostra Selezione</title>
+    <title>Alcolici Premium - La Nostra Selezione | Smart Choices Guide</title>
+    <meta name="description" content="Scopri la nostra selezione di alcolici premium con la strategia Love My Doll Top Quality. Rum e distillati selezionati per ogni fascia di prezzo.">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        :root {
+            --primary-color: #E6B3B3;
+            --secondary-color: #f8f9fa;
+            --accent-color: #F5DEB3;
+            --success-color: #F5F5F5;
+            --trust-color: #E6B3B3;
+        }
+        
         body {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
+            background-color: #ffffff;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
+        
         .hero-section {
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.9) 0%, rgba(118, 75, 162, 0.9) 100%);
-            padding: 80px 0;
+            background: linear-gradient(135deg, #E6B3B3 0%, #F5DEB3 50%, #F5F5F5 100%);
+            padding: 100px 0;
             text-align: center;
-            color: white;
+            color: #333;
+            position: relative;
+            overflow: hidden;
         }
+        
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="rgba(255,255,255,0.1)"/></svg>');
+            background-size: 100px 100px;
+            animation: float 20s linear infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0) rotate(0deg); }
+            100% { transform: translateY(-100px) rotate(360deg); }
+        }
+        
         .hero-section h1 {
-            font-size: 3rem;
+            font-size: 3.5rem;
             font-weight: 700;
             margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
         }
+        
         .hero-section p {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
             opacity: 0.9;
+            position: relative;
+            z-index: 1;
         }
+        
+        .hero-icon {
+            font-size: 5rem;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #E6B3B3 0%, #F5DEB3 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .products-section {
+            padding: 80px 0;
+        }
+        
         .product-card {
             background: white;
             border-radius: 20px;
-            padding: 30px;
-            margin-bottom: 30px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 40px 30px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            height: 100%;
+            border: 2px solid transparent;
         }
+        
         .product-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
         }
+        
+        .product-card.featured {
+            border: 2px solid #E6B3B3;
+            background: linear-gradient(135deg, rgba(230, 179, 179, 0.05) 0%, rgba(245, 222, 179, 0.05) 100%);
+        }
+        
+        .product-icon {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #E6B3B3 0%, #F5DEB3 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
         .badge-low {
             background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
             color: white;
@@ -47,14 +114,16 @@
             font-weight: 600;
             font-size: 0.9rem;
         }
+        
         .badge-middle {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: linear-gradient(135deg, #E6B3B3 0%, #F5DEB3 100%);
+            color: #333;
             padding: 8px 20px;
             border-radius: 50px;
             font-weight: 600;
             font-size: 0.9rem;
         }
+        
         .badge-high {
             background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
             color: white;
@@ -63,35 +132,91 @@
             font-weight: 600;
             font-size: 0.9rem;
         }
+        
         .btn-ebay {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
+            background: linear-gradient(135deg, #E6B3B3 0%, #F5DEB3 100%);
+            color: #333;
             border: none;
             padding: 15px 40px;
             border-radius: 50px;
             font-weight: 600;
             font-size: 1.1rem;
             transition: all 0.3s ease;
-            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 5px 20px rgba(230, 179, 179, 0.4);
+            width: 100%;
         }
+        
         .btn-ebay:hover {
             transform: translateY(-3px);
-            box-shadow: 0 8px 30px rgba(102, 126, 234, 0.6);
-            color: white;
+            box-shadow: 0 8px 30px rgba(230, 179, 179, 0.6);
+            color: #333;
         }
+        
         .footer {
-            background: rgba(0, 0, 0, 0.8);
+            background: rgba(0, 0, 0, 0.9);
             color: white;
-            padding: 40px 0;
-            text-align: center;
-            margin-top: 60px;
+            padding: 60px 0 30px;
         }
+        
+        .footer h5 {
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #E6B3B3;
+        }
+        
+        .footer a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer a:hover {
+            color: #E6B3B3;
+        }
+        
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            margin-right: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background: #E6B3B3;
+            color: #333;
+        }
+        
         .disclaimer {
             background: rgba(255, 255, 255, 0.1);
             padding: 20px;
             border-radius: 10px;
-            margin-top: 20px;
+            margin-top: 30px;
             font-size: 0.9rem;
+            border-left: 4px solid #E6B3B3;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2.5rem;
+            }
+            .hero-section p {
+                font-size: 1.1rem;
+            }
+            .hero-icon {
+                font-size: 3rem;
+            }
         }
     </style>
 </head>
@@ -99,55 +224,70 @@
     <!-- Hero Section -->
     <div class="hero-section">
         <div class="container">
-            <h1><i class="fas fa-wine-glass-alt me-3"></i>La Nostra Selezione di Alcolici</h1>
-            <p>Scopri i migliori rum e distillati selezionati per te</p>
+            <i class="fas fa-wine-glass-alt hero-icon"></i>
+            <h1>Alcolici Premium</h1>
+            <p>La nostra selezione con la strategia Love My Doll Top Quality</p>
+            <div class="mt-4">
+                <a href="#products" class="btn btn-ebay" style="display: inline-block; width: auto;">
+                    <i class="fas fa-arrow-down me-2"></i>Scopri la Selezione
+                </a>
+            </div>
         </div>
     </div>
 
     <!-- Products Section -->
-    <div class="container my-5">
-        <div class="row justify-content-center">
-            <div class="col-lg-10">
+    <div class="products-section" id="products">
+        <div class="container">
+            <div class="row g-4">
                 
-                <!-- Low Quality - Accessibile -->
-                <div class="product-card">
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                        <h3 class="mb-0">Opzione Accessibile</h3>
-                        <span class="badge-low">Entry Level</span>
-                    </div>
-                    <p class="text-muted mb-4">Se vuoi iniziare senza spendere troppo, ecco il kit base per iniziare il tuo viaggio nel mondo dei rum.</p>
-                    <div class="text-center">
-                        <a href="https://ebay.us/IxSG5k" target="_blank" rel="noopener noreferrer" class="btn btn-ebay">
-                            <i class="fab fa-ebay me-2"></i>Vedi su eBay
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Middle Quality - Best Buy -->
-                <div class="product-card">
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                        <h3 class="mb-0">Il Nostro Best Buy</h3>
-                        <span class="badge-middle">Consigliato</span>
-                    </div>
-                    <p class="text-muted mb-4">Per la maggior parte degli utenti, questo è il prodotto ideale che consigliamo. Ottimo rapporto qualità-prezzo.</p>
-                    <div class="text-center">
-                        <a href="https://ebay.us/SR4OtG" target="_blank" rel="noopener noreferrer" class="btn btn-ebay">
-                            <i class="fab fa-ebay me-2"></i>Vedi su eBay
-                        </a>
+                <!-- Low Quality - Love My Doll -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card">
+                        <div class="text-center">
+                            <i class="fas fa-heart product-icon"></i>
+                            <h3 class="mb-3">Love My Doll</h3>
+                            <span class="badge-low mb-3 d-inline-block">Entry Level</span>
+                        </div>
+                        <p class="text-muted mb-4">Se vuoi iniziare senza spendere troppo, ecco il kit base per iniziare il tuo viaggio nel mondo dei rum. Perfetto per chi vuole avvicinarsi alla categoria.</p>
+                        <div class="text-center">
+                            <a href="https://ebay.us/IxSG5k" target="_blank" rel="noopener noreferrer" class="btn btn-ebay">
+                                <i class="fab fa-ebay me-2"></i>Vedi su eBay
+                            </a>
+                        </div>
                     </div>
                 </div>
 
-                <!-- High Quality - Top Performance -->
-                <div class="product-card">
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                        <h3 class="mb-0">Top Performance</h3>
-                        <span class="badge-high">Premium</span>
+                <!-- Middle Quality - Top Quality -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="product-card featured">
+                        <div class="text-center">
+                            <i class="fas fa-star product-icon"></i>
+                            <h3 class="mb-3">Top Quality</h3>
+                            <span class="badge-middle mb-3 d-inline-block">Consigliato</span>
+                        </div>
+                        <p class="text-muted mb-4">Per la maggior parte degli utenti, questo è il prodotto ideale che consigliamo. Ottimo rapporto qualità-prezzo e soddisfazione garantita.</p>
+                        <div class="text-center">
+                            <a href="https://ebay.us/SR4OtG" target="_blank" rel="noopener noreferrer" class="btn btn-ebay">
+                                <i class="fab fa-ebay me-2"></i>Vedi su eBay
+                            </a>
+                        </div>
                     </div>
-                    <p class="text-muted mb-4">Se cerchi il massimo e non vuoi compromessi, prendi questo. Il meglio che il mercato può offrire.</p>
-                    <div class="text-center">
-                        <a href="https://ebay.us/pR3aDA" target="_blank" rel="noopener noreferrer" class="btn btn-ebay">
-                            <i class="fab fa-ebay me-2"></i>Vedi su eBay
-                        </a>
+                </div>
+
+                <!-- High Quality - Premium -->
+                <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
+                    <div class="product-card">
+                        <div class="text-center">
+                            <i class="fas fa-crown product-icon"></i>
+                            <h3 class="mb-3">Premium</h3>
+                            <span class="badge-high mb-3 d-inline-block">Top Performance</span>
+                        </div>
+                        <p class="text-muted mb-4">Se cerchi il massimo e non vuoi compromessi, prendi questo. Il meglio che il mercato può offrire per i veri intenditori.</p>
+                        <div class="text-center">
+                            <a href="https://ebay.us/pR3aDA" target="_blank" rel="noopener noreferrer" class="btn btn-ebay">
+                                <i class="fab fa-ebay me-2"></i>Vedi su eBay
+                            </a>
+                        </div>
                     </div>
                 </div>
 
@@ -158,9 +298,46 @@
     <!-- Footer -->
     <div class="footer">
         <div class="container">
-            <p class="mb-2">© 2026 Smart Choices Guide - Tutti i diritti riservati</p>
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-shopping-cart me-2"></i>Smart Choices Guide</h5>
+                    <p class="text-muted">La tua guida per acquisti intelligenti su eBay. Selezioniamo i migliori prodotti per ogni categoria.</p>
+                    <div class="social-links mt-3">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-link me-2"></i>Link Utili</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="../index.html"><i class="fas fa-home me-2"></i>Home</a></li>
+                        <li class="mb-2"><a href="#"><i class="fas fa-info-circle me-2"></i>Chi Siamo</a></li>
+                        <li class="mb-2"><a href="#"><i class="fas fa-envelope me-2"></i>Contatti</a></li>
+                        <li class="mb-2"><a href="#"><i class="fas fa-file-alt me-2"></i>Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#"><i class="fas fa-shield-alt me-2"></i>Termini di Servizio</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <h5><i class="fas fa-tags me-2"></i>Categorie</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#"><i class="fas fa-wine-glass-alt me-2"></i>Alcolici</a></li>
+                        <li class="mb-2"><a href="#"><i class="fas fa-laptop me-2"></i>Tech</a></li>
+                        <li class="mb-2"><a href="#"><i class="fas fa-tshirt me-2"></i>Moda</a></li>
+                        <li class="mb-2"><a href="#"><i class="fas fa-home me-2"></i>Casa</a></li>
+                        <li class="mb-2"><a href="#"><i class="fas fa-heart me-2"></i>Benessere</a></li>
+                    </ul>
+                </div>
+            </div>
+            
             <div class="disclaimer">
-                <p class="mb-0">In qualità di Affiliato eBay, ricevo un guadagno per ciascun acquisto idoneo.</p>
+                <p class="mb-2"><strong>Disclaimer Affiliazione:</strong></p>
+                <p class="mb-0">In qualità di Affiliato eBay, ricevo un guadagno per ciascun acquisto idoneo. I prezzi e la disponibilità dei prodotti possono variare. Consigliamo sempre di verificare le informazioni direttamente su eBay prima dell'acquisto.</p>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="mb-0">© 2026 Smart Choices Guide - Tutti i diritti riservati</p>
             </div>
         </div>
     </div>

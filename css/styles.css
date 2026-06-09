@@ -28,6 +28,16 @@
     --casa-mint: #98FB98;
     --casa-azure: #4682B4;
     
+    /* Palette Nicchia RAM/Tech (Blinding Lights) */
+    --ram-primary: #FF0000;
+    --ram-secondary: #000000;
+    --ram-accent: #8A2BE2;
+    --ram-trust: #C0C0C0;
+    --ram-white: #FFFFFF;
+    --ram-neon-red: #FF0000;
+    --ram-deep-black: #000000;
+    --ram-electric-purple: #8A2BE2;
+    
     /* Spaziature */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
@@ -637,17 +647,229 @@ body {
     color: var(--casa-trust);
 }
 
+/* Nicchia RAM/Tech Styles */
+.ram-body {
+    background-color: var(--ram-secondary);
+}
+
+.ram-hero {
+    background: linear-gradient(135deg, var(--ram-deep-black) 0%, var(--ram-electric-purple) 50%, var(--ram-neon-red) 100%);
+    padding: 100px 0;
+    text-align: center;
+    color: var(--ram-white);
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 100px rgba(255, 0, 0, 0.3);
+}
+
+.ram-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 2px,
+        rgba(138, 43, 226, 0.1) 2px,
+        rgba(138, 43, 226, 0.1) 4px
+    ),
+    repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(255, 0, 0, 0.1) 2px,
+        rgba(255, 0, 0, 0.1) 4px
+    );
+    pointer-events: none;
+}
+
+.ram-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+    color: var(--ram-white);
+    text-shadow: 0 0 20px rgba(255, 0, 0, 0.8), 0 0 40px rgba(138, 43, 226, 0.6);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.ram-hero p {
+    font-size: 1.4rem;
+    opacity: 0.95;
+    position: relative;
+    z-index: 2;
+    color: var(--ram-white);
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.ram-hero-icon {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, var(--ram-neon-red) 0%, var(--ram-electric-purple) 50%, var(--ram-trust) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    z-index: 2;
+    filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.8));
+}
+
+.ram-product-card {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2C3E50 100%);
+    border-radius: var(--radius-lg);
+    padding: 40px 30px;
+    box-shadow: 0 10px 40px rgba(255, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    height: 100%;
+    border: 2px solid var(--ram-electric-purple);
+}
+
+.ram-product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(255, 0, 0, 0.4);
+}
+
+.ram-product-card.featured:hover {
+    border-color: var(--ram-neon-red);
+    box-shadow: 0 20px 60px rgba(255, 0, 0, 0.5);
+}
+
+.ram-product-card.featured {
+    border: 3px solid var(--ram-neon-red);
+    background: linear-gradient(135deg, rgba(255, 0, 0, 0.1) 0%, rgba(138, 43, 226, 0.1) 100%);
+}
+
+.ram-product-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, var(--ram-neon-red) 0%, var(--ram-electric-purple) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.ram-badge-low {
+    background: linear-gradient(135deg, var(--ram-trust) 0%, var(--ram-electric-purple) 100%);
+    color: var(--ram-white);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.ram-badge-middle {
+    background: linear-gradient(135deg, var(--ram-electric-purple) 0%, var(--ram-neon-red) 100%);
+    color: var(--ram-white);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.ram-badge-high {
+    background: linear-gradient(135deg, var(--ram-neon-red) 0%, var(--ram-deep-black) 100%);
+    color: var(--ram-white);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.ram-btn-ebay {
+    background: linear-gradient(135deg, var(--ram-neon-red) 0%, var(--ram-electric-purple) 100%);
+    color: var(--ram-white);
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(255, 0, 0, 0.4);
+    width: 100%;
+}
+
+.ram-btn-ebay:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(255, 0, 0, 0.6);
+    color: var(--ram-white);
+}
+
+.ram-footer {
+    background: rgba(0, 0, 0, 0.95);
+    color: white;
+    padding: 60px 0 30px;
+    margin-top: 80px;
+}
+
+.ram-footer a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.ram-footer a:hover {
+    color: var(--ram-neon-red);
+}
+
+.ram-footer h5 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--ram-neon-red);
+}
+
+.ram-footer-glass {
+    color: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+}
+
+.ram-footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.ram-social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.ram-social-links a:hover {
+    background: var(--ram-neon-red);
+    color: var(--ram-white);
+}
+
 @media (max-width: 768px) {
-    .casa-hero h1 {
+    .ram-hero h1 {
         font-size: 2.5rem;
     }
     
-    .casa-hero p {
+    .ram-hero p {
         font-size: 1.1rem;
     }
     
-    .casa-hero-icon {
+    .ram-hero-icon {
         font-size: 3rem;
     }
 }
-

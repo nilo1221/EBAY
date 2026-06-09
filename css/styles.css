@@ -1,12 +1,12 @@
 /* Smart Choices Guide - CSS Unificato */
 /* Variabili Globali */
 :root {
-    /* Palette Homepage */
-    --primary-color: #E6B3B3;
-    --secondary-color: #f8f9fa;
-    --accent-color: #F5DEB3;
-    --success-color: #F5F5F5;
-    --trust-color: #E6B3B3;
+    /* Palette Homepage (Uptown Funk) */
+    --primary-color: #D4AF37;
+    --secondary-color: #1a1a1a;
+    --accent-color: #E74C3C;
+    --success-color: #FFFFFF;
+    --trust-color: #2C3E50;
     
     /* Palette Nicchia Alcol (Rumours) */
     --alcol-primary: #5D4037;
@@ -67,11 +67,11 @@ body {
 
 /* Homepage Styles */
 .hero-section {
-    background: linear-gradient(135deg, #E6B3B3 0%, #F5DEB3 50%, #F5F5F5 100%);
-    color: #333;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2C3E50 50%, #D4AF37 100%);
+    color: #FFFFFF;
     padding: var(--spacing-xl) 0;
     margin-bottom: var(--spacing-xl);
-    box-shadow: 0 4px 20px rgba(230, 179, 179, 0.3);
+    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
 }
 
 .hero-section h1 {
@@ -151,11 +151,11 @@ body {
 
 .carousel-item {
     height: 400px;
-    background: linear-gradient(135deg, #E6B3B3 0%, #F5DEB3 100%);
+    background: linear-gradient(135deg, #1a1a1a 0%, #D4AF37 100%);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #333;
+    color: #FFFFFF;
 }
 
 .carousel-item h3 {
@@ -170,7 +170,7 @@ body {
 
 /* Section Titles */
 .section-title {
-    color: #333;
+    color: #1a1a1a;
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: var(--spacing-xl);
@@ -179,23 +179,23 @@ body {
 
 /* Buttons */
 .btn-ebay {
-    background: linear-gradient(135deg, #E6B3B3 0%, #F5DEB3 100%);
-    color: #333;
+    background: linear-gradient(135deg, #D4AF37 0%, #E74C3C 100%);
+    color: #FFFFFF;
     border: none;
     padding: 15px 40px;
     border-radius: 50px;
     font-weight: 600;
     font-size: 1.1rem;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 20px rgba(230, 179, 179, 0.4);
+    box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
     text-decoration: none;
     display: inline-block;
 }
 
 .btn-ebay:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 30px rgba(230, 179, 179, 0.6);
-    color: #333;
+    box-shadow: 0 8px 30px rgba(212, 175, 55, 0.6);
+    color: #FFFFFF;
 }
 
 /* Footer */

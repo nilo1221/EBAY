@@ -38,6 +38,16 @@
     --ram-deep-black: #000000;
     --ram-electric-purple: #8A2BE2;
     
+    /* Palette Nicchia Animali (Stray Cat Strut) */
+    --animali-primary: #FF6B35;
+    --animali-secondary: #1a1a1a;
+    --animali-accent: #CC3333;
+    --animali-trust: #808080;
+    --animali-white: #FFFFFF;
+    --animali-orange: #FF6B35;
+    --animali-black: #1a1a1a;
+    --animali-red: #CC3333;
+    
     /* Spaziature */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
@@ -870,6 +880,231 @@ body {
     }
     
     .ram-hero-icon {
+        font-size: 3rem;
+    }
+}
+
+/* Nicchia Animali Styles */
+.animali-body {
+    background-color: var(--animali-secondary);
+}
+
+.animali-hero {
+    background: linear-gradient(135deg, var(--animali-black) 0%, var(--animali-orange) 50%, var(--animali-red) 100%);
+    padding: 100px 0;
+    text-align: center;
+    color: var(--animali-white);
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 100px rgba(255, 107, 53, 0.3);
+}
+
+.animali-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 3px,
+        rgba(204, 51, 51, 0.05) 3px,
+        rgba(204, 51, 51, 0.05) 6px
+    ),
+    repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 3px,
+        rgba(255, 107, 53, 0.05) 3px,
+        rgba(255, 107, 53, 0.05) 6px
+    );
+    pointer-events: none;
+}
+
+.animali-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+    color: var(--animali-white);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+}
+
+.animali-hero p {
+    font-size: 1.4rem;
+    opacity: 0.95;
+    position: relative;
+    z-index: 2;
+    color: var(--animali-white);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-weight: 300;
+}
+
+.animali-hero-icon {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, var(--animali-orange) 0%, var(--animali-red) 50%, var(--animali-white) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    z-index: 2;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.animali-product-card {
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: 40px 30px;
+    box-shadow: 0 10px 40px rgba(255, 107, 53, 0.15);
+    transition: all 0.3s ease;
+    height: 100%;
+    border: 2px solid var(--animali-trust);
+}
+
+.animali-product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(255, 107, 53, 0.25);
+}
+
+.animali-product-card.featured:hover {
+    border-color: var(--animali-orange);
+    box-shadow: 0 20px 60px rgba(255, 107, 53, 0.3);
+}
+
+.animali-product-card.featured {
+    border: 3px solid var(--animali-orange);
+    background: linear-gradient(135deg, rgba(255, 107, 53, 0.05) 0%, rgba(204, 51, 51, 0.05) 100%);
+}
+
+.animali-product-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, var(--animali-orange) 0%, var(--animali-red) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.animali-badge-low {
+    background: linear-gradient(135deg, var(--animali-trust) 0%, var(--animali-orange) 100%);
+    color: var(--animali-white);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.animali-badge-middle {
+    background: linear-gradient(135deg, var(--animali-orange) 0%, var(--animali-red) 100%);
+    color: var(--animali-white);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.animali-badge-high {
+    background: linear-gradient(135deg, var(--animali-red) 0%, var(--animali-black) 100%);
+    color: var(--animali-white);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.animali-btn-ebay {
+    background: linear-gradient(135deg, var(--animali-orange) 0%, var(--animali-red) 100%);
+    color: var(--animali-white);
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(255, 107, 53, 0.4);
+    width: 100%;
+}
+
+.animali-btn-ebay:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(255, 107, 53, 0.6);
+    color: var(--animali-white);
+}
+
+.animali-footer {
+    background: rgba(26, 26, 26, 0.95);
+    color: white;
+    padding: 60px 0 30px;
+    margin-top: 80px;
+}
+
+.animali-footer a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.animali-footer a:hover {
+    color: var(--animali-orange);
+}
+
+.animali-footer h5 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--animali-orange);
+}
+
+.animali-footer-glass {
+    color: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.1);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+}
+
+.animali-footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.animali-social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.animali-social-links a:hover {
+    background: var(--animali-orange);
+    color: var(--animali-white);
+}
+
+@media (max-width: 768px) {
+    .animali-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .animali-hero p {
+        font-size: 1.1rem;
+    }
+    
+    .animali-hero-icon {
         font-size: 3rem;
     }
 }

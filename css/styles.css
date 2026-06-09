@@ -29,14 +29,14 @@
     --casa-azure: #4682B4;
     
     /* Palette Nicchia RAM/Tech (Blinding Lights) */
-    --ram-primary: #FF0000;
-    --ram-secondary: #000000;
-    --ram-accent: #8A2BE2;
-    --ram-trust: #C0C0C0;
-    --ram-white: #FFFFFF;
-    --ram-neon-red: #FF0000;
-    --ram-deep-black: #000000;
-    --ram-electric-purple: #8A2BE2;
+    --elettronica-primary: #FF0000;
+    --elettronica-secondary: #000000;
+    --elettronica-accent: #8A2BE2;
+    --elettronica-trust: #C0C0C0;
+    --elettronica-white: #FFFFFF;
+    --elettronica-neon-red: #FF0000;
+    --elettronica-deep-black: #000000;
+    --elettronica-electric-purple: #8A2BE2;
     
     /* Palette Nicchia Animali (Stray Cat Strut) */
     --animali-primary: #FF6B35;
@@ -658,21 +658,21 @@ body {
 }
 
 /* Nicchia RAM/Tech Styles */
-.ram-body {
-    background-color: var(--ram-secondary);
+.elettronica-body {
+    background-color: var(--elettronica-secondary);
 }
 
-.ram-hero {
-    background: linear-gradient(135deg, var(--ram-deep-black) 0%, var(--ram-electric-purple) 50%, var(--ram-neon-red) 100%);
+.elettronica-hero {
+    background: linear-gradient(135deg, var(--elettronica-deep-black) 0%, var(--elettronica-electric-purple) 50%, var(--elettronica-neon-red) 100%);
     padding: 100px 0;
     text-align: center;
-    color: var(--ram-white);
+    color: var(--elettronica-white);
     position: relative;
     overflow: hidden;
     box-shadow: inset 0 0 100px rgba(255, 0, 0, 0.3);
 }
 
-.ram-hero::before {
+.elettronica-hero::before {
     content: '';
     position: absolute;
     top: 0;
@@ -696,33 +696,33 @@ body {
     pointer-events: none;
 }
 
-.ram-hero h1 {
+.elettronica-hero h1 {
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 20px;
     position: relative;
     z-index: 2;
-    color: var(--ram-white);
+    color: var(--elettronica-white);
     text-shadow: 0 0 20px rgba(255, 0, 0, 0.8), 0 0 40px rgba(138, 43, 226, 0.6);
     letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-.ram-hero p {
+.elettronica-hero p {
     font-size: 1.4rem;
     opacity: 0.95;
     position: relative;
     z-index: 2;
-    color: var(--ram-white);
+    color: var(--elettronica-white);
     text-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
     font-weight: 300;
     letter-spacing: 1px;
 }
 
-.ram-hero-icon {
+.elettronica-hero-icon {
     font-size: 5rem;
     margin-bottom: 20px;
-    background: linear-gradient(135deg, var(--ram-neon-red) 0%, var(--ram-electric-purple) 50%, var(--ram-trust) 100%);
+    background: linear-gradient(135deg, var(--elettronica-neon-red) 0%, var(--elettronica-electric-purple) 50%, var(--elettronica-trust) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -731,70 +731,70 @@ body {
     filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.8));
 }
 
-.ram-product-card {
+.elettronica-product-card {
     background: linear-gradient(135deg, #1a1a1a 0%, #2C3E50 100%);
     border-radius: var(--radius-lg);
     padding: 40px 30px;
     box-shadow: 0 10px 40px rgba(255, 0, 0, 0.2);
     transition: all 0.3s ease;
     height: 100%;
-    border: 2px solid var(--ram-electric-purple);
+    border: 2px solid var(--elettronica-electric-purple);
 }
 
-.ram-product-card:hover {
+.elettronica-product-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 20px 60px rgba(255, 0, 0, 0.4);
 }
 
-.ram-product-card.featured:hover {
-    border-color: var(--ram-neon-red);
+.elettronica-product-card.featured:hover {
+    border-color: var(--elettronica-neon-red);
     box-shadow: 0 20px 60px rgba(255, 0, 0, 0.5);
 }
 
-.ram-product-card.featured {
-    border: 3px solid var(--ram-neon-red);
+.elettronica-product-card.featured {
+    border: 3px solid var(--elettronica-neon-red);
     background: linear-gradient(135deg, rgba(255, 0, 0, 0.1) 0%, rgba(138, 43, 226, 0.1) 100%);
 }
 
-.ram-product-icon {
+.elettronica-product-icon {
     font-size: 4rem;
     margin-bottom: 20px;
-    background: linear-gradient(135deg, var(--ram-neon-red) 0%, var(--ram-electric-purple) 100%);
+    background: linear-gradient(135deg, var(--elettronica-neon-red) 0%, var(--elettronica-electric-purple) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
-.ram-badge-low {
-    background: linear-gradient(135deg, var(--ram-trust) 0%, var(--ram-electric-purple) 100%);
-    color: var(--ram-white);
+.elettronica-badge-low {
+    background: linear-gradient(135deg, var(--elettronica-trust) 0%, var(--elettronica-electric-purple) 100%);
+    color: var(--elettronica-white);
     padding: 8px 20px;
     border-radius: 50px;
     font-weight: 600;
     font-size: 0.9rem;
 }
 
-.ram-badge-middle {
-    background: linear-gradient(135deg, var(--ram-electric-purple) 0%, var(--ram-neon-red) 100%);
-    color: var(--ram-white);
+.elettronica-badge-middle {
+    background: linear-gradient(135deg, var(--elettronica-electric-purple) 0%, var(--elettronica-neon-red) 100%);
+    color: var(--elettronica-white);
     padding: 8px 20px;
     border-radius: 50px;
     font-weight: 600;
     font-size: 0.9rem;
 }
 
-.ram-badge-high {
-    background: linear-gradient(135deg, var(--ram-neon-red) 0%, var(--ram-deep-black) 100%);
-    color: var(--ram-white);
+.elettronica-badge-high {
+    background: linear-gradient(135deg, var(--elettronica-neon-red) 0%, var(--elettronica-deep-black) 100%);
+    color: var(--elettronica-white);
     padding: 8px 20px;
     border-radius: 50px;
     font-weight: 600;
     font-size: 0.9rem;
 }
 
-.ram-btn-ebay {
-    background: linear-gradient(135deg, var(--ram-neon-red) 0%, var(--ram-electric-purple) 100%);
-    color: var(--ram-white);
+.elettronica-btn-ebay {
+    background: linear-gradient(135deg, var(--elettronica-neon-red) 0%, var(--elettronica-electric-purple) 100%);
+    color: var(--elettronica-white);
     border: none;
     padding: 15px 40px;
     border-radius: 50px;
@@ -805,36 +805,36 @@ body {
     width: 100%;
 }
 
-.ram-btn-ebay:hover {
+.elettronica-btn-ebay:hover {
     transform: translateY(-3px);
     box-shadow: 0 8px 30px rgba(255, 0, 0, 0.6);
-    color: var(--ram-white);
+    color: var(--elettronica-white);
 }
 
-.ram-footer {
+.elettronica-footer {
     background: rgba(0, 0, 0, 0.95);
     color: white;
     padding: 60px 0 30px;
     margin-top: 80px;
 }
 
-.ram-footer a {
+.elettronica-footer a {
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.ram-footer a:hover {
-    color: var(--ram-neon-red);
+.elettronica-footer a:hover {
+    color: var(--elettronica-neon-red);
 }
 
-.ram-footer h5 {
+.elettronica-footer h5 {
     font-weight: 600;
     margin-bottom: 20px;
-    color: var(--ram-neon-red);
+    color: var(--elettronica-neon-red);
 }
 
-.ram-footer-glass {
+.elettronica-footer-glass {
     color: rgba(255, 255, 255, 0.95);
     background: rgba(255, 255, 255, 0.1);
     -webkit-backdrop-filter: blur(10px);
@@ -846,14 +846,14 @@ body {
     margin-top: 15px;
 }
 
-.ram-footer-bottom {
+.elettronica-footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 20px;
     margin-top: 30px;
     text-align: center;
 }
 
-.ram-social-links a {
+.elettronica-social-links a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -865,21 +865,21 @@ body {
     transition: all 0.3s ease;
 }
 
-.ram-social-links a:hover {
-    background: var(--ram-neon-red);
-    color: var(--ram-white);
+.elettronica-social-links a:hover {
+    background: var(--elettronica-neon-red);
+    color: var(--elettronica-white);
 }
 
 @media (max-width: 768px) {
-    .ram-hero h1 {
+    .elettronica-hero h1 {
         font-size: 2.5rem;
     }
     
-    .ram-hero p {
+    .elettronica-hero p {
         font-size: 1.1rem;
     }
     
-    .ram-hero-icon {
+    .elettronica-hero-icon {
         font-size: 3rem;
     }
 }

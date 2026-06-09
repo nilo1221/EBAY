@@ -26,12 +26,13 @@
         }
         
         .hero-section {
-            background: linear-gradient(135deg, #5D4037 0%, #D4A574 50%, #F5E6D3 100%);
+            background: linear-gradient(135deg, #3E2723 0%, #5D4037 25%, #8D6E63 50%, #A1887F 75%, #BCAAA4 100%);
             padding: 100px 0;
             text-align: center;
             color: #fff;
             position: relative;
             overflow: hidden;
+            box-shadow: inset 0 0 100px rgba(0,0,0,0.3);
         }
         
         .hero-section::before {
@@ -41,14 +42,37 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="rgba(255,255,255,0.1)"/></svg>');
-            background-size: 100px 100px;
-            animation: float 20s linear infinite;
+            background: repeating-linear-gradient(
+                90deg,
+                transparent,
+                transparent 2px,
+                rgba(0,0,0,0.03) 2px,
+                rgba(0,0,0,0.03) 4px
+            ),
+            repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 2px,
+                rgba(0,0,0,0.03) 2px,
+                rgba(0,0,0,0.03) 4px
+            );
+            pointer-events: none;
         }
         
-        @keyframes float {
-            0% { transform: translateY(0) rotate(0deg); }
-            100% { transform: translateY(-100px) rotate(360deg); }
+        .hero-section::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(
+                45deg,
+                rgba(62, 39, 35, 0.1) 0%,
+                transparent 50%,
+                rgba(62, 39, 35, 0.1) 100%
+            );
+            pointer-events: none;
         }
         
         .hero-section h1 {
@@ -56,29 +80,34 @@
             font-weight: 700;
             margin-bottom: 20px;
             position: relative;
-            z-index: 1;
+            z-index: 2;
             color: #fff;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.5), 0 0 20px rgba(0,0,0,0.3);
+            letter-spacing: 2px;
+            text-transform: uppercase;
         }
         
         .hero-section p {
             font-size: 1.4rem;
             opacity: 0.95;
             position: relative;
-            z-index: 1;
+            z-index: 2;
             color: #fff;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+            font-weight: 300;
+            letter-spacing: 1px;
         }
         
         .hero-icon {
             font-size: 5rem;
             margin-bottom: 20px;
-            background: linear-gradient(135deg, #C9A227 0%, #D4A574 100%);
+            background: linear-gradient(135deg, #C9A227 0%, #D4A574 50%, #8D6E63 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
             position: relative;
-            z-index: 1;
+            z-index: 2;
+            filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.4));
         }
         
         .products-section {

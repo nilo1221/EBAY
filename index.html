@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Choices Guide - Le Migliori Guide di Acquisto eBay | Recensioni e Offerte</title>
-    <meta name="description" content="Smart Choices Guide: Le migliori guide di acquisto eBay per ogni categoria. Recensioni, confronti e offerte esclusive su Alcolici, Tech, Moda, Sport e molto altro.">
-    <meta name="keywords" content="guide acquisto, recensioni prodotti, eBay, offerte, confronti prezzi, alcolici, tecnologia, moda, sport, migliori prodotti, consigli acquisto">
+    <meta name="description"
+        content="Smart Choices Guide: Le migliori guide di acquisto eBay per ogni categoria. Recensioni, confronti e offerte esclusive su Alcolici, Tech, Moda, Sport e molto altro.">
+    <meta name="keywords"
+        content="guide acquisto, recensioni prodotti, eBay, offerte, confronti prezzi, alcolici, tecnologia, moda, sport, migliori prodotti, consigli acquisto">
     <meta name="author" content="Smart Choices Guide">
     <meta name="robots" content="index, follow">
     <meta name="language" content="Italian">
     <meta name="geo.region" content="IT">
     <meta name="geo.placename" content="Italia">
-    
+
     <!-- Google Analytics GA4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CYTD10EV8T"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-CYTD10EV8T');
     </script>
-    
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- AI Assistant CSS -->
     <link rel="stylesheet" href="ai-assistant/ai-assistant.css">
-    
+
     <style>
         :root {
             --primary-color: #E6B3B3;
@@ -36,7 +39,7 @@
             --success-color: #F5F5F5;
             --trust-color: #E6B3B3;
         }
-        
+
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #ffffff;
@@ -45,7 +48,7 @@
         .container {
             padding: 20px;
         }
-        
+
         /* Bento Grid Styles */
         .bento-grid {
             display: grid;
@@ -54,7 +57,7 @@
             gap: 20px;
             padding: 20px;
         }
-        
+
         .bento-item {
             background: white;
             border-radius: 20px;
@@ -62,39 +65,43 @@
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
             transition: all 0.3s ease;
         }
-        
+
         .bento-item:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
         }
-        
+
         .bento-large {
             grid-column: span 8;
             grid-row: span 2;
         }
-        
+
         .bento-medium {
             grid-column: span 4;
             grid-row: span 1;
         }
-        
+
         .bento-small {
             grid-column: span 4;
             grid-row: span 1;
         }
-        
+
         .bento-wide {
             grid-column: span 12;
             grid-row: span 1;
         }
-        
+
         @media (max-width: 768px) {
-            .bento-large, .bento-medium, .bento-small, .bento-wide {
+
+            .bento-large,
+            .bento-medium,
+            .bento-small,
+            .bento-wide {
                 grid-column: span 12;
                 grid-row: span 1;
             }
         }
-        
+
         .hero-section {
             background: linear-gradient(135deg, #E6B3B3 0%, #F5DEB3 50%, #F5F5F5 100%);
             color: #333;
@@ -102,22 +109,22 @@
             margin-bottom: 40px;
             box-shadow: 0 4px 20px rgba(230, 179, 179, 0.3);
         }
-        
+
         .hero-section h1 {
             font-size: 3rem;
             font-weight: 700;
             margin-bottom: 20px;
         }
-        
+
         .hero-section p {
             font-size: 1.3rem;
             opacity: 0.9;
         }
-        
+
         .carousel-section {
             padding: 60px 0;
         }
-        
+
         .carousel-item {
             height: 400px;
             background: linear-gradient(135deg, #E6B3B3 0%, #F5DEB3 100%);
@@ -127,17 +134,17 @@
             justify-content: center;
             color: #333;
         }
-        
+
         .carousel-item h3 {
             font-size: 2.5rem;
             font-weight: 700;
         }
-        
+
         .carousel-item p {
             font-size: 1.2rem;
             opacity: 0.9;
         }
-        
+
         .category-card {
             background: white;
             border-radius: 20px;
@@ -151,13 +158,13 @@
             color: inherit;
             display: block;
         }
-        
+
         .category-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 50px rgba(0, 0, 0, 0.3);
             color: inherit;
         }
-        
+
         .category-card i {
             font-size: 3rem;
             margin-bottom: 20px;
@@ -166,17 +173,17 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        
+
         .category-card h3 {
             font-weight: 700;
             margin-bottom: 10px;
         }
-        
+
         .category-card p {
             color: #666;
             font-size: 0.95rem;
         }
-        
+
         .footer {
             background: rgba(0, 0, 0, 0.8);
             color: white;
@@ -184,7 +191,7 @@
             text-align: center;
             margin-top: 60px;
         }
-        
+
         .disclaimer {
             background: rgba(255, 255, 255, 0.1);
             padding: 20px;
@@ -192,7 +199,7 @@
             margin-top: 20px;
             font-size: 0.9rem;
         }
-        
+
         .section-title {
             color: #333;
             font-size: 2.5rem;
@@ -200,7 +207,7 @@
             text-align: center;
             margin-bottom: 40px;
         }
-        
+
         .btn-ebay {
             background: linear-gradient(135deg, #E6B3B3 0%, #F5DEB3 100%);
             color: #333;
@@ -212,7 +219,7 @@
             transition: all 0.3s ease;
             box-shadow: 0 5px 20px rgba(230, 179, 179, 0.4);
         }
-        
+
         .btn-ebay:hover {
             transform: translateY(-3px);
             box-shadow: 0 8px 30px rgba(230, 179, 179, 0.6);
@@ -220,6 +227,7 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Hero Section -->
     <div class="hero-section">
@@ -241,55 +249,62 @@
             <!-- Large Item - Alcolici -->
             <div class="bento-item bento-large">
                 <div class="text-center">
-                    <i class="fas fa-wine-glass-alt fa-4x mb-3" style="background: linear-gradient(135deg, #E6B3B3 0%, #F5DEB3 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
+                    <i class="fas fa-wine-glass-alt fa-4x mb-3"
+                        style="background: linear-gradient(135deg, #E6B3B3 0%, #F5DEB3 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
                     <h3 class="fw-bold mb-3">Alcolici Premium</h3>
-                    <p class="text-muted mb-4">Scopri la nostra selezione di rum e distillati con la strategia Low-Middle-High</p>
+                    <p class="text-muted mb-4">Scopri la nostra selezione di rum e distillati con la strategia
+                        Low-Middle-High</p>
                     <a href="alcol/index.html" class="btn btn-ebay">
                         <i class="fas fa-arrow-right me-2"></i>Scopri di più
                     </a>
                 </div>
             </div>
-            
+
             <!-- Medium Item - Tech -->
             <div class="bento-item bento-medium">
                 <div class="text-center">
-                    <i class="fas fa-laptop fa-3x mb-3" style="background: linear-gradient(135deg, #E6B3B3 0%, #F5DEB3 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
+                    <i class="fas fa-laptop fa-3x mb-3"
+                        style="background: linear-gradient(135deg, #E6B3B3 0%, #F5DEB3 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
                     <h4 class="fw-bold mb-2">Tech & Elettronica</h4>
                     <p class="text-muted small">Le migliori offerte per i tuoi dispositivi</p>
                 </div>
             </div>
-            
+
             <!-- Medium Item - Moda -->
             <div class="bento-item bento-medium">
                 <div class="text-center">
-                    <i class="fas fa-tshirt fa-3x mb-3" style="background: linear-gradient(135deg, #E6B3B3 0%, #F5DEB3 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
+                    <i class="fas fa-tshirt fa-3x mb-3"
+                        style="background: linear-gradient(135deg, #E6B3B3 0%, #F5DEB3 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
                     <h4 class="fw-bold mb-2">Moda & Stile</h4>
                     <p class="text-muted small">Abbigliamento e accessori di tendenza</p>
                 </div>
             </div>
-            
+
             <!-- Small Item - Casa -->
             <div class="bento-item bento-small">
                 <div class="text-center">
-                    <i class="fas fa-home fa-2x mb-2" style="background: linear-gradient(135deg, #E6B3B3 0%, #F5DEB3 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
+                    <i class="fas fa-home fa-2x mb-2"
+                        style="background: linear-gradient(135deg, #E6B3B3 0%, #F5DEB3 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
                     <h5 class="fw-bold mb-1">Casa</h5>
                     <p class="text-muted small">Arredamento</p>
                 </div>
             </div>
-            
+
             <!-- Small Item - Benessere -->
             <div class="bento-item bento-small">
                 <div class="text-center">
-                    <i class="fas fa-heart fa-2x mb-2" style="background: linear-gradient(135deg, #E6B3B3 0%, #F5DEB3 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
+                    <i class="fas fa-heart fa-2x mb-2"
+                        style="background: linear-gradient(135deg, #E6B3B3 0%, #F5DEB3 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
                     <h5 class="fw-bold mb-1">Benessere</h5>
                     <p class="text-muted small">Cura personale</p>
                 </div>
             </div>
-            
+
             <!-- Small Item - Sport -->
             <div class="bento-item bento-small">
                 <div class="text-center">
-                    <i class="fas fa-futbol fa-2x mb-2" style="background: linear-gradient(135deg, #E6B3B3 0%, #F5DEB3 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
+                    <i class="fas fa-futbol fa-2x mb-2"
+                        style="background: linear-gradient(135deg, #E6B3B3 0%, #F5DEB3 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;"></i>
                     <h5 class="fw-bold mb-1">Sport</h5>
                     <p class="text-muted small">Fitness</p>
                 </div>
@@ -382,11 +397,12 @@
     <script src="ai-assistant/ai-assistant.js"></script>
     <script>
         // Inizializza AI Assistant
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             if (window.SmartChoicesAI) {
                 SmartChoicesAI.init();
             }
         });
     </script>
 </body>
+
 </html>

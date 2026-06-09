@@ -18,6 +18,16 @@
     --alcol-wood-medium: #D4A574;
     --alcol-wood-light: #F5E6D3;
     
+    /* Palette Nicchia Casa e Pulizia (Clean) */
+    --casa-primary: #87CEEB;
+    --casa-secondary: #FFFFFF;
+    --casa-accent: #98FB98;
+    --casa-trust: #4682B4;
+    --casa-neutral: #D3D3D3;
+    --casa-sky: #87CEEB;
+    --casa-mint: #98FB98;
+    --casa-azure: #4682B4;
+    
     /* Spaziature */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
@@ -416,13 +426,228 @@ body {
     color: #fff;
 }
 
-/* Responsive */
+/* Nicchia Casa e Pulizia Styles */
+.casa-body {
+    background-color: var(--casa-secondary);
+}
+
+.casa-hero {
+    background: linear-gradient(135deg, var(--casa-sky) 0%, var(--casa-mint) 50%, var(--casa-secondary) 100%);
+    padding: 100px 0;
+    text-align: center;
+    color: var(--casa-trust);
+    position: relative;
+    overflow: hidden;
+    box-shadow: inset 0 0 100px rgba(70, 130, 180, 0.2);
+}
+
+.casa-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 3px,
+        rgba(152, 251, 152, 0.05) 3px,
+        rgba(152, 251, 152, 0.05) 6px
+    ),
+    repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 3px,
+        rgba(135, 206, 235, 0.05) 3px,
+        rgba(135, 206, 235, 0.05) 6px
+    );
+    pointer-events: none;
+}
+
+.casa-hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+    color: var(--casa-trust);
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+    letter-spacing: 1px;
+}
+
+.casa-hero p {
+    font-size: 1.4rem;
+    opacity: 0.95;
+    position: relative;
+    z-index: 2;
+    color: var(--casa-trust);
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
+    font-weight: 300;
+}
+
+.casa-hero-icon {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, var(--casa-sky) 0%, var(--casa-mint) 50%, var(--casa-azure) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    z-index: 2;
+    filter: drop-shadow(2px 2px 4px rgba(70, 130, 180, 0.3));
+}
+
+.casa-product-card {
+    background: white;
+    border-radius: var(--radius-lg);
+    padding: 40px 30px;
+    box-shadow: 0 10px 40px rgba(135, 206, 235, 0.15);
+    transition: all 0.3s ease;
+    height: 100%;
+    border: 2px solid var(--casa-neutral);
+}
+
+.casa-product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 60px rgba(135, 206, 235, 0.25);
+}
+
+.casa-product-card.featured:hover {
+    border-color: var(--casa-sky);
+    box-shadow: 0 20px 60px rgba(135, 206, 235, 0.3);
+}
+
+.casa-product-card.featured {
+    border: 3px solid var(--casa-sky);
+    background: linear-gradient(135deg, rgba(135, 206, 235, 0.05) 0%, rgba(152, 251, 152, 0.05) 100%);
+}
+
+.casa-product-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, var(--casa-sky) 0%, var(--casa-mint) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.casa-badge-low {
+    background: linear-gradient(135deg, var(--casa-neutral) 0%, var(--casa-sky) 100%);
+    color: var(--casa-trust);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.casa-badge-middle {
+    background: linear-gradient(135deg, var(--casa-sky) 0%, var(--casa-mint) 100%);
+    color: var(--casa-trust);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.casa-badge-high {
+    background: linear-gradient(135deg, var(--casa-azure) 0%, var(--casa-sky) 100%);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.casa-btn-ebay {
+    background: linear-gradient(135deg, var(--casa-sky) 0%, var(--casa-mint) 100%);
+    color: var(--casa-trust);
+    border: none;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(135, 206, 235, 0.4);
+    width: 100%;
+}
+
+.casa-btn-ebay:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(135, 206, 235, 0.6);
+    color: var(--casa-trust);
+}
+
+.casa-footer {
+    background: rgba(70, 130, 180, 0.9);
+    color: white;
+    padding: 60px 0 30px;
+    margin-top: 80px;
+}
+
+.casa-footer a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.casa-footer a:hover {
+    color: var(--casa-mint);
+}
+
+.casa-footer h5 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--casa-mint);
+}
+
+.casa-footer-glass {
+    color: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 255, 255, 0.15);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    padding: 15px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+}
+
+.casa-footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.casa-social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.casa-social-links a:hover {
+    background: var(--casa-mint);
+    color: var(--casa-trust);
+}
+
 @media (max-width: 768px) {
-    .alcol-hero h1 {
+    .casa-hero h1 {
         font-size: 2.5rem;
     }
     
-    .product-card {
-        padding: 30px 20px;
+    .casa-hero p {
+        font-size: 1.1rem;
+    }
+    
+    .casa-hero-icon {
+        font-size: 3rem;
     }
 }
+

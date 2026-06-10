@@ -2528,3 +2528,66 @@ body {
     transform: translateY(-1px);
     box-shadow: 0 4px 15px rgba(46, 139, 87, 0.3);
 }
+
+/* Alcol Kraken Banner Styles */
+.alcol-kraken-banner {
+    background: linear-gradient(135deg, #1A1A2E 0%, #2C3E50 50%, #3E2723 100%);
+    color: #FFFFFF;
+    padding: 60px 0;
+    margin: 40px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.alcol-kraken-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 70% 50%, rgba(212, 175, 55, 0.15) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.kraken-image-placeholder {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 40px;
+    border: 2px dashed rgba(212, 175, 55, 0.3);
+}
+
+.kraken-image-placeholder i {
+    color: rgba(212, 175, 55, 0.7);
+}
+
+/* Alcol Additional Bottles Styles */
+.alcol-additional-bottles {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 40px 0;
+    border-radius: 20px;
+    margin: 40px 0;
+}
+
+.bottle-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(139, 69, 19, 0.2);
+}
+
+.bottle-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(139, 69, 19, 0.3);
+}
+
+.bottle-card i {
+    color: #8B4513;
+}
+
+.alcol-btn-ebay.btn-sm {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+}

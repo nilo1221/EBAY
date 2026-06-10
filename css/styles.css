@@ -2112,3 +2112,77 @@ body {
     transform: translateY(-1px);
     box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
 }
+
+/* Carosello Prodotti Moda */
+.moda-carousel-section {
+    background: linear-gradient(135deg, #0A1628 0%, #1E3A5F 50%, #2D1B2E 100%);
+    padding: 40px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.moda-carousel-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(212, 196, 168, 0.1) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.moda-carousel-track {
+    display: flex;
+    animation: carouselScroll 40s linear infinite;
+    width: max-content;
+}
+
+@keyframes carouselScroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.moda-carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    min-width: 150px;
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+}
+
+.moda-carousel-item i {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    background: linear-gradient(135deg, #3B82F6 0%, #EC4899 50%, #D4C4A8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    filter: drop-shadow(0 0 10px rgba(59, 130, 246, 0.3));
+}
+
+.moda-carousel-item span {
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.moda-carousel-item:hover {
+    color: #FFFFFF;
+    transform: scale(1.1);
+}
+
+.moda-carousel-item:hover i {
+    filter: drop-shadow(0 0 20px rgba(59, 130, 246, 0.6));
+}
+
+.moda-carousel-section:hover .moda-carousel-track {
+    animation-play-state: paused;
+}

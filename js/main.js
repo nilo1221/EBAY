@@ -149,10 +149,12 @@ function initSplitScreenNav() {
         ]
     };
 
-    // Apri navigazione
+    // Smooth scroll verso le categorie
     openBtn.addEventListener('click', function() {
-        splitNav.classList.add('active');
-        document.body.style.overflow = 'hidden';
+        const categoriesSection = document.querySelector('.bento-grid');
+        if (categoriesSection) {
+            categoriesSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
     });
 
     // Chiudi navigazione

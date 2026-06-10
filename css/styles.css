@@ -300,13 +300,28 @@ body {
     border-radius: 8px;
     font-weight: 600;
     font-size: 1.1rem;
-    transition: transform 0.2s;
+    transition: all 0.3s ease;
     text-decoration: none;
     display: inline-block;
+    box-shadow: 0 4px 15px rgba(204, 85, 0, 0.3);
+}
+
+.alcol-btn-ebay i {
+    transition: transform 0.3s ease;
 }
 
 .alcol-btn-ebay:hover {
-    transform: scale(1.05);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(204, 85, 0, 0.6);
+}
+
+.alcol-btn-ebay:hover i {
+    transform: translateX(3px);
+}
+
+.alcol-btn-ebay:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(204, 85, 0, 0.3);
 }
 
 .casa-btn-ebay {
@@ -317,13 +332,28 @@ body {
     border-radius: 8px;
     font-weight: 600;
     font-size: 1.1rem;
-    transition: transform 0.2s;
+    transition: all 0.3s ease;
     text-decoration: none;
     display: inline-block;
+    box-shadow: 0 4px 15px rgba(0, 168, 232, 0.3);
+}
+
+.casa-btn-ebay i {
+    transition: transform 0.3s ease;
 }
 
 .casa-btn-ebay:hover {
-    transform: scale(1.05);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(0, 168, 232, 0.6);
+}
+
+.casa-btn-ebay:hover i {
+    transform: translateX(3px);
+}
+
+.casa-btn-ebay:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(0, 168, 232, 0.3);
 }
 
 .elettronica-btn-ebay {
@@ -334,13 +364,28 @@ body {
     border-radius: 8px;
     font-weight: 600;
     font-size: 1.1rem;
-    transition: transform 0.2s;
+    transition: all 0.3s ease;
     text-decoration: none;
     display: inline-block;
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+}
+
+.elettronica-btn-ebay i {
+    transition: transform 0.3s ease;
 }
 
 .elettronica-btn-ebay:hover {
-    transform: scale(1.05);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(0, 123, 255, 0.6);
+}
+
+.elettronica-btn-ebay:hover i {
+    transform: translateX(3px);
+}
+
+.elettronica-btn-ebay:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
 }
 
 .animali-btn-ebay {
@@ -351,13 +396,28 @@ body {
     border-radius: 8px;
     font-weight: 600;
     font-size: 1.1rem;
-    transition: transform 0.2s;
+    transition: all 0.3s ease;
     text-decoration: none;
     display: inline-block;
+    box-shadow: 0 4px 15px rgba(255, 140, 66, 0.3);
+}
+
+.animali-btn-ebay i {
+    transition: transform 0.3s ease;
 }
 
 .animali-btn-ebay:hover {
-    transform: scale(1.05);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(255, 140, 66, 0.6);
+}
+
+.animali-btn-ebay:hover i {
+    transform: translateX(3px);
+}
+
+.animali-btn-ebay:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(255, 140, 66, 0.3);
 }
 
 /* Footer */
@@ -835,10 +895,23 @@ body {
     width: 100%;
 }
 
+.casa-btn-ebay i {
+    transition: transform 0.3s ease;
+}
+
 .casa-btn-ebay:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 30px rgba(129, 199, 132, 0.6);
+    box-shadow: 0 12px 35px rgba(129, 199, 132, 0.6);
     color: white;
+}
+
+.casa-btn-ebay:hover i {
+    transform: translateX(3px);
+}
+
+.casa-btn-ebay:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 20px rgba(129, 199, 132, 0.4);
 }
 
 .casa-footer {
@@ -1029,10 +1102,23 @@ body {
     width: 100%;
 }
 
+.elettronica-btn-ebay i {
+    transition: transform 0.3s ease;
+}
+
 .elettronica-btn-ebay:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 30px rgba(0, 123, 255, 0.4);
+    box-shadow: 0 12px 35px rgba(0, 123, 255, 0.6);
     color: #FFFFFF;
+}
+
+.elettronica-btn-ebay:hover i {
+    transform: translateX(3px);
+}
+
+.elettronica-btn-ebay:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 20px rgba(0, 123, 255, 0.3);
 }
 
 .elettronica-footer {
@@ -1219,10 +1305,23 @@ body {
     width: 100%;
 }
 
+.animali-btn-ebay i {
+    transition: transform 0.3s ease;
+}
+
 .animali-btn-ebay:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 30px rgba(255, 107, 53, 0.6);
+    box-shadow: 0 12px 35px rgba(255, 107, 53, 0.6);
     color: var(--animali-white);
+}
+
+.animali-btn-ebay:hover i {
+    transform: translateX(3px);
+}
+
+.animali-btn-ebay:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 20px rgba(255, 107, 53, 0.4);
 }
 
 .animali-footer {
@@ -1726,10 +1825,23 @@ body {
     width: 100%;
 }
 
+.climatizzazione-btn-ebay i {
+    transition: transform 0.3s ease;
+}
+
 .climatizzazione-btn-ebay:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 30px rgba(125, 143, 105, 0.6);
+    box-shadow: 0 12px 35px rgba(125, 143, 105, 0.6);
     color: white;
+}
+
+.climatizzazione-btn-ebay:hover i {
+    transform: translateX(3px);
+}
+
+.climatizzazione-btn-ebay:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 20px rgba(125, 143, 105, 0.4);
 }
 
 .climatizzazione-footer {

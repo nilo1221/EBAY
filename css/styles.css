@@ -1014,7 +1014,7 @@ body {
 }
 
 .elettronica-hero {
-    background: linear-gradient(135deg, #0F172A 0%, #1E3A8A 50%, #3B82F6 100%);
+    background: linear-gradient(135deg, #0F172A 0%, #DC2626 30%, #3B82F6 70%, #0F172A 100%);
     padding: 80px 20px;
     text-align: left;
     color: #FFFFFF;
@@ -1031,34 +1031,35 @@ body {
 }
 
 .elettronica-product-card {
-    background: #FAF9F6;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(220, 38, 38, 0.1) 100%);
     border-radius: var(--radius-lg);
     padding: 40px 30px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.2);
     transition: all 0.3s ease;
     height: 100%;
-    border: 1px solid #E0E0E0;
+    border: 1px solid rgba(59, 130, 246, 0.3);
 }
 
 .elettronica-product-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 20px 40px rgba(59, 130, 246, 0.4), 0 20px 40px rgba(220, 38, 38, 0.2);
 }
 
 .elettronica-product-card.featured:hover {
-    border-color: #60A5FA;
-    box-shadow: 0 20px 40px rgba(96, 165, 250, 0.2);
+    border-color: #DC2626;
+    box-shadow: 0 20px 40px rgba(220, 38, 38, 0.4), 0 20px 40px rgba(59, 130, 246, 0.2);
 }
 
 .elettronica-product-card.featured {
-    border: 2px solid #60A5FA;
-    background: #FAF9F6;
+    border: 2px solid #DC2626;
+    background: linear-gradient(135deg, rgba(220, 38, 38, 0.15) 0%, rgba(59, 130, 246, 0.15) 100%);
 }
 
 .elettronica-product-icon {
     font-size: 4rem;
     margin-bottom: 20px;
-    color: #60A5FA;
+    color: #DC2626;
+    text-shadow: 0 0 20px rgba(220, 38, 38, 0.5);
 }
 
 .elettronica-product-card h3 {
@@ -1075,34 +1076,37 @@ body {
 }
 
 .elettronica-badge-low {
-    background: #888888;
+    background: linear-gradient(135deg, #3B82F6 0%, #60A5FA 100%);
     color: #FFFFFF;
     padding: 8px 20px;
     border-radius: 50px;
     font-weight: 600;
     font-size: 0.9rem;
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.5);
 }
 
 .elettronica-badge-middle {
-    background: #4CAF50;
+    background: linear-gradient(135deg, #DC2626 0%, #EF4444 100%);
     color: #FFFFFF;
     padding: 8px 20px;
     border-radius: 50px;
     font-weight: 600;
     font-size: 0.9rem;
+    box-shadow: 0 0 15px rgba(220, 38, 38, 0.5);
 }
 
 .elettronica-badge-high {
-    background: #FF6B6B;
+    background: linear-gradient(135deg, #DC2626 0%, #3B82F6 100%);
     color: #FFFFFF;
     padding: 8px 20px;
     border-radius: 50px;
     font-weight: 600;
     font-size: 0.9rem;
+    box-shadow: 0 0 15px rgba(220, 38, 38, 0.5), 0 0 15px rgba(59, 130, 246, 0.5);
 }
 
 .elettronica-btn-ebay {
-    background: var(--elettronica-accent);
+    background: linear-gradient(135deg, #DC2626 0%, #3B82F6 100%);
     color: #FFFFFF;
     border: none;
     padding: 15px 40px;
@@ -1110,7 +1114,7 @@ body {
     font-weight: 600;
     font-size: 1.1rem;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 20px rgba(0, 123, 255, 0.3);
+    box-shadow: 0 5px 20px rgba(220, 38, 38, 0.4), 0 5px 20px rgba(59, 130, 246, 0.4);
     width: 100%;
 }
 
@@ -1120,7 +1124,7 @@ body {
 
 .elettronica-btn-ebay:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(0, 123, 255, 0.6);
+    box-shadow: 0 12px 35px rgba(220, 38, 38, 0.6), 0 12px 35px rgba(59, 130, 246, 0.6);
     color: #FFFFFF;
 }
 
@@ -1130,7 +1134,7 @@ body {
 
 .elettronica-btn-ebay:active {
     transform: translateY(-1px);
-    box-shadow: 0 5px 20px rgba(0, 123, 255, 0.3);
+    box-shadow: 0 5px 20px rgba(220, 38, 38, 0.4), 0 5px 20px rgba(59, 130, 246, 0.4);
 }
 
 .elettronica-footer {

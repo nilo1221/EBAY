@@ -299,6 +299,7 @@ function initCategoryFilter() {
                     const subItem = document.createElement('a');
                     subItem.className = `bento-item ${sub.size}`;
                     subItem.href = sub.link;
+                    subItem.setAttribute('data-category', category);
                     subItem.style.transitionDelay = `${index * 0.05}s`;
                     subItem.innerHTML = `
                         <div class="text-center">

@@ -1102,6 +1102,86 @@ body {
     opacity: 1;
     transform: translateY(0);
     transition: all 0.3s ease;
+    background: #FFFFFF;
+    border: 2px solid #E5E7EB;
+}
+
+/* Colori specifici per categoria */
+.subcategory-grid .bento-item[data-category="casa"] {
+    background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
+    border-color: #81C784;
+}
+
+.subcategory-grid .bento-item[data-category="casa"]:hover {
+    background: linear-gradient(135deg, #C8E6C9 0%, #A5D6A7 100%);
+    border-color: #66BB6A;
+    box-shadow: 0 8px 20px rgba(102, 187, 106, 0.3);
+}
+
+.subcategory-grid .bento-item[data-category="elettronica"] {
+    background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
+    border-color: #64B5F6;
+}
+
+.subcategory-grid .bento-item[data-category="elettronica"]:hover {
+    background: linear-gradient(135deg, #BBDEFB 0%, #90CAF9 100%);
+    border-color: #42A5F5;
+    box-shadow: 0 8px 20px rgba(66, 165, 245, 0.3);
+}
+
+.subcategory-grid .bento-item[data-category="salotto"] {
+    background: linear-gradient(135deg, #FFF3E0 0%, #FFE0B2 100%);
+    border-color: #FFB74D;
+}
+
+.subcategory-grid .bento-item[data-category="salotto"]:hover {
+    background: linear-gradient(135deg, #FFE0B2 0%, #FFCC80 100%);
+    border-color: #FFA726;
+    box-shadow: 0 8px 20px rgba(255, 167, 38, 0.3);
+}
+
+.subcategory-grid .bento-item[data-category="animali"] {
+    background: linear-gradient(135deg, #F3E5F5 0%, #E1BEE7 100%);
+    border-color: #BA68C8;
+}
+
+.subcategory-grid .bento-item[data-category="animali"]:hover {
+    background: linear-gradient(135deg, #E1BEE7 0%, #CE93D8 100%);
+    border-color: #AB47BC;
+    box-shadow: 0 8px 20px rgba(171, 71, 188, 0.3);
+}
+
+.subcategory-grid .bento-item[data-category="moda"] {
+    background: linear-gradient(135deg, #FCE4EC 0%, #F8BBD0 100%);
+    border-color: #F06292;
+}
+
+.subcategory-grid .bento-item[data-category="moda"]:hover {
+    background: linear-gradient(135deg, #F8BBD0 0%, #F48FB1 100%);
+    border-color: #EC407A;
+    box-shadow: 0 8px 20px rgba(236, 64, 122, 0.3);
+}
+
+.subcategory-grid .bento-item[data-category="sport"] {
+    background: linear-gradient(135deg, #E0F7FA 0%, #B2EBF2 100%);
+    border-color: #4DD0E1;
+}
+
+.subcategory-grid .bento-item[data-category="sport"]:hover {
+    background: linear-gradient(135deg, #B2EBF2 0%, #80DEEA 100%);
+    border-color: #26C6DA;
+    box-shadow: 0 8px 20px rgba(38, 198, 218, 0.3);
+}
+
+.subcategory-grid .bento-item[data-category="all"] {
+    background: linear-gradient(135deg, #F5F5F5 0%, #E0E0E0 100%);
+    border-color: #9E9E9E;
+}
+
+.subcategory-grid .bento-item[data-category="all"]:hover {
+    background: linear-gradient(135deg, #E0E0E0 0%, #BDBDBD 100%);
+    border-color: #757575;
+    box-shadow: 0 8px 20px rgba(117, 117, 117, 0.3);
 }
 
 .subcategory-grid .bento-item:hover {

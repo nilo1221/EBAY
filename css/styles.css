@@ -310,12 +310,14 @@ body {
 }
 
 .alcol-hero {
-    background: linear-gradient(135deg, var(--alcol-hero-bg) 0%, #E8DCC8 100%);
-    padding: 80px 20px;
+    background-color: #2E1A14;
+    background-image: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7));
+    padding: 100px 20px;
     text-align: left;
-    color: var(--alcol-text);
+    color: #FFFFFF;
     position: relative;
     overflow: hidden;
+    border-radius: 0 0 40px 40px;
 }
 
 .alcol-hero-icon {
@@ -324,6 +326,11 @@ body {
     color: var(--alcol-accent);
     position: relative;
     z-index: 2;
+}
+
+.alcol-hero h1 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
 }
 
 /* Product Cards */
@@ -338,7 +345,7 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     height: 100%;
-    border: 1px solid #E0E0E0;
+    border: 1px solid #5D4037;
 }
 
 .product-card:hover {

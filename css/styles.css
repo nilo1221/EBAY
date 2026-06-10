@@ -1784,7 +1784,7 @@ body {
 }
 
 .moda-hero {
-    background: linear-gradient(135deg, #0A1628 0%, #1E3A5F 50%, #0A1628 100%);
+    background: linear-gradient(135deg, #0A1628 0%, #1E3A5F 30%, #2D1B2E 70%, #1A1A1A 100%);
     padding: 50px 20px;
     text-align: left;
     color: #FFFFFF;
@@ -1798,11 +1798,12 @@ body {
 .moda-hero::before {
     content: '';
     position: absolute;
-    top: -50%;
-    right: -50%;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle, rgba(59, 130, 246, 0.2) 0%, transparent 70%);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 30% 50%, rgba(212, 196, 168, 0.2) 0%, transparent 60%);
+    pointer-events: none;
 }
 
 .moda-hero-icon {

@@ -649,10 +649,10 @@ body {
 }
 
 .casa-hero {
-    background: linear-gradient(135deg, var(--casa-hero-bg) 0%, #E8F5E9 100%);
+    background: linear-gradient(135deg, #064E3B 0%, #065F46 50%, #10B981 100%);
     padding: 80px 20px;
     text-align: left;
-    color: var(--casa-text);
+    color: #FFFFFF;
     position: relative;
     overflow: hidden;
 }
@@ -660,7 +660,7 @@ body {
 .casa-hero-icon {
     font-size: 5rem;
     margin-bottom: 20px;
-    color: var(--casa-accent);
+    color: #34D399;
     position: relative;
     z-index: 2;
 }
@@ -681,13 +681,13 @@ body {
 }
 
 .casa-product-card.featured:hover {
-    border-color: var(--casa-sky);
-    box-shadow: 0 20px 60px rgba(135, 206, 235, 0.3);
+    border-color: #34D399;
+    box-shadow: 0 20px 60px rgba(52, 211, 153, 0.3);
 }
 
 .casa-product-card.featured {
-    border: 3px solid var(--casa-sky);
-    background: linear-gradient(135deg, rgba(135, 206, 235, 0.05) 0%, rgba(152, 251, 152, 0.05) 100%);
+    border: 3px solid #34D399;
+    background: linear-gradient(135deg, rgba(52, 211, 153, 0.05) 0%, rgba(16, 185, 129, 0.05) 100%);
 }
 
 .casa-product-card h3 {
@@ -759,7 +759,7 @@ body {
 }
 
 .casa-footer {
-    background: rgba(70, 130, 180, 0.9);
+    background: linear-gradient(135deg, #064E3B 0%, #065F46 100%);
     color: white;
     padding: 60px 0 30px;
     margin-top: 80px;
@@ -772,13 +772,13 @@ body {
 }
 
 .casa-footer a:hover {
-    color: var(--casa-mint);
+    color: #34D399;
 }
 
 .casa-footer h5 {
     font-weight: 600;
     margin-bottom: 20px;
-    color: var(--casa-mint);
+    color: #34D399;
 }
 
 .casa-footer-glass {
@@ -824,7 +824,7 @@ body {
 }
 
 .elettronica-hero {
-    background: linear-gradient(135deg, var(--elettronica-hero-bg) 0%, #1565C0 100%);
+    background: linear-gradient(135deg, #0F172A 0%, #1E3A8A 50%, #3B82F6 100%);
     padding: 80px 20px;
     text-align: left;
     color: #FFFFFF;
@@ -856,19 +856,19 @@ body {
 }
 
 .elettronica-product-card.featured:hover {
-    border-color: var(--elettronica-accent);
-    box-shadow: 0 20px 40px rgba(0, 123, 255, 0.2);
+    border-color: #60A5FA;
+    box-shadow: 0 20px 40px rgba(96, 165, 250, 0.2);
 }
 
 .elettronica-product-card.featured {
-    border: 2px solid var(--elettronica-accent);
+    border: 2px solid #60A5FA;
     background: #FAF9F6;
 }
 
 .elettronica-product-icon {
     font-size: 4rem;
     margin-bottom: 20px;
-    color: var(--elettronica-accent);
+    color: #60A5FA;
 }
 
 .elettronica-product-card h3 {
@@ -931,7 +931,7 @@ body {
 }
 
 .elettronica-footer {
-    background: rgba(0, 0, 0, 0.95);
+    background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
     color: white;
     padding: 60px 0 30px;
     margin-top: 80px;
@@ -944,13 +944,13 @@ body {
 }
 
 .elettronica-footer a:hover {
-    color: var(--elettronica-neon-red);
+    color: #60A5FA;
 }
 
 .elettronica-footer h5 {
     font-weight: 600;
     margin-bottom: 20px;
-    color: var(--elettronica-neon-red);
+    color: #60A5FA;
 }
 
 .elettronica-footer-glass {
@@ -1010,10 +1010,10 @@ body {
 }
 
 .animali-hero {
-    background: linear-gradient(135deg, var(--animali-hero-bg) 0%, #FCE4EC 100%);
+    background: linear-gradient(135deg, #9A3412 0%, #C2410C 50%, #EA580C 100%);
     padding: 80px 20px;
     text-align: left;
-    color: var(--animali-text);
+    color: #FFFFFF;
     position: relative;
     overflow: hidden;
 }
@@ -1021,7 +1021,7 @@ body {
 .animali-hero-icon {
     font-size: 5rem;
     margin-bottom: 20px;
-    color: var(--animali-accent);
+    color: #FB923C;
     position: relative;
     z-index: 2;
 }
@@ -1042,13 +1042,13 @@ body {
 }
 
 .animali-product-card.featured:hover {
-    border-color: var(--animali-orange);
-    box-shadow: 0 20px 60px rgba(255, 107, 53, 0.3);
+    border-color: #FB923C;
+    box-shadow: 0 20px 60px rgba(251, 146, 60, 0.3);
 }
 
 .animali-product-card.featured {
-    border: 3px solid var(--animali-orange);
-    background: linear-gradient(135deg, rgba(255, 107, 53, 0.05) 0%, rgba(204, 51, 51, 0.05) 100%);
+    border: 3px solid #FB923C;
+    background: linear-gradient(135deg, rgba(251, 146, 60, 0.05) 0%, rgba(234, 88, 12, 0.05) 100%);
 }
 
 .animali-product-card h3 {
@@ -1120,7 +1120,7 @@ body {
 }
 
 .animali-footer {
-    background: rgba(26, 26, 26, 0.95);
+    background: linear-gradient(135deg, #9A3412 0%, #C2410C 100%);
     color: white;
     padding: 60px 0 30px;
     margin-top: 80px;
@@ -1133,13 +1133,13 @@ body {
 }
 
 .animali-footer a:hover {
-    color: var(--animali-orange);
+    color: #FB923C;
 }
 
 .animali-footer h5 {
     font-weight: 600;
     margin-bottom: 20px;
-    color: var(--animali-orange);
+    color: #FB923C;
 }
 
 .animali-footer-glass {

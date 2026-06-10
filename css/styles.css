@@ -2926,3 +2926,88 @@ body {
     padding: 10px 20px;
     font-size: 0.9rem;
 }
+
+/* Products Filter and Pagination Styles */
+.filters-container {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: var(--radius-lg);
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.filters-container .input-group-text {
+    background: var(--casa-accent);
+    color: white;
+    border: none;
+}
+
+.filters-container .form-control,
+.filters-container .form-select {
+    border: 2px solid var(--casa-accent);
+    border-radius: var(--radius-md);
+    transition: all 0.3s ease;
+}
+
+.filters-container .form-control:focus,
+.filters-container .form-select:focus {
+    border-color: var(--casa-orange);
+    box-shadow: 0 0 0 0.2rem rgba(255, 138, 101, 0.25);
+}
+
+.filters-container .btn-outline-secondary {
+    border: 2px solid var(--casa-accent);
+    color: var(--casa-accent);
+    border-radius: var(--radius-md);
+    transition: all 0.3s ease;
+}
+
+.filters-container .btn-outline-secondary:hover {
+    background: var(--casa-accent);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Pagination Styles */
+.pagination {
+    margin-top: 30px;
+}
+
+.pagination .page-link {
+    color: var(--casa-accent);
+    border: 2px solid var(--casa-accent);
+    margin: 0 5px;
+    border-radius: var(--radius-md);
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.pagination .page-link:hover {
+    background: var(--casa-accent);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+}
+
+.pagination .page-item.active .page-link {
+    background: var(--casa-orange);
+    border-color: var(--casa-orange);
+    color: white;
+    box-shadow: 0 4px 12px rgba(255, 138, 101, 0.4);
+}
+
+.pagination .page-item.disabled .page-link {
+    color: #ccc;
+    border-color: #ddd;
+    pointer-events: none;
+}
+
+/* Results Count */
+#results-count {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--casa-text);
+    opacity: 0.8;
+}

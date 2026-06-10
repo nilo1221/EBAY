@@ -17,7 +17,7 @@
     --alcol-text: #1A1A1A;
     
     /* Palette Nicchia Tech (Azzurro Ghiaccio + Blu Elettrico) */
-    --elettronica-hero-bg: #F0F4F8;
+    --elettronica-hero-bg: #1E88E5;
     --elettronica-accent: #007BFF;
     --elettronica-primary: #FFFFFF;
     --elettronica-secondary: #FAFAFA;
@@ -647,10 +647,10 @@ body {
 }
 
 .elettronica-hero {
-    background: linear-gradient(135deg, var(--elettronica-hero-bg) 0%, #E3F2FD 100%);
+    background: linear-gradient(135deg, var(--elettronica-hero-bg) 0%, #1565C0 100%);
     padding: 80px 20px;
     text-align: left;
-    color: var(--elettronica-text);
+    color: #FFFFFF;
     position: relative;
     overflow: hidden;
 }
@@ -658,7 +658,7 @@ body {
 .elettronica-hero-icon {
     font-size: 5rem;
     margin-bottom: 20px;
-    color: var(--elettronica-accent);
+    color: #FFFFFF;
     position: relative;
     z-index: 2;
 }

@@ -293,19 +293,19 @@ body {
 
 /* Nicchia-specific buttons with accent colors */
 .alcol-btn-ebay {
-    background: linear-gradient(135deg, rgba(139, 69, 19, 0.8) 0%, rgba(204, 85, 0, 0.8) 50%, rgba(212, 165, 116, 0.8) 100%);
+    background: linear-gradient(135deg, rgba(139, 69, 19, 0.8) 0%, rgba(212, 175, 55, 0.9) 30%, rgba(204, 85, 0, 0.8) 70%, rgba(212, 165, 116, 0.8) 100%);
     color: #FFFFFF;
     padding: 16px 32px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(212, 175, 55, 0.4);
     border-radius: 12px;
     font-weight: 600;
     font-size: 1.1rem;
     transition: all 0.3s ease;
     text-decoration: none;
     display: inline-block;
-    box-shadow: 0 8px 32px rgba(139, 69, 19, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(139, 69, 19, 0.4), inset 0 1px 0 rgba(212, 175, 55, 0.3);
     -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 .alcol-btn-ebay i {
@@ -314,8 +314,8 @@ body {
 
 .alcol-btn-ebay:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 40px rgba(139, 69, 19, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.3);
-    background: linear-gradient(135deg, rgba(139, 69, 19, 0.9) 0%, rgba(204, 85, 0, 0.9) 50%, rgba(212, 165, 116, 0.9) 100%);
+    box-shadow: 0 12px 40px rgba(212, 175, 55, 0.6), inset 0 1px 0 rgba(212, 175, 55, 0.4);
+    background: linear-gradient(135deg, rgba(139, 69, 19, 0.9) 0%, rgba(212, 175, 55, 1) 30%, rgba(204, 85, 0, 0.9) 70%, rgba(212, 165, 116, 0.9) 100%);
 }
 
 .alcol-btn-ebay:hover i {
@@ -328,17 +328,17 @@ body {
 }
 
 .casa-btn-ebay {
-    background: linear-gradient(135deg, rgba(0, 168, 232, 0.8) 0%, rgba(0, 119, 182, 0.8) 50%, rgba(0, 180, 216, 0.8) 100%);
+    background: linear-gradient(135deg, rgba(0, 168, 232, 0.8) 0%, rgba(212, 175, 55, 0.7) 30%, rgba(0, 119, 182, 0.8) 70%, rgba(0, 180, 216, 0.8) 100%);
     color: #FFFFFF;
     padding: 16px 32px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(212, 175, 55, 0.3);
     border-radius: 12px;
     font-weight: 600;
     font-size: 1.1rem;
     transition: all 0.3s ease;
     text-decoration: none;
     display: inline-block;
-    box-shadow: 0 8px 32px rgba(0, 168, 232, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 168, 232, 0.4), inset 0 1px 0 rgba(212, 175, 55, 0.2);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
 }
@@ -349,8 +349,8 @@ body {
 
 .casa-btn-ebay:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 40px rgba(0, 168, 232, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.3);
-    background: linear-gradient(135deg, rgba(0, 168, 232, 0.9) 0%, rgba(0, 119, 182, 0.9) 50%, rgba(0, 180, 216, 0.9) 100%);
+    box-shadow: 0 12px 40px rgba(212, 175, 55, 0.5), inset 0 1px 0 rgba(212, 175, 55, 0.3);
+    background: linear-gradient(135deg, rgba(0, 168, 232, 0.9) 0%, rgba(212, 175, 55, 0.8) 30%, rgba(0, 119, 182, 0.9) 70%, rgba(0, 180, 216, 0.9) 100%);
 }
 
 .casa-btn-ebay:hover i {
@@ -363,17 +363,17 @@ body {
 }
 
 .elettronica-btn-ebay {
-    background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(30, 41, 59, 0.8) 50%, rgba(51, 65, 85, 0.8) 100%);
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(212, 175, 55, 0.6) 30%, rgba(30, 41, 59, 0.8) 70%, rgba(51, 65, 85, 0.8) 100%);
     color: #FFFFFF;
     padding: 16px 32px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(212, 175, 55, 0.3);
     border-radius: 12px;
     font-weight: 600;
     font-size: 1.1rem;
     transition: all 0.3s ease;
     text-decoration: none;
     display: inline-block;
-    box-shadow: 0 8px 32px rgba(15, 23, 42, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(15, 23, 42, 0.4), inset 0 1px 0 rgba(212, 175, 55, 0.2);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
 }
@@ -384,8 +384,8 @@ body {
 
 .elettronica-btn-ebay:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 40px rgba(15, 23, 42, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.3);
-    background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(30, 41, 59, 0.9) 50%, rgba(51, 65, 85, 0.9) 100%);
+    box-shadow: 0 12px 40px rgba(212, 175, 55, 0.5), inset 0 1px 0 rgba(212, 175, 55, 0.3);
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(212, 175, 55, 0.7) 30%, rgba(30, 41, 59, 0.9) 70%, rgba(51, 65, 85, 0.9) 100%);
 }
 
 .elettronica-btn-ebay:hover i {
@@ -398,17 +398,17 @@ body {
 }
 
 .animali-btn-ebay {
-    background: linear-gradient(135deg, rgba(255, 140, 66, 0.8) 0%, rgba(255, 107, 53, 0.8) 50%, rgba(247, 147, 30, 0.8) 100%);
+    background: linear-gradient(135deg, rgba(255, 140, 66, 0.8) 0%, rgba(212, 175, 55, 0.7) 30%, rgba(255, 107, 53, 0.8) 70%, rgba(247, 147, 30, 0.8) 100%);
     color: #FFFFFF;
     padding: 16px 32px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(212, 175, 55, 0.3);
     border-radius: 12px;
     font-weight: 600;
     font-size: 1.1rem;
     transition: all 0.3s ease;
     text-decoration: none;
     display: inline-block;
-    box-shadow: 0 8px 32px rgba(255, 140, 66, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(255, 140, 66, 0.4), inset 0 1px 0 rgba(212, 175, 55, 0.2);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
 }
@@ -419,8 +419,8 @@ body {
 
 .animali-btn-ebay:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 40px rgba(255, 140, 66, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.3);
-    background: linear-gradient(135deg, rgba(255, 140, 66, 0.9) 0%, rgba(255, 107, 53, 0.9) 50%, rgba(247, 147, 30, 0.9) 100%);
+    box-shadow: 0 12px 40px rgba(212, 175, 55, 0.5), inset 0 1px 0 rgba(212, 175, 55, 0.3);
+    background: linear-gradient(135deg, rgba(255, 140, 66, 0.9) 0%, rgba(212, 175, 55, 0.8) 30%, rgba(255, 107, 53, 0.9) 70%, rgba(247, 147, 30, 0.9) 100%);
 }
 
 .animali-btn-ebay:hover i {
@@ -1845,7 +1845,8 @@ body {
 
 .climatizzazione-btn-ebay:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(125, 143, 105, 0.6);
+    box-shadow: 0 12px 40px rgba(212, 175, 55, 0.5), inset 0 1px 0 rgba(212, 175, 55, 0.3);
+    background: linear-gradient(135deg, rgba(125, 143, 105, 0.9) 0%, rgba(212, 175, 55, 0.7) 30%, rgba(107, 122, 90, 0.9) 70%, rgba(139, 154, 122, 0.9) 100%);
     color: white;
 }
 
@@ -2185,9 +2186,9 @@ body {
 }
 
 .alcol-btn-home {
-    background: linear-gradient(135deg, rgba(139, 69, 19, 0.8) 0%, rgba(204, 85, 0, 0.8) 50%, rgba(212, 165, 116, 0.8) 100%);
+    background: linear-gradient(135deg, rgba(139, 69, 19, 0.8) 0%, rgba(212, 175, 55, 0.9) 30%, rgba(204, 85, 0, 0.8) 70%, rgba(212, 165, 116, 0.8) 100%);
     color: #FFFFFF;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(212, 175, 55, 0.4);
     padding: 10px 25px;
     border-radius: 25px;
     font-weight: 600;
@@ -2200,9 +2201,9 @@ body {
 }
 
 .casa-btn-home {
-    background: linear-gradient(135deg, rgba(0, 168, 232, 0.8) 0%, rgba(0, 119, 182, 0.8) 50%, rgba(0, 180, 216, 0.8) 100%);
+    background: linear-gradient(135deg, rgba(0, 168, 232, 0.8) 0%, rgba(212, 175, 55, 0.7) 30%, rgba(0, 119, 182, 0.8) 70%, rgba(0, 180, 216, 0.8) 100%);
     color: #FFFFFF;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(212, 175, 55, 0.3);
     padding: 10px 25px;
     border-radius: 25px;
     font-weight: 600;
@@ -2215,9 +2216,9 @@ body {
 }
 
 .elettronica-btn-home {
-    background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(30, 41, 59, 0.8) 50%, rgba(51, 65, 85, 0.8) 100%);
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(212, 175, 55, 0.6) 30%, rgba(30, 41, 59, 0.8) 70%, rgba(51, 65, 85, 0.8) 100%);
     color: #FFFFFF;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(212, 175, 55, 0.3);
     padding: 10px 25px;
     border-radius: 25px;
     font-weight: 600;
@@ -2230,9 +2231,9 @@ body {
 }
 
 .animali-btn-home {
-    background: linear-gradient(135deg, rgba(255, 140, 66, 0.8) 0%, rgba(255, 107, 53, 0.8) 50%, rgba(247, 147, 30, 0.8) 100%);
+    background: linear-gradient(135deg, rgba(255, 140, 66, 0.8) 0%, rgba(212, 175, 55, 0.7) 30%, rgba(255, 107, 53, 0.8) 70%, rgba(247, 147, 30, 0.8) 100%);
     color: #FFFFFF;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(212, 175, 55, 0.3);
     padding: 10px 25px;
     border-radius: 25px;
     font-weight: 600;
@@ -2245,9 +2246,9 @@ body {
 }
 
 .climatizzazione-btn-home {
-    background: linear-gradient(135deg, rgba(125, 143, 105, 0.8) 0%, rgba(107, 122, 90, 0.8) 50%, rgba(139, 154, 122, 0.8) 100%);
+    background: linear-gradient(135deg, rgba(125, 143, 105, 0.8) 0%, rgba(212, 175, 55, 0.6) 30%, rgba(107, 122, 90, 0.8) 70%, rgba(139, 154, 122, 0.8) 100%);
     color: #FFFFFF;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(212, 175, 55, 0.3);
     padding: 10px 25px;
     border-radius: 25px;
     font-weight: 600;

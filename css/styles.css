@@ -1,52 +1,53 @@
 /* Smart Choices Guide - CSS Unificato */
-/* Variabili Globali */
+/* Variabili Globali - Palette eBay Unificata */
 :root {
-    /* Palette Homepage (Uptown Funk) */
-    --primary-color: #D4AF37;
-    --secondary-color: #1a1a1a;
-    --accent-color: #E74C3C;
-    --success-color: #FFFFFF;
-    --trust-color: #2C3E50;
+    /* Palette eBay Unificata */
+    --primary-color: #0064D2;
+    --secondary-color: #FFFFFF;
+    --accent-color: #E53238;
+    --neutral-color: #F5F5F5;
+    --text-color: #333333;
+    --text-light: #666666;
     
-    /* Palette Nicchia Alcol (Rumours) */
-    --alcol-primary: #5D4037;
-    --alcol-secondary: #F5E6D3;
-    --alcol-accent: #D4A574;
-    --alcol-trust: #2C1810;
-    --alcol-gold: #C9A227;
-    --alcol-wood-dark: #5D4037;
-    --alcol-wood-medium: #D4A574;
-    --alcol-wood-light: #F5E6D3;
+    /* Palette Nicchia Alcol (unificata) */
+    --alcol-primary: #0064D2;
+    --alcol-secondary: #FFFFFF;
+    --alcol-accent: #E53238;
+    --alcol-trust: #333333;
+    --alcol-gold: #0064D2;
+    --alcol-wood-dark: #333333;
+    --alcol-wood-medium: #666666;
+    --alcol-wood-light: #F5F5F5;
     
-    /* Palette Nicchia Casa e Pulizia (Clean) */
-    --casa-primary: #87CEEB;
+    /* Palette Nicchia Casa e Pulizia (unificata) */
+    --casa-primary: #0064D2;
     --casa-secondary: #FFFFFF;
-    --casa-accent: #98FB98;
-    --casa-trust: #4682B4;
-    --casa-neutral: #D3D3D3;
-    --casa-sky: #87CEEB;
-    --casa-mint: #98FB98;
-    --casa-azure: #4682B4;
+    --casa-accent: #E53238;
+    --casa-trust: #333333;
+    --casa-neutral: #F5F5F5;
+    --casa-sky: #0064D2;
+    --casa-mint: #E53238;
+    --casa-azure: #333333;
     
-    /* Palette Nicchia RAM/Tech (Blinding Lights) */
-    --elettronica-primary: #FF0000;
-    --elettronica-secondary: #000000;
-    --elettronica-accent: #8A2BE2;
-    --elettronica-trust: #C0C0C0;
+    /* Palette Nicchia RAM/Tech (unificata) */
+    --elettronica-primary: #0064D2;
+    --elettronica-secondary: #FFFFFF;
+    --elettronica-accent: #E53238;
+    --elettronica-trust: #333333;
     --elettronica-white: #FFFFFF;
-    --elettronica-neon-red: #FF0000;
-    --elettronica-deep-black: #000000;
-    --elettronica-electric-purple: #8A2BE2;
+    --elettronica-neon-red: #E53238;
+    --elettronica-deep-black: #333333;
+    --elettronica-electric-purple: #0064D2;
     
-    /* Palette Nicchia Animali (Stray Cat Strut) */
-    --animali-primary: #FF6B35;
-    --animali-secondary: #1a1a1a;
-    --animali-accent: #CC3333;
-    --animali-trust: #808080;
+    /* Palette Nicchia Animali (unificata) */
+    --animali-primary: #0064D2;
+    --animali-secondary: #FFFFFF;
+    --animali-accent: #E53238;
+    --animali-trust: #333333;
     --animali-white: #FFFFFF;
-    --animali-orange: #FF6B35;
-    --animali-black: #1a1a1a;
-    --animali-red: #CC3333;
+    --animali-orange: #E53238;
+    --animali-black: #333333;
+    --animali-red: #E53238;
     
     /* Spaziature */
     --spacing-xs: 0.5rem;
@@ -87,11 +88,11 @@ body {
 
 /* Homepage Styles */
 .hero-section {
-    background: linear-gradient(135deg, #1a1a1a 0%, #2C3E50 50%, #D4AF37 100%);
+    background: linear-gradient(135deg, #0064D2 0%, #0056b3 50%, #E53238 100%);
     color: #FFFFFF;
     padding: var(--spacing-xl) 0;
     margin-bottom: var(--spacing-xl);
-    box-shadow: 0 4px 20px rgba(212, 175, 55, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 100, 210, 0.3);
 }
 
 .hero-section h1 {
@@ -122,11 +123,13 @@ body {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    border: 2px solid transparent;
 }
 
 .bento-item:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
+    border-color: #0064D2;
 }
 
 .bento-large {
@@ -199,7 +202,7 @@ body {
 
 /* Buttons */
 .btn-ebay {
-    background: linear-gradient(135deg, #D4AF37 0%, #E74C3C 100%);
+    background: linear-gradient(135deg, #0064D2 0%, #E53238 100%);
     color: #FFFFFF;
     border: none;
     padding: 15px 40px;
@@ -207,14 +210,14 @@ body {
     font-weight: 600;
     font-size: 1.1rem;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 20px rgba(212, 175, 55, 0.4);
+    box-shadow: 0 5px 20px rgba(0, 100, 210, 0.4);
     text-decoration: none;
     display: inline-block;
 }
 
 .btn-ebay:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 30px rgba(212, 175, 55, 0.6);
+    box-shadow: 0 8px 30px rgba(0, 100, 210, 0.6);
     color: #FFFFFF;
 }
 
@@ -251,53 +254,13 @@ body {
 }
 
 .alcol-hero {
-    background: linear-gradient(135deg, #3E2723 0%, #5D4037 25%, #8D6E63 50%, #A1887F 75%, #BCAAA4 100%);
+    background: linear-gradient(135deg, #0064D2 0%, #0056b3 50%, #E53238 100%);
     padding: 100px 0;
     text-align: center;
     color: #fff;
     position: relative;
     overflow: hidden;
-    box-shadow: inset 0 0 100px rgba(0,0,0,0.3);
-}
-
-.alcol-hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: repeating-linear-gradient(
-        90deg,
-        transparent,
-        transparent 2px,
-        rgba(0,0,0,0.03) 2px,
-        rgba(0,0,0,0.03) 4px
-    ),
-    repeating-linear-gradient(
-        0deg,
-        transparent,
-        transparent 2px,
-        rgba(0,0,0,0.03) 2px,
-        rgba(0,0,0,0.03) 4px
-    );
-    pointer-events: none;
-}
-
-.alcol-hero::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(
-        45deg,
-        rgba(62, 39, 35, 0.1) 0%,
-        transparent 50%,
-        rgba(62, 39, 35, 0.1) 100%
-    );
-    pointer-events: none;
+    box-shadow: 0 4px 20px rgba(0, 100, 210, 0.3);
 }
 
 .alcol-hero h1 {
@@ -307,9 +270,8 @@ body {
     position: relative;
     z-index: 2;
     color: #fff;
-    text-shadow: 3px 3px 6px rgba(0,0,0,0.5), 0 0 20px rgba(0,0,0,0.3);
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    letter-spacing: 1px;
 }
 
 .alcol-hero p {
@@ -318,9 +280,8 @@ body {
     position: relative;
     z-index: 2;
     color: #fff;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
     font-weight: 300;
-    letter-spacing: 1px;
 }
 
 .alcol-hero-icon {
@@ -452,37 +413,13 @@ body {
 }
 
 .casa-hero {
-    background: linear-gradient(135deg, var(--casa-sky) 0%, var(--casa-mint) 50%, var(--casa-secondary) 100%);
+    background: linear-gradient(135deg, #0064D2 0%, #0056b3 50%, #E53238 100%);
     padding: 100px 0;
     text-align: center;
-    color: var(--casa-trust);
+    color: #fff;
     position: relative;
     overflow: hidden;
-    box-shadow: inset 0 0 100px rgba(70, 130, 180, 0.2);
-}
-
-.casa-hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: repeating-linear-gradient(
-        90deg,
-        transparent,
-        transparent 3px,
-        rgba(152, 251, 152, 0.05) 3px,
-        rgba(152, 251, 152, 0.05) 6px
-    ),
-    repeating-linear-gradient(
-        0deg,
-        transparent,
-        transparent 3px,
-        rgba(135, 206, 235, 0.05) 3px,
-        rgba(135, 206, 235, 0.05) 6px
-    );
-    pointer-events: none;
+    box-shadow: 0 4px 20px rgba(0, 100, 210, 0.3);
 }
 
 .casa-hero h1 {
@@ -491,8 +428,8 @@ body {
     margin-bottom: 20px;
     position: relative;
     z-index: 2;
-    color: var(--casa-trust);
-    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
     letter-spacing: 1px;
 }
 
@@ -501,8 +438,8 @@ body {
     opacity: 0.95;
     position: relative;
     z-index: 2;
-    color: var(--casa-trust);
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
     font-weight: 300;
 }
 
@@ -663,37 +600,13 @@ body {
 }
 
 .elettronica-hero {
-    background: linear-gradient(135deg, var(--elettronica-deep-black) 0%, var(--elettronica-electric-purple) 50%, var(--elettronica-neon-red) 100%);
+    background: linear-gradient(135deg, #0064D2 0%, #0056b3 50%, #E53238 100%);
     padding: 100px 0;
     text-align: center;
-    color: var(--elettronica-white);
+    color: #fff;
     position: relative;
     overflow: hidden;
-    box-shadow: inset 0 0 100px rgba(255, 0, 0, 0.3);
-}
-
-.elettronica-hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: repeating-linear-gradient(
-        90deg,
-        transparent,
-        transparent 2px,
-        rgba(138, 43, 226, 0.1) 2px,
-        rgba(138, 43, 226, 0.1) 4px
-    ),
-    repeating-linear-gradient(
-        0deg,
-        transparent,
-        transparent 2px,
-        rgba(255, 0, 0, 0.1) 2px,
-        rgba(255, 0, 0, 0.1) 4px
-    );
-    pointer-events: none;
+    box-shadow: 0 4px 20px rgba(0, 100, 210, 0.3);
 }
 
 .elettronica-hero h1 {
@@ -702,10 +615,9 @@ body {
     margin-bottom: 20px;
     position: relative;
     z-index: 2;
-    color: var(--elettronica-white);
-    text-shadow: 0 0 20px rgba(255, 0, 0, 0.8), 0 0 40px rgba(138, 43, 226, 0.6);
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    letter-spacing: 1px;
 }
 
 .elettronica-hero p {
@@ -713,8 +625,8 @@ body {
     opacity: 0.95;
     position: relative;
     z-index: 2;
-    color: var(--elettronica-white);
-    text-shadow: 0 0 10px rgba(255, 0, 0, 0.6);
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
     font-weight: 300;
     letter-spacing: 1px;
 }
@@ -890,37 +802,13 @@ body {
 }
 
 .animali-hero {
-    background: linear-gradient(135deg, var(--animali-black) 0%, var(--animali-orange) 50%, var(--animali-red) 100%);
+    background: linear-gradient(135deg, #0064D2 0%, #0056b3 50%, #E53238 100%);
     padding: 100px 0;
     text-align: center;
-    color: var(--animali-white);
+    color: #fff;
     position: relative;
     overflow: hidden;
-    box-shadow: inset 0 0 100px rgba(255, 107, 53, 0.3);
-}
-
-.animali-hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: repeating-linear-gradient(
-        90deg,
-        transparent,
-        transparent 3px,
-        rgba(204, 51, 51, 0.05) 3px,
-        rgba(204, 51, 51, 0.05) 6px
-    ),
-    repeating-linear-gradient(
-        0deg,
-        transparent,
-        transparent 3px,
-        rgba(255, 107, 53, 0.05) 3px,
-        rgba(255, 107, 53, 0.05) 6px
-    );
-    pointer-events: none;
+    box-shadow: 0 4px 20px rgba(0, 100, 210, 0.3);
 }
 
 .animali-hero h1 {
@@ -929,8 +817,8 @@ body {
     margin-bottom: 20px;
     position: relative;
     z-index: 2;
-    color: var(--animali-white);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
     letter-spacing: 1px;
 }
 
@@ -939,8 +827,8 @@ body {
     opacity: 0.95;
     position: relative;
     z-index: 2;
-    color: var(--animali-white);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
     font-weight: 300;
 }
 

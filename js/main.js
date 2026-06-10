@@ -245,7 +245,7 @@ function initCategoryFilter() {
             { name: 'Rum Entry', icon: 'fa-wine-bottle', link: 'salotto-distillati/index.html#rum-entry', size: 'bento-medium' },
             { name: 'Rum Top', icon: 'fa-wine-bottle', link: 'salotto-distillati/index.html#rum-top', size: 'bento-large' },
             { name: 'Rum Premium', icon: 'fa-wine-bottle', link: 'salotto-distillati/index.html#rum-premium', size: 'bento-medium' },
-            { name: 'Vodka 1', icon: 'fa-glass-cheers', link: 'salotto-distillati/index.html#vodka-1', size: 'bento-small' },
+            { name: 'Vodka Moskovskaya', icon: 'fa-glass-cheers', link: 'salotto-distillati/index.html#vodka-1', size: 'bento-small' },
             { name: 'Vodka 2', icon: 'fa-glass-cheers', link: 'salotto-distillati/index.html#vodka-2', size: 'bento-small' },
             { name: 'Vodka 3', icon: 'fa-glass-cheers', link: 'salotto-distillati/index.html#vodka-3', size: 'bento-small' }
         ],

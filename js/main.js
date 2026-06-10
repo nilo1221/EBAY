@@ -130,7 +130,7 @@ function initSplitScreenNav() {
             { name: 'Soggiorno', icon: 'fa-couch', link: 'casa/soggiorno/index.html' },
             { name: 'Bagno', icon: 'fa-bath', link: 'casa/bagno/index.html' },
             { name: 'Camera', icon: 'fa-bed', link: 'casa/camera/index.html' },
-            { name: 'Pulizia', icon: 'fa-broom', link: 'casa/pulizia/index.html' }
+            { name: 'Pulizia', icon: 'fa-broom', link: 'casa/home-cleaning/index.html' }
         ],
         elettronica: [
             { name: 'RAM', icon: 'fa-memory', link: 'elettronica/index.html#ram' },

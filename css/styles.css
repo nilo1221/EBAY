@@ -2555,7 +2555,7 @@ body {
     border-radius: 15px;
     padding: 0;
     border: 2px dashed rgba(212, 175, 55, 0.3);
-    min-height: 250px;
+    min-height: 350px;
     display: flex;
     flex-direction: column;
     justify-content: center;

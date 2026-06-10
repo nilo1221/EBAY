@@ -1850,22 +1850,50 @@ body {
 }
 
 .moda-btn-ebay {
-    background: transparent;
+    background: linear-gradient(135deg, rgba(248, 246, 240, 0.4) 0%, rgba(26, 54, 93, 0.6) 50%, rgba(248, 246, 240, 0.4) 100%);
     color: #1A365D;
-    border: 2px solid #1A365D;
+    border: 2px solid rgba(26, 54, 93, 0.5);
     padding: 15px 40px;
     border-radius: 6px;
     font-weight: 600;
     font-size: 1.1rem;
     transition: all 0.3s ease;
     width: 100%;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(26, 54, 93, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.moda-btn-ebay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #FF6B35 0%, #FF8C42 50%, #FF6B35 100%);
+    opacity: 0.8;
+}
+
+.moda-btn-ebay::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent 0%, #FF6B35 50%, transparent 100%);
+    opacity: 0.6;
 }
 
 .moda-btn-ebay:hover {
-    background: #FF6B35;
+    background: linear-gradient(135deg, rgba(26, 54, 93, 0.8) 0%, rgba(44, 82, 130, 0.9) 50%, rgba(26, 54, 93, 0.8) 100%);
     border-color: #FF6B35;
-    color: #FFFFFF;
+    color: #F8F6F0;
     transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .moda-footer {

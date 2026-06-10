@@ -39,16 +39,18 @@
     --casa-secondary: #FAFAFA;
     --casa-text: #1A1A1A;
     
-    /* Palette Nicchia Animali (Rosa Pastello + Fucsia Tenue) */
-    --animali-hero-bg: #FDF2F5;
-    --animali-accent: #D63384;
-    --animali-orange: #FF6B35;
-    --animali-red: #CC3333;
-    --animali-trust: #FF8C42;
+    /* Palette Nicchia Animali (Naturale & Calda) */
+    --animali-hero-bg: #FFF8E1;
+    --animali-accent: #7CB342;
+    --animali-olive: #7CB342;
+    --animali-brown: #8D6E63;
+    --animali-orange: #FF8A65;
+    --animali-beige: #F5F5DC;
+    --animali-cream: #FFF8E1;
     --animali-white: #FFFFFF;
     --animali-black: #1A1A1A;
-    --animali-primary: #FFFFFF;
-    --animali-secondary: #FAFAFA;
+    --animali-primary: #FFF8E1;
+    --animali-secondary: #F5F5DC;
     --animali-text: #1A1A1A;
     
     /* Spaziature */
@@ -1141,14 +1143,14 @@ body {
 }
 
 .subcategory-grid .bento-item[data-category="animali"] {
-    background: linear-gradient(135deg, #F3E5F5 0%, #E1BEE7 100%);
-    border-color: #BA68C8;
+    background: linear-gradient(135deg, #FFF8E1 0%, #F5F5DC 100%);
+    border-color: #7CB342;
 }
 
 .subcategory-grid .bento-item[data-category="animali"]:hover {
-    background: linear-gradient(135deg, #E1BEE7 0%, #CE93D8 100%);
-    border-color: #AB47BC;
-    box-shadow: 0 8px 20px rgba(171, 71, 188, 0.3);
+    background: linear-gradient(135deg, #F5F5DC 0%, #E8E4C9 100%);
+    border-color: #8D6E63;
+    box-shadow: 0 8px 20px rgba(124, 179, 66, 0.3);
 }
 
 .subcategory-grid .bento-item[data-category="moda"] {
@@ -1404,62 +1406,81 @@ body {
 
 /* Nicchia Animali Styles */
 .animali-body {
-    background-color: var(--animali-primary);
+    background: linear-gradient(135deg, #FFF8E1 0%, #F5F5DC 50%, #E8E4C9 100%);
     color: var(--animali-text);
 }
 
 .animali-hero {
-    background: #FFFFFF;
+    background: linear-gradient(135deg, rgba(124, 179, 66, 0.8) 0%, rgba(141, 110, 99, 0.7) 50%, rgba(255, 138, 101, 0.6) 100%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(124, 179, 66, 0.2);
     padding: 80px 20px;
     text-align: left;
-    color: #1A1A1A;
+    color: #FFFFFF;
     position: relative;
     overflow: hidden;
-    border-left: 100px solid #FF8C42;
+}
+
+.animali-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.3) 50%, transparent 70%);
+    pointer-events: none;
+    animation: glassShine 3s infinite;
 }
 
 .animali-hero-icon {
     font-size: 5rem;
     margin-bottom: 20px;
-    color: #FF8C42;
+    color: #FFFFFF;
     position: relative;
     z-index: 2;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .animali-product-card {
-    background: white;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-radius: var(--radius-lg);
     padding: 40px 30px;
-    box-shadow: 0 10px 40px rgba(255, 107, 53, 0.15);
+    box-shadow: 0 10px 40px rgba(124, 179, 66, 0.15);
     transition: all 0.3s ease;
     height: 100%;
-    border: 2px solid var(--animali-trust);
+    border: 2px solid var(--animali-olive);
 }
 
 .animali-product-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 60px rgba(255, 107, 53, 0.25);
+    box-shadow: 0 20px 60px rgba(124, 179, 66, 0.3);
+    border-color: var(--animali-brown);
 }
 
 .animali-product-card.featured:hover {
-    border-color: #FF8C42;
-    box-shadow: 0 20px 60px rgba(255, 140, 66, 0.3);
+    border-color: var(--animali-orange);
+    box-shadow: 0 20px 60px rgba(255, 138, 101, 0.4);
 }
 
 .animali-product-card.featured {
-    border: 3px solid #FF8C42;
-    background: linear-gradient(135deg, rgba(255, 140, 66, 0.05) 0%, rgba(255, 140, 66, 0.02) 100%);
+    border: 3px solid var(--animali-orange);
+    background: linear-gradient(135deg, rgba(255, 138, 101, 0.1) 0%, rgba(255, 255, 255, 0.8) 100%);
 }
 
 .animali-product-card h3 {
-    color: #1A1A1A;
+    color: var(--animali-brown);
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 15px;
 }
 
 .animali-product-card p {
-    color: #1A1A1A;
+    color: var(--animali-text);
     font-size: 1rem;
     line-height: 1.6;
 }
@@ -1467,49 +1488,52 @@ body {
 .animali-product-icon {
     font-size: 4rem;
     margin-bottom: 20px;
-    background: linear-gradient(135deg, var(--animali-orange) 0%, var(--animali-red) 100%);
+    background: linear-gradient(135deg, var(--animali-olive) 0%, var(--animali-brown) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .animali-badge-low {
-    background: linear-gradient(135deg, var(--animali-trust) 0%, var(--animali-orange) 100%);
+    background: linear-gradient(135deg, var(--animali-olive) 0%, var(--animali-orange) 100%);
     color: var(--animali-white);
     padding: 8px 20px;
     border-radius: 50px;
     font-weight: 600;
     font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(124, 179, 66, 0.3);
 }
 
 .animali-badge-middle {
-    background: linear-gradient(135deg, var(--animali-orange) 0%, var(--animali-red) 100%);
+    background: linear-gradient(135deg, var(--animali-orange) 0%, var(--animali-brown) 100%);
     color: var(--animali-white);
     padding: 8px 20px;
     border-radius: 50px;
     font-weight: 600;
     font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(255, 138, 101, 0.3);
 }
 
 .animali-badge-high {
-    background: linear-gradient(135deg, var(--animali-red) 0%, var(--animali-black) 100%);
+    background: linear-gradient(135deg, var(--animali-brown) 0%, var(--animali-black) 100%);
     color: var(--animali-white);
     padding: 8px 20px;
     border-radius: 50px;
     font-weight: 600;
     font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(141, 110, 99, 0.3);
 }
 
 .animali-btn-ebay {
-    background: linear-gradient(135deg, var(--animali-orange) 0%, var(--animali-red) 100%);
+    background: linear-gradient(135deg, var(--animali-olive) 0%, var(--animali-orange) 100%);
     color: var(--animali-white);
     border: none;
     padding: 15px 40px;
     border-radius: 50px;
     font-weight: 600;
     font-size: 1.1rem;
+    box-shadow: 0 4px 12px rgba(124, 179, 66, 0.3);
     transition: all 0.3s ease;
-    box-shadow: 0 5px 20px rgba(255, 107, 53, 0.4);
     width: 100%;
 }
 
@@ -1519,7 +1543,8 @@ body {
 
 .animali-btn-ebay:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(255, 107, 53, 0.6);
+    background: linear-gradient(135deg, var(--animali-orange) 0%, var(--animali-brown) 100%);
+    box-shadow: 0 12px 35px rgba(255, 138, 101, 0.4);
     color: var(--animali-white);
 }
 
@@ -1529,41 +1554,44 @@ body {
 
 .animali-btn-ebay:active {
     transform: translateY(-1px);
-    box-shadow: 0 5px 20px rgba(255, 107, 53, 0.4);
+    box-shadow: 0 5px 20px rgba(124, 179, 66, 0.3);
 }
 
 .animali-footer {
-    background: #FFFFFF;
-    color: #1A1A1A;
+    background: linear-gradient(135deg, rgba(124, 179, 66, 0.8) 0%, rgba(141, 110, 99, 0.7) 100%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: #FFFFFF;
     padding: 60px 0 30px;
     margin-top: 80px;
 }
 
 .animali-footer a {
-    color: #1A1A1A;
+    color: #FFFFFF;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .animali-footer a:hover {
-    color: #FF8C42;
+    color: var(--animali-cream);
 }
 
 .animali-footer h5 {
     font-weight: 600;
     margin-bottom: 20px;
-    color: #FF8C42;
+    color: var(--animali-cream);
 }
 
 .animali-footer-glass {
-    color: #1A1A1A;
-    background: rgba(255, 140, 66, 0.1);
+    color: #FFFFFF;
+    background: rgba(255, 255, 255, 0.1);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     padding: 15px 20px;
     border-radius: 10px;
-    border: 1px solid rgba(255, 140, 66, 0.25);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(124, 179, 66, 0.2);
     margin-top: 15px;
 }
 
@@ -1587,7 +1615,7 @@ body {
 }
 
 .animali-social-links a:hover {
-    background: var(--animali-orange);
+    background: var(--animali-olive);
     color: var(--animali-white);
 }
 

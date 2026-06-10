@@ -27,16 +27,20 @@
     --elettronica-secondary: #FAFAFA;
     --elettronica-text: #1A1A1A;
     
-    /* Palette Nicchia Casa (Verde Salvia + Verde Foresta) */
-    --casa-hero-bg: #F1F8E9;
-    --casa-accent: #4CAF50;
-    --casa-sky: #87CEEB;
-    --casa-mint: #98FF98;
-    --casa-azure: #007FFF;
+    /* Palette Nicchia Casa (Calda & Accogliente per Arredamento) */
+    --casa-hero-bg: #FBE9E7;
+    --casa-accent: #8D6E63;
+    --casa-brown: #8D6E63;
+    --casa-beige: #D7CCC8;
+    --casa-orange: #FF8A65;
+    --casa-cream: #FBE9E7;
+    --casa-sky: #D7CCC8;
+    --casa-mint: #BCAAA4;
+    --casa-azure: #8D6E63;
     --casa-neutral: #E0E0E0;
-    --casa-trust: #2E7D32;
+    --casa-trust: #8D6E63;
     --casa-primary: #FFFFFF;
-    --casa-secondary: #FAFAFA;
+    --casa-secondary: #FBE9E7;
     --casa-text: #1A1A1A;
     
     /* Palette Nicchia Animali (Naturale & Calda) */
@@ -769,18 +773,22 @@ body {
 
 /* Nicchia Casa e Pulizia Styles */
 .casa-body {
-    background-color: var(--casa-primary);
+    background: linear-gradient(135deg, #FBE9E7 0%, #D7CCC8 50%, #BCAAA4 100%);
     color: var(--casa-text);
 }
 
 .casa-hero {
-    background: linear-gradient(135deg, #FFFFFF 0%, #F8FFFE 25%, #E8F5E9 50%, #E3F2FD 75%, #F0F4F8 100%);
+    background: linear-gradient(135deg, rgba(141, 110, 99, 0.8) 0%, rgba(215, 204, 200, 0.7) 50%, rgba(255, 138, 101, 0.6) 100%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(141, 110, 99, 0.2);
     padding: 50px 20px;
     text-align: left;
-    color: #1A1A1A;
+    color: #FFFFFF;
     position: relative;
     overflow: hidden;
-    border-left: 5px solid #81C784;
+    border-left: 5px solid #8D6E63;
     min-height: 35vh;
     display: flex;
     align-items: center;
@@ -789,10 +797,10 @@ body {
 .casa-hero-icon {
     font-size: 6rem;
     margin-bottom: 20px;
-    color: #81C784;
+    color: #8D6E63;
     position: relative;
     z-index: 2;
-    text-shadow: 0 5px 20px rgba(129, 199, 132, 0.3);
+    text-shadow: 0 5px 20px rgba(141, 110, 99, 0.3);
 }
 
 .casa-hero h1 {
@@ -803,7 +811,7 @@ body {
     margin-bottom: 15px;
     line-height: 1.2;
     text-transform: uppercase;
-    background: linear-gradient(135deg, #81C784 0%, #66BB6A 50%, #4CAF50 100%);
+    background: linear-gradient(135deg, #8D6E63 0%, #D7CCC8 50%, #FF8A65 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -823,28 +831,31 @@ body {
 }
 
 .casa-product-card {
-    background: white;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-radius: var(--radius-lg);
     padding: 40px 30px;
-    box-shadow: 0 10px 40px rgba(129, 199, 132, 0.15);
+    box-shadow: 0 10px 40px rgba(141, 110, 99, 0.15);
     transition: all 0.3s ease;
     height: 100%;
-    border: 2px solid #E8F5E9;
+    border: 2px solid #8D6E63;
 }
 
 .casa-product-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 60px rgba(129, 199, 132, 0.25);
+    box-shadow: 0 20px 60px rgba(141, 110, 99, 0.3);
+    border-color: #FF8A65;
 }
 
 .casa-product-card.featured:hover {
-    border-color: #81C784;
-    box-shadow: 0 20px 60px rgba(129, 199, 132, 0.3);
+    border-color: #FF8A65;
+    box-shadow: 0 20px 60px rgba(255, 138, 101, 0.4);
 }
 
 .casa-product-card.featured {
-    border: 3px solid #81C784;
-    background: linear-gradient(135deg, rgba(129, 199, 132, 0.05) 0%, rgba(227, 242, 253, 0.02) 100%);
+    border: 3px solid #FF8A65;
+    background: linear-gradient(135deg, rgba(255, 138, 101, 0.1) 0%, rgba(255, 255, 255, 0.8) 100%);
 }
 
 .casa-product-card h3 {
@@ -863,41 +874,44 @@ body {
 .casa-product-icon {
     font-size: 4rem;
     margin-bottom: 20px;
-    background: linear-gradient(135deg, var(--casa-sky) 0%, var(--casa-mint) 100%);
+    background: linear-gradient(135deg, #8D6E63 0%, #FF8A65 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .casa-badge-low {
-    background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);
-    color: #2E7D32;
-    padding: 8px 20px;
-    border-radius: 50px;
-    font-weight: 600;
-    font-size: 0.9rem;
-}
-
-.casa-badge-middle {
-    background: linear-gradient(135deg, #81C784 0%, #66BB6A 100%);
+    background: linear-gradient(135deg, #D7CCC8 0%, #8D6E63 100%);
     color: white;
     padding: 8px 20px;
     border-radius: 50px;
     font-weight: 600;
     font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(141, 110, 99, 0.3);
 }
 
-.casa-badge-high {
-    background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);
-    color: #1565C0;
+.casa-badge-middle {
+    background: linear-gradient(135deg, #8D6E63 0%, #FF8A65 100%);
+    color: white;
     padding: 8px 20px;
     border-radius: 50px;
     font-weight: 600;
     font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(141, 110, 99, 0.3);
+}
+
+.casa-badge-high {
+    background: linear-gradient(135deg, #FF8A65 0%, #1A1A1A 100%);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(255, 138, 101, 0.3);
 }
 
 .casa-btn-ebay {
-    background: linear-gradient(135deg, #81C784 0%, #66BB6A 100%);
+    background: linear-gradient(135deg, #8D6E63 0%, #FF8A65 100%);
     color: white;
     border: none;
     padding: 15px 40px;
@@ -905,7 +919,7 @@ body {
     font-weight: 600;
     font-size: 1.1rem;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 20px rgba(129, 199, 132, 0.4);
+    box-shadow: 0 5px 20px rgba(141, 110, 99, 0.4);
     width: 100%;
 }
 
@@ -915,7 +929,7 @@ body {
 
 .casa-btn-ebay:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(129, 199, 132, 0.6);
+    box-shadow: 0 12px 35px rgba(141, 110, 99, 0.6);
     color: white;
 }
 
@@ -925,11 +939,14 @@ body {
 
 .casa-btn-ebay:active {
     transform: translateY(-1px);
-    box-shadow: 0 5px 20px rgba(129, 199, 132, 0.4);
+    box-shadow: 0 5px 20px rgba(141, 110, 99, 0.4);
 }
 
 .casa-footer {
-    background: #0A0A0A;
+    background: linear-gradient(135deg, rgba(141, 110, 99, 0.8) 0%, rgba(215, 204, 200, 0.7) 100%);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     color: #FFFFFF;
     padding: 60px 0 30px;
     margin-top: 80px;

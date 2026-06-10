@@ -1777,32 +1777,59 @@ body {
     color: #D4A373;
 }
 
-/* Nicchia Moda Styles - Palette Vitalità e Gioia Pura */
+/* Nicchia Moda Styles - Palette Moderna Blu/Nero/Viola con Effetti Vetro */
 .moda-body {
-    background-color: #FAFAFA;
-    color: #2A9D8F;
+    background: linear-gradient(135deg, #0A0A0A 0%, #1A1A2E 50%, #16213E 100%);
+    color: #E8E8E8;
 }
 
 .moda-hero {
-    background: linear-gradient(135deg, #FAFAFA 0%, #F4A261 50%, #2A9D8F 100%);
+    background: linear-gradient(135deg, rgba(10, 10, 10, 0.9) 0%, rgba(26, 26, 46, 0.85) 50%, rgba(22, 33, 62, 0.9) 100%);
     padding: 50px 20px;
     text-align: left;
-    color: #2A9D8F;
+    color: #E8E8E8;
     position: relative;
     overflow: hidden;
-    border-left: 5px solid #2A9D8F;
+    border-left: 5px solid #6C5CE7;
     min-height: 35vh;
     display: flex;
     align-items: center;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+.moda-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(108, 92, 231, 0.1) 0%, transparent 50%);
+    animation: float 20s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    50% { transform: translate(50px, 50px) rotate(180deg); }
 }
 
 .moda-hero-icon {
     font-size: 6rem;
     margin-bottom: 20px;
-    color: #2A9D8F;
+    background: linear-gradient(135deg, #6C5CE7 0%, #A29BFE 50%, #6C5CE7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     position: relative;
     z-index: 2;
-    text-shadow: 0 5px 20px rgba(42, 157, 143, 0.3);
+    filter: drop-shadow(0 0 30px rgba(108, 92, 231, 0.5));
+    animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
 }
 
 .moda-hero h1 {
@@ -1813,12 +1840,13 @@ body {
     margin-bottom: 15px;
     line-height: 1.2;
     text-transform: uppercase;
-    background: linear-gradient(135deg, #2A9D8F 0%, #21867a 50%, #1B7066 100%);
+    background: linear-gradient(135deg, #6C5CE7 0%, #A29BFE 50%, #74B9FF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     position: relative;
     z-index: 2;
+    filter: drop-shadow(0 0 20px rgba(108, 92, 231, 0.3));
 }
 
 .moda-hero p {
@@ -1833,55 +1861,97 @@ body {
 }
 
 .moda-product-card {
-    background: white;
+    background: linear-gradient(135deg, #F8F6F0 0%, #F5F0E6 50%, #F8F6F0 100%);
     border-radius: var(--radius-lg);
     padding: 40px 30px;
-    box-shadow: 0 10px 40px rgba(42, 157, 143, 0.15);
-    transition: all 0.3s ease;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     height: 100%;
-    border: 2px solid #F4A261;
+    border: 1px solid rgba(108, 92, 231, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.moda-product-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #6C5CE7 0%, #A29BFE 50%, #74B9FF 100%);
+    opacity: 0;
+    transition: opacity 0.4s ease;
 }
 
 .moda-product-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 20px 60px rgba(42, 157, 143, 0.25);
+    transform: translateY(-15px);
+    box-shadow: 0 25px 80px rgba(108, 92, 231, 0.2);
+}
+
+.moda-product-card:hover::before {
+    opacity: 1;
 }
 
 .moda-product-icon {
     font-size: 4rem;
     margin-bottom: 20px;
-    background: linear-gradient(135deg, #2A9D8F 0%, #21867a 100%);
+    background: linear-gradient(135deg, #6C5CE7 0%, #A29BFE 50%, #74B9FF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    filter: drop-shadow(0 0 15px rgba(108, 92, 231, 0.3));
 }
 
 .moda-btn-ebay {
-    background: linear-gradient(135deg, #2A9D8F 0%, #21867a 100%);
-    color: white;
-    border: none;
+    background: linear-gradient(135deg, rgba(108, 92, 231, 0.3) 0%, rgba(162, 155, 254, 0.3) 50%, rgba(116, 185, 255, 0.3) 100%);
+    color: #6C5CE7;
+    border: 2px solid rgba(108, 92, 231, 0.5);
     padding: 15px 40px;
     border-radius: 50px;
     font-weight: 600;
     font-size: 1.1rem;
-    transition: all 0.3s ease;
-    box-shadow: 0 5px 20px rgba(42, 157, 143, 0.4);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 5px 20px rgba(108, 92, 231, 0.2);
     width: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    position: relative;
+    overflow: hidden;
+}
+
+.moda-btn-ebay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
 }
 
 .moda-btn-ebay:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 30px rgba(42, 157, 143, 0.6);
-    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(108, 92, 231, 0.4);
+    background: linear-gradient(135deg, rgba(108, 92, 231, 0.5) 0%, rgba(162, 155, 254, 0.5) 50%, rgba(116, 185, 255, 0.5) 100%);
+    border-color: #6C5CE7;
+    color: #A29BFE;
+}
+
+.moda-btn-ebay:hover::before {
+    left: 100%;
 }
 
 .moda-footer {
-    background: #2A9D8F;
-    color: #FAFAFA;
+    background: linear-gradient(135deg, #0A0A0A 0%, #1A1A2E 50%, #16213E 100%);
+    color: #E8E8E8;
     padding: 60px 0 30px;
     margin-top: 80px;
     position: relative;
     overflow: hidden;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 .moda-footer::before {
@@ -1891,7 +1961,8 @@ body {
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, #E9C46A 0%, #F4A261 50%, #E9C46A 100%);
+    background: linear-gradient(90deg, #6C5CE7 0%, #A29BFE 50%, #74B9FF 100%);
+    box-shadow: 0 0 20px rgba(108, 92, 231, 0.5);
 }
 
 .moda-footer::after {
@@ -1901,21 +1972,23 @@ body {
     left: 0;
     right: 0;
     height: 2px;
-    background: linear-gradient(90deg, transparent 0%, #F4A261 50%, transparent 100%);
+    background: linear-gradient(90deg, transparent 0%, #6C5CE7 50%, transparent 100%);
 }
 
 .moda-footer a {
-    color: rgba(250, 250, 250, 0.8);
+    color: rgba(232, 232, 232, 0.8);
     text-decoration: none;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .moda-footer a:hover {
-    color: #E9C46A;
+    color: #A29BFE;
+    text-shadow: 0 0 10px rgba(108, 92, 231, 0.5);
 }
 
 .moda-footer h5 {
     font-weight: 600;
     margin-bottom: 20px;
-    color: #E9C46A;
+    color: #A29BFE;
+    text-shadow: 0 0 15px rgba(108, 92, 231, 0.3);
 }

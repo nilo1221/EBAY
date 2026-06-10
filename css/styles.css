@@ -1904,6 +1904,12 @@ body {
     box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
     position: relative;
     overflow: hidden;
+    animation: pulse 3s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
 }
 
 .moda-btn-ebay::before {
@@ -1917,13 +1923,22 @@ body {
     transition: left 0.6s ease;
 }
 
+.moda-btn-ebay i {
+    transition: transform 0.3s ease;
+}
+
 .moda-btn-ebay:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.5);
+    box-shadow: 0 12px 35px rgba(59, 130, 246, 0.6);
+    animation: none;
 }
 
 .moda-btn-ebay:hover::before {
     left: 100%;
+}
+
+.moda-btn-ebay:hover i {
+    transform: translateX(3px);
 }
 
 .moda-btn-ebay:active {

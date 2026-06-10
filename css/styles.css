@@ -2112,3 +2112,111 @@ body {
     transform: translateY(-1px);
     box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
 }
+
+/* Generic footer styles for all niches */
+.alcol-footer p,
+.casa-footer p,
+.elettronica-footer p,
+.animali-footer p,
+.climatizzazione-footer p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.alcol-footer a,
+.casa-footer a,
+.elettronica-footer a,
+.animali-footer a,
+.climatizzazione-footer a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.alcol-footer a:hover,
+.casa-footer a:hover,
+.elettronica-footer a:hover,
+.animali-footer a:hover,
+.climatizzazione-footer a:hover {
+    color: #3B82F6;
+    text-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+.alcol-footer h5,
+.casa-footer h5,
+.elettronica-footer h5,
+.animali-footer h5,
+.climatizzazione-footer h5 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.alcol-footer .social-link,
+.casa-footer .social-link,
+.elettronica-footer .social-link,
+.animali-footer .social-link,
+.climatizzazione-footer .social-link {
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.alcol-footer .social-link:hover,
+.casa-footer .social-link:hover,
+.elettronica-footer .social-link:hover,
+.animali-footer .social-link:hover,
+.climatizzazione-footer .social-link:hover {
+    color: #E1306C;
+    transform: scale(1.1);
+    text-shadow: 0 0 15px rgba(225, 48, 108, 0.5);
+}
+
+.alcol-btn-home,
+.casa-btn-home,
+.elettronica-btn-home,
+.animali-btn-home,
+.climatizzazione-btn-home {
+    background: linear-gradient(135deg, #3B82F6 0%, #EC4899 50%, #D4C4A8 100%);
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.alcol-btn-home i,
+.casa-btn-home i,
+.elettronica-btn-home i,
+.animali-btn-home i,
+.climatizzazione-btn-home i {
+    transition: transform 0.3s ease;
+}
+
+.alcol-btn-home:hover,
+.casa-btn-home:hover,
+.elettronica-btn-home:hover,
+.animali-btn-home:hover,
+.climatizzazione-btn-home:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.5);
+}
+
+.alcol-btn-home:hover i,
+.casa-btn-home:hover i,
+.elettronica-btn-home:hover i,
+.animali-btn-home:hover i,
+.climatizzazione-btn-home:hover i {
+    transform: translateX(2px);
+}
+
+.alcol-btn-home:active,
+.casa-btn-home:active,
+.elettronica-btn-home:active,
+.animali-btn-home:active,
+.climatizzazione-btn-home:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}

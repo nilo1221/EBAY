@@ -395,7 +395,7 @@ body {
 }
 
 .alcol-footer {
-    background: linear-gradient(135deg, #1A1A2E 0%, #2C3E50 50%, #3E2723 100%);
+    background: linear-gradient(135deg, #1A1A2E 0%, #2C3E50 33%, #8B4513 66%, #5D4037 100%);
     color: white;
     padding: 60px 0 30px;
     margin-top: 80px;

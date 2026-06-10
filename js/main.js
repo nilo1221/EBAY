@@ -275,13 +275,15 @@ function initCategoryFilter() {
             filterBtns.forEach(b => b.classList.remove('active'));
             this.classList.add('active');
 
+            // Rimuovi active dal display
+            subcategoriesDisplay.classList.remove('active');
+
             // Mostra sottocategorie
             const subcategories = subcategoriesData[category] || [];
             subcategoryGrid.innerHTML = '';
 
             if (subcategories.length > 0) {
-                subcategoriesDisplay.style.display = 'block';
-                subcategoryGrid.innerHTML = '';
+                subcategoriesDisplay.classList.add('active');
 
                 subcategories.forEach((sub, index) => {
                     const subItem = document.createElement('a');
@@ -296,13 +298,8 @@ function initCategoryFilter() {
                     `;
                     subcategoryGrid.appendChild(subItem);
                 });
-            } else {
-                subcategoriesDisplay.style.display = 'none';
             }
         });
     });
-
-    // Nascondi sottocategorie inizialmente
-    subcategoriesDisplay.style.display = 'none';
 }
 

@@ -1784,13 +1784,13 @@ body {
 }
 
 .moda-hero {
-    background: linear-gradient(135deg, #6C5CE7 0%, #A29BFE 50%, #74B9FF 100%);
+    background: linear-gradient(135deg, #1A1A2E 0%, #4A3F6B 50%, #2D2D44 100%);
     padding: 50px 20px;
     text-align: left;
     color: #FFFFFF;
     position: relative;
     overflow: hidden;
-    border-left: 5px solid #0A0A0A;
+    border-left: 5px solid #6C5CE7;
     min-height: 35vh;
     display: flex;
     align-items: center;

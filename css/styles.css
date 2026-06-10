@@ -811,37 +811,59 @@ body {
 }
 
 .casa-footer {
-    background: linear-gradient(135deg, #FFFFFF 0%, #F8FFFE 50%, #E8F5E9 100%);
-    color: #1A1A1A;
+    background: #0A0A0A;
+    color: #FFFFFF;
     padding: 60px 0 30px;
     margin-top: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+.casa-footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #81C784 0%, #66BB6A 50%, #81C784 100%);
+}
+
+.casa-footer::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent 0%, #81C784 50%, transparent 100%);
 }
 
 .casa-footer a {
-    color: #1A1A1A;
+    color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .casa-footer a:hover {
-    color: #00A8E8;
+    color: #81C784;
 }
 
 .casa-footer h5 {
     font-weight: 600;
     margin-bottom: 20px;
-    color: #00A8E8;
+    color: #81C784;
 }
 
 .casa-footer-glass {
-    color: #1A1A1A;
-    background: rgba(0, 168, 232, 0.1);
+    color: rgba(255, 255, 255, 0.9);
+    background: rgba(129, 199, 132, 0.1);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     padding: 15px 20px;
     border-radius: 10px;
-    border: 1px solid rgba(0, 168, 232, 0.25);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(129, 199, 132, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     margin-top: 15px;
 }
 

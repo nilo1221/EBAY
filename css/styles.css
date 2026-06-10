@@ -1790,7 +1790,7 @@ body {
     color: #F8F6F0;
     position: relative;
     overflow: hidden;
-    border-left: 5px solid #FF6B35;
+    border-left: 5px solid #FFB366;
     min-height: 35vh;
     display: flex;
     align-items: center;
@@ -1873,7 +1873,7 @@ body {
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, #FF6B35 0%, #FF8C42 50%, #FF6B35 100%);
+    background: linear-gradient(90deg, #FFB366 0%, #FFC285 50%, #FFB366 100%);
     opacity: 0.8;
 }
 
@@ -1884,16 +1884,20 @@ body {
     left: 0;
     right: 0;
     height: 2px;
-    background: linear-gradient(90deg, transparent 0%, #FF6B35 50%, transparent 100%);
+    background: linear-gradient(90deg, transparent 0%, #FFB366 50%, transparent 100%);
     opacity: 0.6;
 }
 
 .moda-btn-ebay:hover {
-    background: linear-gradient(135deg, rgba(26, 54, 93, 0.8) 0%, rgba(44, 82, 130, 0.9) 50%, rgba(26, 54, 93, 0.8) 100%);
-    border-color: #FF6B35;
+    background: linear-gradient(135deg, rgba(26, 54, 93, 0.5) 0%, rgba(44, 82, 130, 0.6) 50%, rgba(26, 54, 93, 0.5) 100%);
+    border-color: #FFB366;
     color: #F8F6F0;
     transform: scale(1.02);
-    box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 15px rgba(26, 54, 93, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.moda-product-card:hover .moda-btn-ebay {
+    box-shadow: 0 8px 25px rgba(255, 179, 102, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
 
 .moda-footer {
@@ -1912,7 +1916,7 @@ body {
     left: 0;
     right: 0;
     height: 3px;
-    background: #FF6B35;
+    background: #FFB366;
 }
 
 .moda-footer::after {
@@ -1922,7 +1926,7 @@ body {
     left: 0;
     right: 0;
     height: 2px;
-    background: linear-gradient(90deg, transparent 0%, #FF6B35 50%, transparent 100%);
+    background: linear-gradient(90deg, transparent 0%, #FFB366 50%, transparent 100%);
 }
 
 .moda-footer a {
@@ -1932,11 +1936,11 @@ body {
 }
 
 .moda-footer a:hover {
-    color: #FF6B35;
+    color: #FFB366;
 }
 
 .moda-footer h5 {
     font-weight: 600;
     margin-bottom: 20px;
-    color: #FF6B35;
+    color: #FFB366;
 }

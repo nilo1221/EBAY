@@ -219,50 +219,50 @@ function initCategoryFilter() {
     // Dati sottocategorie per il filtro
     const subcategoriesData = {
         casa: [
-            { name: 'Cucina', icon: 'fa-utensils', link: 'casa/cucina/index.html' },
-            { name: 'Soggiorno', icon: 'fa-couch', link: 'casa/soggiorno/index.html' },
-            { name: 'Bagno', icon: 'fa-bath', link: 'casa/bagno/index.html' },
-            { name: 'Camera', icon: 'fa-bed', link: 'casa/camera/index.html' },
-            { name: 'Pulizia', icon: 'fa-broom', link: 'casa/home-cleaning/index.html' },
-            { name: 'Climatizzazione', icon: 'fa-wind', link: 'casa/climatizzazione/index.html' },
-            { name: 'Arredamento', icon: 'fa-chair', link: 'casa/arredamento/index.html' }
+            { name: 'Cucina', icon: 'fa-utensils', link: 'casa/cucina/index.html', size: 'bento-medium' },
+            { name: 'Soggiorno', icon: 'fa-couch', link: 'casa/soggiorno/index.html', size: 'bento-medium' },
+            { name: 'Bagno', icon: 'fa-bath', link: 'casa/bagno/index.html', size: 'bento-small' },
+            { name: 'Camera', icon: 'fa-bed', link: 'casa/camera/index.html', size: 'bento-small' },
+            { name: 'Pulizia', icon: 'fa-broom', link: 'casa/home-cleaning/index.html', size: 'bento-small' },
+            { name: 'Climatizzazione', icon: 'fa-wind', link: 'casa/climatizzazione/index.html', size: 'bento-small' },
+            { name: 'Arredamento', icon: 'fa-chair', link: 'casa/arredamento/index.html', size: 'bento-medium' }
         ],
         elettronica: [
-            { name: 'RAM', icon: 'fa-memory', link: 'elettronica/index.html#ram' },
-            { name: 'GPU', icon: 'fa-microchip', link: 'elettronica/index.html#gpu' },
-            { name: 'SSD', icon: 'fa-hdd', link: 'elettronica/index.html#ssd' },
-            { name: 'CPU Ryzen', icon: 'fa-server', link: 'elettronica/index.html#cpu-ryzen' },
-            { name: 'CPU Intel', icon: 'fa-server', link: 'elettronica/index.html#cpu-intel' }
+            { name: 'RAM', icon: 'fa-memory', link: 'elettronica/index.html#ram', size: 'bento-medium' },
+            { name: 'GPU', icon: 'fa-microchip', link: 'elettronica/index.html#gpu', size: 'bento-large' },
+            { name: 'SSD', icon: 'fa-hdd', link: 'elettronica/index.html#ssd', size: 'bento-medium' },
+            { name: 'CPU Ryzen', icon: 'fa-server', link: 'elettronica/index.html#cpu-ryzen', size: 'bento-medium' },
+            { name: 'CPU Intel', icon: 'fa-server', link: 'elettronica/index.html#cpu-intel', size: 'bento-medium' }
         ],
         salotto: [
-            { name: 'Rum Entry', icon: 'fa-wine-bottle', link: 'salotto-distillati/index.html#rum-entry' },
-            { name: 'Rum Top', icon: 'fa-wine-bottle', link: 'salotto-distillati/index.html#rum-top' },
-            { name: 'Rum Premium', icon: 'fa-wine-bottle', link: 'salotto-distillati/index.html#rum-premium' },
-            { name: 'Vodka 1', icon: 'fa-glass-cheers', link: 'salotto-distillati/index.html#vodka-1' },
-            { name: 'Vodka 2', icon: 'fa-glass-cheers', link: 'salotto-distillati/index.html#vodka-2' },
-            { name: 'Vodka 3', icon: 'fa-glass-cheers', link: 'salotto-distillati/index.html#vodka-3' }
+            { name: 'Rum Entry', icon: 'fa-wine-bottle', link: 'salotto-distillati/index.html#rum-entry', size: 'bento-medium' },
+            { name: 'Rum Top', icon: 'fa-wine-bottle', link: 'salotto-distillati/index.html#rum-top', size: 'bento-large' },
+            { name: 'Rum Premium', icon: 'fa-wine-bottle', link: 'salotto-distillati/index.html#rum-premium', size: 'bento-medium' },
+            { name: 'Vodka 1', icon: 'fa-glass-cheers', link: 'salotto-distillati/index.html#vodka-1', size: 'bento-small' },
+            { name: 'Vodka 2', icon: 'fa-glass-cheers', link: 'salotto-distillati/index.html#vodka-2', size: 'bento-small' },
+            { name: 'Vodka 3', icon: 'fa-glass-cheers', link: 'salotto-distillati/index.html#vodka-3', size: 'bento-small' }
         ],
         animali: [
-            { name: 'Gatti', icon: 'fa-cat', link: 'animali/index.html#gatti' },
-            { name: 'Cani', icon: 'fa-dog', link: 'animali/index.html#cani' }
+            { name: 'Gatti', icon: 'fa-cat', link: 'animali/index.html#gatti', size: 'bento-large' },
+            { name: 'Cani', icon: 'fa-dog', link: 'animali/index.html#cani', size: 'bento-large' }
         ],
         moda: [
-            { name: 'Abbigliamento', icon: 'fa-tshirt', link: 'moda/index.html#abbigliamento' },
-            { name: 'Scarpe', icon: 'fa-shoe-prints', link: 'moda/index.html#scarpe' },
-            { name: 'Accessori', icon: 'fa-gem', link: 'moda/index.html#accessori' }
+            { name: 'Abbigliamento', icon: 'fa-tshirt', link: 'moda/index.html#abbigliamento', size: 'bento-large' },
+            { name: 'Scarpe', icon: 'fa-shoe-prints', link: 'moda/index.html#scarpe', size: 'bento-medium' },
+            { name: 'Accessori', icon: 'fa-gem', link: 'moda/index.html#accessori', size: 'bento-medium' }
         ],
         sport: [
-            { name: 'Fitness', icon: 'fa-dumbbell', link: 'sport/index.html#fitness' },
-            { name: 'Ciclismo', icon: 'fa-bicycle', link: 'sport/index.html#ciclismo' },
-            { name: 'Calcio', icon: 'fa-futbol', link: 'sport/index.html#calcio' }
+            { name: 'Fitness', icon: 'fa-dumbbell', link: 'sport/index.html#fitness', size: 'bento-large' },
+            { name: 'Ciclismo', icon: 'fa-bicycle', link: 'sport/index.html#ciclismo', size: 'bento-medium' },
+            { name: 'Calcio', icon: 'fa-futbol', link: 'sport/index.html#calcio', size: 'bento-medium' }
         ],
         all: [
-            { name: 'Casa', icon: 'fa-home', link: 'casa/home-cleaning/index.html' },
-            { name: 'Elettronica', icon: 'fa-laptop', link: 'elettronica/index.html' },
-            { name: 'Distillati', icon: 'fa-wine-glass-alt', link: 'salotto-distillati/index.html' },
-            { name: 'Animali', icon: 'fa-paw', link: 'animali/index.html' },
-            { name: 'Moda', icon: 'fa-tshirt', link: 'moda/index.html' },
-            { name: 'Sport', icon: 'fa-futbol', link: 'sport/index.html' }
+            { name: 'Casa', icon: 'fa-home', link: 'casa/home-cleaning/index.html', size: 'bento-large' },
+            { name: 'Elettronica', icon: 'fa-laptop', link: 'elettronica/index.html', size: 'bento-large' },
+            { name: 'Distillati', icon: 'fa-wine-glass-alt', link: 'salotto-distillati/index.html', size: 'bento-large' },
+            { name: 'Animali', icon: 'fa-paw', link: 'animali/index.html', size: 'bento-medium' },
+            { name: 'Moda', icon: 'fa-tshirt', link: 'moda/index.html', size: 'bento-medium' },
+            { name: 'Sport', icon: 'fa-futbol', link: 'sport/index.html', size: 'bento-medium' }
         ]
     };
 
@@ -281,14 +281,18 @@ function initCategoryFilter() {
 
             if (subcategories.length > 0) {
                 subcategoriesDisplay.style.display = 'block';
+                subcategoryGrid.innerHTML = '';
+
                 subcategories.forEach((sub, index) => {
                     const subItem = document.createElement('a');
-                    subItem.className = 'subcategory-card';
+                    subItem.className = `bento-item ${sub.size}`;
                     subItem.href = sub.link;
                     subItem.style.transitionDelay = `${index * 0.05}s`;
                     subItem.innerHTML = `
-                        <i class="fas ${sub.icon}"></i>
-                        <span>${sub.name}</span>
+                        <div class="text-center">
+                            <i class="fas ${sub.icon} fa-3x mb-3"></i>
+                            <h4 class="fw-bold mb-2">${sub.name}</h4>
+                        </div>
                     `;
                     subcategoryGrid.appendChild(subItem);
                 });

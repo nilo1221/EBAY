@@ -1081,7 +1081,8 @@ body {
 
 .subcategory-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
     gap: 15px;
     padding: 20px;
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.9) 100%);
@@ -1090,45 +1091,28 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.03);
 }
 
-.subcategory-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px 15px;
-    background: #FFFFFF;
-    border-radius: 12px;
+.subcategory-grid .bento-item {
     text-decoration: none;
-    color: #374151;
-    transition: all 0.3s ease;
-    border: 1px solid #E5E7EB;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    color: inherit;
     opacity: 0;
     transform: translateY(10px);
+    transition: all 0.3s ease;
 }
 
-.subcategory-card:hover {
+.subcategory-grid .bento-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(59, 130, 246, 0.2);
     border-color: #3B82F6;
     color: #3B82F6;
 }
 
-.subcategory-card i {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
+.subcategory-grid .bento-item i {
     color: #6B7280;
     transition: color 0.3s ease;
 }
 
-.subcategory-card:hover i {
+.subcategory-grid .bento-item:hover i {
     color: #3B82F6;
-}
-
-.subcategory-card span {
-    font-weight: 600;
-    font-size: 0.9rem;
-    text-align: center;
 }
 
 .elettronica-body {

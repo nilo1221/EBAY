@@ -91,12 +91,12 @@ body {
 
 /* Homepage Styles */
 .hero-section {
-    background-color: #EDE8E0;
-    color: var(--text-primary);
+    background: linear-gradient(135deg, #0F172A 0%, #1E3A8A 50%, #3B82F6 100%);
+    color: #FFFFFF;
     padding: 120px 20px;
     text-align: center;
     margin-bottom: var(--spacing-xl);
-    border-bottom: 1px solid #EAEAEA;
+    border-bottom: 1px solid #1E3A8A;
 }
 
 .hero-section h1 {
@@ -120,14 +120,14 @@ body {
 }
 
 .bento-item {
-    background: #F9F9F9;
+    background: #F8FAFC;
     border-radius: var(--radius-lg);
     padding: 30px;
     box-shadow: var(--shadow-md);
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
-    border: 2px solid transparent;
+    border: 2px solid #E2E8F0;
 }
 
 .bento-item:hover {
@@ -165,6 +165,42 @@ body {
 
 .bento-item[data-category="animali"]:hover h3 {
     color: var(--animali-accent);
+}
+
+/* Bento Icon Gradients */
+.bento-icon-alcol {
+    background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.bento-icon-elettronica {
+    background: linear-gradient(135deg, #3B82F6 0%, #1E3A8A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.bento-icon-casa {
+    background: linear-gradient(135deg, #87CEEB 0%, #5F9EA0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.bento-icon-animali {
+    background: linear-gradient(135deg, #FF69B4 0%, #DB7093 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.bento-icon-sport {
+    background: linear-gradient(135deg, #3B82F6 0%, #1E3A8A 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .bento-large {
@@ -209,7 +245,7 @@ body {
 
 .carousel-item {
     height: 400px;
-    background: linear-gradient(135deg, #1a1a1a 0%, #D4AF37 100%);
+    background: linear-gradient(135deg, #1E293B 0%, #334155 50%, #475569 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -326,12 +362,12 @@ body {
 
 /* Footer */
 .footer {
-    background: #FAFAFA;
-    color: var(--text-primary);
+    background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
+    color: #FFFFFF;
     padding: var(--spacing-xl) 0;
     text-align: center;
     margin-top: 60px;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #1E293B;
 }
 
 .footer a {

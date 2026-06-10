@@ -47,7 +47,7 @@
         "title": "Lettiera per Gatti Entry Level",
         "description": "La lettiera si sporca troppo facilmente? Odori persistenti in casa? Questa lettiera entry level offre una soluzione pratica e economica per mantenere l'ambiente pulito senza spendere troppo.",
         "price": "29.99 EUR",
-        "url": "https://ebay.us/link1",
+        "url": "https://ebay.us/PO8ylI",
         "image": "https://via.placeholder.com/400x300/7CB342/FFFFFF?text=Lettiera+Entry",
         "badge": "Entry Level",
         "badge_class": "badge-low"
@@ -58,7 +58,7 @@
         "title": "Lettiera per Gatti Top Quality",
         "description": "La lettira si graffia facilmente? I tuoi gatti la rovinano in poco tempo? Questa lettiera top quality offre materiali resistenti e design duraturo, mantenendo l'aspetto nuovo nel tempo.",
         "price": "59.99 EUR",
-        "url": "https://ebay.us/link2",
+        "url": "https://ebay.us/gCw10N",
         "image": "https://via.placeholder.com/400x300/8D6E63/FFFFFF?text=Lettiera+Top",
         "badge": "Consigliato",
         "badge_class": "badge-middle",
@@ -70,8 +70,398 @@
         "title": "Lettiera per Gatti High Performance",
         "description": "Vuoi il massimo comfort per i tuoi gatti? Cerchi una soluzione premium che faccia figurare? Questa lettiera high performance offre design esclusivo, materiali premium e funzionalità avanzate.",
         "price": "129.99 EUR",
-        "url": "https://ebay.us/link3",
+        "url": "https://ebay.us/2SpK2f",
         "image": "https://via.placeholder.com/400x300/FF8A65/FFFFFF?text=Lettiera+High",
+        "badge": "Top Performance",
+        "badge_class": "badge-high"
+      }
+    ]
+  },
+  "elettronica": {
+    "category": "Elettronica & Tech",
+    "products": [
+      {
+        "id": "ram-entry",
+        "tier": "Entry Level",
+        "title": "Memoria RAM Entry Level",
+        "description": "Il tuo PC è lento? Vuoi potenziare il sistema senza spendere troppo? Questa RAM entry level offre un upgrade accessibile per migliorare le prestazioni base del tuo computer.",
+        "price": "29.99 EUR",
+        "url": "https://ebay.us/TEA0wc",
+        "image": "https://via.placeholder.com/400x300/2196F3/FFFFFF?text=RAM+Entry",
+        "badge": "Entry Level",
+        "badge_class": "badge-low"
+      },
+      {
+        "id": "ram-top",
+        "tier": "Top Quality",
+        "title": "Memoria RAM Top Quality",
+        "description": "Vuoi prestazioni migliori per gaming e produttività? Questa RAM top quality offre eccellente equilibrio tra prestazioni e prezzo per la maggior parte degli utenti.",
+        "price": "69.99 EUR",
+        "url": "https://ebay.us/vy4lEN",
+        "image": "https://via.placeholder.com/400x300/4CAF50/FFFFFF?text=RAM+Top",
+        "badge": "Consigliato",
+        "badge_class": "badge-middle",
+        "featured": true
+      },
+      {
+        "id": "ram-high",
+        "tier": "High",
+        "title": "Memoria RAM High Performance",
+        "description": "Sei un professionista o gamer esigente? Questa RAM high performance offre frequenze estreme e overclocking supportato per il massimo delle prestazioni.",
+        "price": "149.99 EUR",
+        "url": "https://ebay.us/EkyBcf",
+        "image": "https://via.placeholder.com/400x300/FF5722/FFFFFF?text=RAM+High",
+        "badge": "Top Performance",
+        "badge_class": "badge-high"
+      }
+    ]
+  },
+  "sport": {
+    "category": "Sport & Fitness",
+    "products": [
+      {
+        "id": "fitness-entry",
+        "tier": "Entry Level",
+        "title": "Attrezzatura Fitness Entry Level",
+        "description": "Vuoi iniziare a fare sport a casa? Cerchi attrezzatura base per principianti? Questa soluzione entry level offre tutto il necessario per iniziare senza investire troppo.",
+        "price": "49.99 EUR",
+        "url": "https://ebay.us/fitness-entry",
+        "image": "https://via.placeholder.com/400x300/FF9800/FFFFFF?text=Fitness+Entry",
+        "badge": "Entry Level",
+        "badge_class": "badge-low"
+      },
+      {
+        "id": "fitness-top",
+        "tier": "Top Quality",
+        "title": "Attrezzatura Fitness Top Quality",
+        "description": "Vuoi attrezzatura professionale per casa? Cerchi qualità e durata nel tempo? Questa soluzione top quality offre eccellente rapporto qualità-prezzo per fitness avanzato.",
+        "price": "129.99 EUR",
+        "url": "https://ebay.us/fitness-top",
+        "image": "https://via.placeholder.com/400x300/4CAF50/FFFFFF?text=Fitness+Top",
+        "badge": "Consigliato",
+        "badge_class": "badge-middle",
+        "featured": true
+      },
+      {
+        "id": "fitness-high",
+        "tier": "High",
+        "title": "Attrezzatura Fitness High Performance",
+        "description": "Sei un atleta professionista? Cerchi attrezzatura da palestra premium? Questa soluzione high performance offre materiali professionali e design esclusivo.",
+        "price": "299.99 EUR",
+        "url": "https://ebay.us/fitness-high",
+        "image": "https://via.placeholder.com/400x300/2196F3/FFFFFF?text=Fitness+High",
+        "badge": "Top Performance",
+        "badge_class": "badge-high"
+      }
+    ]
+  },
+  "moda": {
+    "category": "Moda & Accessori",
+    "products": [
+      {
+        "id": "fashion-entry",
+        "tier": "Entry Level",
+        "title": "Abbigliamento Entry Level",
+        "description": "Vuoi rinnovare il guardaroba senza spendere troppo? Cerchi capi base versatili? Questa soluzione entry level offre stile accessibile per il quotidiano.",
+        "price": "39.99 EUR",
+        "url": "https://ebay.us/fashion-entry",
+        "image": "https://via.placeholder.com/400x300/E91E63/FFFFFF?text=Moda+Entry",
+        "badge": "Entry Level",
+        "badge_class": "badge-low"
+      },
+      {
+        "id": "fashion-top",
+        "tier": "Top Quality",
+        "title": "Abbigliamento Top Quality",
+        "description": "Vuoi qualità e stile duraturo? Cerchi capi che durino nel tempo? Questa soluzione top quality offre eccellente equilibrio tra moda e qualità.",
+        "price": "89.99 EUR",
+        "url": "https://ebay.us/fashion-top",
+        "image": "https://via.placeholder.com/400x300/9C27B0/FFFFFF?text=Moda+Top",
+        "badge": "Consigliato",
+        "badge_class": "badge-middle",
+        "featured": true
+      },
+      {
+        "id": "fashion-high",
+        "tier": "High",
+        "title": "Abbigliamento High Performance",
+        "description": "Vuoi lusso ed esclusività? Cerchi capi designer premium? Questa soluzione high performance offre design esclusivo e materiali di alta gamma.",
+        "price": "199.99 EUR",
+        "url": "https://ebay.us/fashion-high",
+        "image": "https://via.placeholder.com/400x300/673AB7/FFFFFF?text=Moda+High",
+        "badge": "Top Performance",
+        "badge_class": "badge-high"
+      }
+    ]
+  },
+  "salotto-distillati": {
+    "category": "Distillati Premium",
+    "products": [
+      {
+        "id": "vodka-entry",
+        "tier": "Entry Level",
+        "title": "Vodka Entry Level",
+        "description": "Vuoi una vodka di base per cocktail? Cerchi qualità accessibile? Questa vodka entry level offre purezza sufficiente per mixology casalinga.",
+        "price": "24.99 EUR",
+        "url": "https://ebay.us/vodka-entry",
+        "image": "https://via.placeholder.com/400x300/00BCD4/FFFFFF?text=Vodka+Entry",
+        "badge": "Entry Level",
+        "badge_class": "badge-low"
+      },
+      {
+        "id": "vodka-top",
+        "tier": "Top Quality",
+        "title": "Vodka Top Quality",
+        "description": "Vuoi vodka premium per sipping? Cerchi purezza e sapore superiore? Questa vodka top quality offre eccellente equilibrio tra qualità e prezzo.",
+        "price": "49.99 EUR",
+        "url": "https://ebay.us/vodka-top",
+        "image": "https://via.placeholder.com/400x300/009688/FFFFFF?text=Vodka+Top",
+        "badge": "Consigliato",
+        "badge_class": "badge-middle",
+        "featured": true
+      },
+      {
+        "id": "vodka-high",
+        "tier": "High",
+        "title": "Vodka High Performance",
+        "description": "Vuoi il lusso assoluto? Cerchi vodka ultra-premium? Questa soluzione high performance offre design esclusivo e purezza estrema.",
+        "price": "99.99 EUR",
+        "url": "https://ebay.us/vodka-high",
+        "image": "https://via.placeholder.com/400x300/3F51B5/FFFFFF?text=Vodka+High",
+        "badge": "Top Performance",
+        "badge_class": "badge-high"
+      }
+    ]
+  },
+  "bagno": {
+    "category": "Arredo Bagno",
+    "products": [
+      {
+        "id": "bagno-entry",
+        "tier": "Entry Level",
+        "title": "Arredo Bagno Entry Level",
+        "description": "Il tuo bagno ha bisogno di un refresh? Cerchi soluzioni economiche? Questo arredo entry level offre praticità senza spendere troppo.",
+        "price": "34.99 EUR",
+        "url": "https://ebay.us/bagno-entry",
+        "image": "https://via.placeholder.com/400x300/00BCD4/FFFFFF?text=Bagno+Entry",
+        "badge": "Entry Level",
+        "badge_class": "badge-low"
+      },
+      {
+        "id": "bagno-top",
+        "tier": "Top Quality",
+        "title": "Arredo Bagno Top Quality",
+        "description": "Vuoi qualità e design nel bagno? Cerchi arredo duraturo? Questa soluzione top quality offre eccellente equilibrio tra stile e funzionalità.",
+        "price": "79.99 EUR",
+        "url": "https://ebay.us/bagno-top",
+        "image": "https://via.placeholder.com/400x300/009688/FFFFFF?text=Bagno+Top",
+        "badge": "Consigliato",
+        "badge_class": "badge-middle",
+        "featured": true
+      },
+      {
+        "id": "bagno-high",
+        "tier": "High",
+        "title": "Arredo Bagno High Performance",
+        "description": "Vuoi lusso nel bagno? Cerchi design premium? Questa soluzione high performance offre arredo esclusivo e materiali di alta gamma.",
+        "price": "179.99 EUR",
+        "url": "https://ebay.us/bagno-high",
+        "image": "https://via.placeholder.com/400x300/3F51B5/FFFFFF?text=Bagno+High",
+        "badge": "Top Performance",
+        "badge_class": "badge-high"
+      }
+    ]
+  },
+  "camera": {
+    "category": "Arredo Camera",
+    "products": [
+      {
+        "id": "camera-entry",
+        "tier": "Entry Level",
+        "title": "Arredo Camera Entry Level",
+        "description": "Vuoi rinnovare la camera? Cerchi soluzioni economiche? Questo arredo entry level offre comfort base senza spendere troppo.",
+        "price": "44.99 EUR",
+        "url": "https://ebay.us/camera-entry",
+        "image": "https://via.placeholder.com/400x300/E91E63/FFFFFF?text=Camera+Entry",
+        "badge": "Entry Level",
+        "badge_class": "badge-low"
+      },
+      {
+        "id": "camera-top",
+        "tier": "Top Quality",
+        "title": "Arredo Camera Top Quality",
+        "description": "Vuoi qualità e comfort nella camera? Cerchi arredo duraturo? Questa soluzione top quality offre eccellente equilibrio tra stile e funzionalità.",
+        "price": "99.99 EUR",
+        "url": "https://ebay.us/camera-top",
+        "image": "https://via.placeholder.com/400x300/9C27B0/FFFFFF?text=Camera+Top",
+        "badge": "Consigliato",
+        "badge_class": "badge-middle",
+        "featured": true
+      },
+      {
+        "id": "camera-high",
+        "tier": "High",
+        "title": "Arredo Camera High Performance",
+        "description": "Vuoi lusso nella camera? Cerchi design premium? Questa soluzione high performance offre arredo esclusivo e materiali di alta gamma.",
+        "price": "219.99 EUR",
+        "url": "https://ebay.us/camera-high",
+        "image": "https://via.placeholder.com/400x300/673AB7/FFFFFF?text=Camera+High",
+        "badge": "Top Performance",
+        "badge_class": "badge-high"
+      }
+    ]
+  },
+  "climatizzazione": {
+    "category": "Climatizzazione",
+    "products": [
+      {
+        "id": "clima-entry",
+        "tier": "Entry Level",
+        "title": "Climatizzatore Entry Level",
+        "description": "Vuoi rinfrescare la casa? Cerchi soluzioni economiche? Questo climatizzatore entry level offre raffreddamento base senza spendere troppo.",
+        "price": "199.99 EUR",
+        "url": "https://ebay.us/clima-entry",
+        "image": "https://via.placeholder.com/400x300/00BCD4/FFFFFF?text=Clima+Entry",
+        "badge": "Entry Level",
+        "badge_class": "badge-low"
+      },
+      {
+        "id": "clima-top",
+        "tier": "Top Quality",
+        "title": "Climatizzatore Top Quality",
+        "description": "Vuoi efficienza energetica? Cerchi climatizzatore silenzioso? Questa soluzione top quality offre eccellente equilibrio tra prestazioni e consumo.",
+        "price": "399.99 EUR",
+        "url": "https://ebay.us/clima-top",
+        "image": "https://via.placeholder.com/400x300/009688/FFFFFF?text=Clima+Top",
+        "badge": "Consigliato",
+        "badge_class": "badge-middle",
+        "featured": true
+      },
+      {
+        "id": "clima-high",
+        "tier": "High",
+        "title": "Climatizzatore High Performance",
+        "description": "Vuoi il massimo comfort? Cerchi climatizzatore premium? Questa soluzione high performance offre tecnologia avanzata e design esclusivo.",
+        "price": "799.99 EUR",
+        "url": "https://ebay.us/clima-high",
+        "image": "https://via.placeholder.com/400x300/3F51B5/FFFFFF?text=Clima+High",
+        "badge": "Top Performance",
+        "badge_class": "badge-high"
+      }
+    ]
+  },
+  "cucina": {
+    "category": "Arredo Cucina",
+    "products": [
+      {
+        "id": "cucina-entry",
+        "tier": "Entry Level",
+        "title": "Arredo Cucina Entry Level",
+        "description": "Vuoi organizzare la cucina? Cerchi soluzioni economiche? Questo arredo entry level offre praticità senza spendere troppo.",
+        "price": "39.99 EUR",
+        "url": "https://ebay.us/cucina-entry",
+        "image": "https://via.placeholder.com/400x300/FF9800/FFFFFF?text=Cucina+Entry",
+        "badge": "Entry Level",
+        "badge_class": "badge-low"
+      },
+      {
+        "id": "cucina-top",
+        "tier": "Top Quality",
+        "title": "Arredo Cucina Top Quality",
+        "description": "Vuoi qualità e organizzazione? Cerchi arredo duraturo? Questa soluzione top quality offre eccellente equilibrio tra stile e funzionalità.",
+        "price": "89.99 EUR",
+        "url": "https://ebay.us/cucina-top",
+        "image": "https://via.placeholder.com/400x300/4CAF50/FFFFFF?text=Cucina+Top",
+        "badge": "Consigliato",
+        "badge_class": "badge-middle",
+        "featured": true
+      },
+      {
+        "id": "cucina-high",
+        "tier": "High",
+        "title": "Arredo Cucina High Performance",
+        "description": "Vuoi lusso in cucina? Cerchi design premium? Questa soluzione high performance offre arredo esclusivo e materiali di alta gamma.",
+        "price": "199.99 EUR",
+        "url": "https://ebay.us/cucina-high",
+        "image": "https://via.placeholder.com/400x300/2196F3/FFFFFF?text=Cucina+High",
+        "badge": "Top Performance",
+        "badge_class": "badge-high"
+      }
+    ]
+  },
+  "home-cleaning": {
+    "category": "Pulizia Casa",
+    "products": [
+      {
+        "id": "cleaning-entry",
+        "tier": "Entry Level",
+        "title": "Prodotti Pulizia Entry Level",
+        "description": "Vuoi pulire casa efficacemente? Cerchi soluzioni economiche? Questi prodotti entry level offrono pulizia base senza spendere troppo.",
+        "price": "19.99 EUR",
+        "url": "https://ebay.us/cleaning-entry",
+        "image": "https://via.placeholder.com/400x300/00BCD4/FFFFFF?text=Pulizia+Entry",
+        "badge": "Entry Level",
+        "badge_class": "badge-low"
+      },
+      {
+        "id": "cleaning-top",
+        "tier": "Top Quality",
+        "title": "Prodotti Pulizia Top Quality",
+        "description": "Vuoi pulizia professionale? Cerchi prodotti efficaci? Questa soluzione top quality offre eccellente equilibrio tra qualità e prezzo.",
+        "price": "49.99 EUR",
+        "url": "https://ebay.us/cleaning-top",
+        "image": "https://via.placeholder.com/400x300/009688/FFFFFF?text=Pulizia+Top",
+        "badge": "Consigliato",
+        "badge_class": "badge-middle",
+        "featured": true
+      },
+      {
+        "id": "cleaning-high",
+        "tier": "High",
+        "title": "Prodotti Pulizia High Performance",
+        "description": "Vuoi il massimo in pulizia? Cerchi prodotti premium? Questa soluzione high performance offre tecnologia avanzata e risultati eccezionali.",
+        "price": "99.99 EUR",
+        "url": "https://ebay.us/cleaning-high",
+        "image": "https://via.placeholder.com/400x300/3F51B5/FFFFFF?text=Pulizia+High",
+        "badge": "Top Performance",
+        "badge_class": "badge-high"
+      }
+    ]
+  },
+  "soggiorno": {
+    "category": "Arredo Soggiorno",
+    "products": [
+      {
+        "id": "soggiorno-entry",
+        "tier": "Entry Level",
+        "title": "Arredo Soggiorno Entry Level",
+        "description": "Vuoi rinnovare il soggiorno? Cerchi soluzioni economiche? Questo arredo entry level offre comfort base senza spendere troppo.",
+        "price": "59.99 EUR",
+        "url": "https://ebay.us/soggiorno-entry",
+        "image": "https://via.placeholder.com/400x300/FF9800/FFFFFF?text=Soggiorno+Entry",
+        "badge": "Entry Level",
+        "badge_class": "badge-low"
+      },
+      {
+        "id": "soggiorno-top",
+        "tier": "Top Quality",
+        "title": "Arredo Soggiorno Top Quality",
+        "description": "Vuoi qualità e stile nel soggiorno? Cerchi arredo duraturo? Questa soluzione top quality offre eccellente equilibrio tra stile e funzionalità.",
+        "price": "129.99 EUR",
+        "url": "https://ebay.us/soggiorno-top",
+        "image": "https://via.placeholder.com/400x300/4CAF50/FFFFFF?text=Soggiorno+Top",
+        "badge": "Consigliato",
+        "badge_class": "badge-middle",
+        "featured": true
+      },
+      {
+        "id": "soggiorno-high",
+        "tier": "High",
+        "title": "Arredo Soggiorno High Performance",
+        "description": "Vuoi lusso nel soggiorno? Cerchi design premium? Questa soluzione high performance offre arredo esclusivo e materiali di alta gamma.",
+        "price": "299.99 EUR",
+        "url": "https://ebay.us/soggiorno-high",
+        "image": "https://via.placeholder.com/400x300/2196F3/FFFFFF?text=Soggiorno+High",
         "badge": "Top Performance",
         "badge_class": "badge-high"
       }

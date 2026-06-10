@@ -39,119 +39,20 @@
     <div class="products-section" id="products">
         <div class="container">
             <h2 class="text-center mb-5" style="color: var(--animali-orange); font-weight: 700;">Lettiere per Gatti</h2>
-            <div class="row g-4">
-                <!-- Entry Level -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="animali-product-card">
-                        <div class="text-center">
-                            <i class="fas fa-box animali-product-icon"></i>
-                            <h3 class="mb-3">Entry Level</h3>
-                            <span class="animali-badge-low mb-3 d-inline-block">Partenza</span>
-                        </div>
-                        <p class="text-muted mb-4">Sei stanco di odori sgradevoli in casa? La lettiera del tuo gatto non trattiene bene i cattivi odori? Questa soluzione entry level risolve il problema base dell'assorbimento, mantenendo la casa pulita senza spendere troppo.</p>
-                        <div class="text-center">
-                            <a href="https://ebay.us/PO8ylI" target="_blank" rel="noopener noreferrer" class="animali-btn-ebay">
-                                <i class="fab fa-ebay me-2"></i>Vedi prodotto su eBay
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Top Quality (Consigliato) -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="animali-product-card featured">
-                        <div class="text-center">
-                            <i class="fas fa-paw animali-product-icon"></i>
-                            <h3 class="mb-3">Top Quality</h3>
-                            <span class="animali-badge-middle mb-3 d-inline-block">Consigliato</span>
-                        </div>
-                        <p class="text-muted mb-4">Cambi lettiera ogni giorno? Stanco di polvere ovunque? Questa soluzione premium offre assorbimento superiore e zero polvere, risparmiando tempo e mantenendo la casa fresca. La scelta intelligente per chi vuole qualità senza complicazioni.</p>
-                        <div class="text-center">
-                            <a href="https://ebay.us/gCw10N" target="_blank" rel="noopener noreferrer" class="animali-btn-ebay">
-                                <i class="fab fa-ebay me-2"></i>Vedi prodotto su eBay
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- High Quality - Premium -->
-                <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
-                    <div class="animali-product-card">
-                        <div class="text-center">
-                            <i class="fas fa-fire animali-product-icon"></i>
-                            <h3 class="mb-3">Top</h3>
-                            <span class="animali-badge-high mb-3 d-inline-block">Top Performance</span>
-                        </div>
-                        <p class="text-muted mb-4">Il tuo gatto merita il massimo comfort? Sei stanco di prodotti che non durano? Questa soluzione top performance offre tecnologia avanzata per massima assorbenza e durata estrema. Per chi non accetta compromessi sull'igiene e il benessere del proprio animale.</p>
-                        <div class="text-center">
-                            <a href="https://ebay.us/2SpK2f" target="_blank" rel="noopener noreferrer" class="animali-btn-ebay">
-                                <i class="fab fa-ebay me-2"></i>Vedi prodotto su eBay
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
+            
+            <!-- Filters Container -->
+            <div id="filters-container"></div>
+            
+            <!-- Results Count -->
+            <div id="results-count" class="text-muted mb-3"></div>
+            
+            <!-- Products Container -->
+            <div class="row g-4" id="products-container">
+                <!-- Products will be loaded dynamically from JSON -->
             </div>
-        </div>
-    </div>
-
-    <!-- Products Section - Cani -->
-    <div class="products-section" id="dogs" style="background-color: rgba(255, 107, 53, 0.05); padding: 80px 0;">
-        <div class="container">
-            <h2 class="text-center mb-5" style="color: var(--animali-red); font-weight: 700;">Lettiere per Cani</h2>
-            <div class="row g-4">
-                <!-- Entry Level -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="animali-product-card">
-                        <div class="text-center">
-                            <i class="fas fa-dog animali-product-icon"></i>
-                            <h3 class="mb-3">Entry Level</h3>
-                            <span class="animali-badge-low mb-3 d-inline-block">Partenza</span>
-                        </div>
-                        <p class="text-muted mb-4">Il tuo cane fa i bisogni in casa? Stanco di pulizie continue? Questa soluzione entry level risolve il problema base, offrendo un'area dedicata pulita e pratica. Perfetta per chi cerca una soluzione semplice senza spendere troppo.</p>
-                        <div class="text-center">
-                            <a href="https://ebay.us/Rx2Hnp" target="_blank" rel="noopener noreferrer" class="animali-btn-ebay">
-                                <i class="fab fa-ebay me-2"></i>Vedi prodotto su eBay
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Top Quality (Consigliato) -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="animali-product-card featured">
-                        <div class="text-center">
-                            <i class="fas fa-bone animali-product-icon"></i>
-                            <h3 class="mb-3">Top Quality</h3>
-                            <span class="animali-badge-middle mb-3 d-inline-block">Consigliato</span>
-                        </div>
-                        <p class="text-muted mb-4">Odori persistenti che non vanno via? Stanco di cambiare la lettiera troppo spesso? Questa soluzione premium offre assorbimento superiore e controllo odori avanzato, risparmiando tempo e mantenendo la casa fresca. La scelta intelligente per chi vuole qualità senza complicazioni.</p>
-                        <div class="text-center">
-                            <a href="https://ebay.us/9iITTZ" target="_blank" rel="noopener noreferrer" class="animali-btn-ebay">
-                                <i class="fab fa-ebay me-2"></i>Vedi prodotto su eBay
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- High Quality - Premium -->
-                <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
-                    <div class="animali-product-card">
-                        <div class="text-center">
-                            <i class="fas fa-fire animali-product-icon"></i>
-                            <h3 class="mb-3">Top</h3>
-                            <span class="animali-badge-high mb-3 d-inline-block">Top Performance</span>
-                        </div>
-                        <p class="text-muted mb-4">Il tuo cane merita il massimo comfort? Sei stanco di prodotti che non durano? Questa soluzione top performance offre tecnologia avanzata per massima assorbenza e durata estrema. Per chi non accetta compromessi sull'igiene e il benessere del proprio animale.</p>
-                        <div class="text-center">
-                            <a href="https://ebay.us/oWIGF7" target="_blank" rel="noopener noreferrer" class="animali-btn-ebay">
-                                <i class="fab fa-ebay me-2"></i>Vedi prodotto su eBay
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+            
+            <!-- Pagination Container -->
+            <div id="pagination-container" class="mt-4"></div>
         </div>
     </div>
 
@@ -204,6 +105,8 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Products Loader -->
+    <script src="../js/products-loader.js"></script>
     <!-- Custom JS -->
     <script src="../js/main.js"></script>
     <!-- eBay Partner Network Tracking -->

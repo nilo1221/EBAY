@@ -2929,85 +2929,132 @@ body {
 
 /* Products Filter and Pagination Styles */
 .filters-container {
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border-radius: var(--radius-lg);
-    padding: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filters-container:hover {
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
 }
 
 .filters-container .input-group-text {
-    background: var(--casa-accent);
+    background: linear-gradient(135deg, var(--casa-accent), var(--casa-orange));
     color: white;
     border: none;
+    transition: all 0.3s ease;
 }
 
 .filters-container .form-control,
 .filters-container .form-select {
     border: 2px solid var(--casa-accent);
     border-radius: var(--radius-md);
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: rgba(255, 255, 255, 0.9);
 }
 
 .filters-container .form-control:focus,
 .filters-container .form-select:focus {
     border-color: var(--casa-orange);
-    box-shadow: 0 0 0 0.2rem rgba(255, 138, 101, 0.25);
+    box-shadow: 0 0 0 0.3rem rgba(255, 138, 101, 0.3);
+    transform: scale(1.02);
 }
 
 .filters-container .btn-outline-secondary {
     border: 2px solid var(--casa-accent);
     color: var(--casa-accent);
     border-radius: var(--radius-md);
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: rgba(255, 255, 255, 0.9);
 }
 
 .filters-container .btn-outline-secondary:hover {
-    background: var(--casa-accent);
+    background: linear-gradient(135deg, var(--casa-accent), var(--casa-orange));
     color: white;
-    transform: translateY(-2px);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 8px 20px rgba(141, 110, 99, 0.4);
 }
 
 /* Pagination Styles */
 .pagination {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .pagination .page-link {
     color: var(--casa-accent);
     border: 2px solid var(--casa-accent);
-    margin: 0 5px;
+    margin: 0 8px;
     border-radius: var(--radius-md);
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     font-weight: 600;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .pagination .page-link:hover {
-    background: var(--casa-accent);
+    background: linear-gradient(135deg, var(--casa-accent), var(--casa-orange));
     color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.3);
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 8px 20px rgba(141, 110, 99, 0.4);
+    border-color: var(--casa-orange);
 }
 
 .pagination .page-item.active .page-link {
-    background: var(--casa-orange);
+    background: linear-gradient(135deg, var(--casa-orange), var(--casa-accent));
     border-color: var(--casa-orange);
     color: white;
-    box-shadow: 0 4px 12px rgba(255, 138, 101, 0.4);
+    box-shadow: 0 8px 20px rgba(255, 138, 101, 0.5);
+    transform: scale(1.1);
 }
 
 .pagination .page-item.disabled .page-link {
     color: #ccc;
     border-color: #ddd;
     pointer-events: none;
+    opacity: 0.6;
 }
 
 /* Results Count */
 #results-count {
-    font-size: 0.9rem;
-    font-weight: 500;
+    font-size: 0.95rem;
+    font-weight: 600;
     color: var(--casa-text);
-    opacity: 0.8;
+    opacity: 0.9;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: var(--radius-md);
+    display: inline-block;
+}
+
+/* Enhanced Product Card Animations */
+.product-card {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+}
+
+.product-card:hover {
+    transform: translateY(-8px) rotateX(2deg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.product-card.featured {
+    animation: pulse-glow 3s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(255, 138, 101, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 20px 5px rgba(255, 138, 101, 0.6);
+    }
 }

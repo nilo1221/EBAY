@@ -1777,20 +1777,20 @@ body {
     color: #D4A373;
 }
 
-/* Nicchia Moda Styles - Palette Soft-Industrial (Lino, Blu Navy, Arancione) */
+/* Nicchia Moda Styles - Palette Contemporary Silk */
 .moda-body {
-    background-color: #F8F6F0;
-    color: #1A365D;
+    background-color: #F4EFEA;
+    color: #3D3D3D;
 }
 
 .moda-hero {
-    background: linear-gradient(135deg, #1A365D 0%, #2C5282 50%, #1A365D 100%);
+    background: linear-gradient(135deg, #3D3D3D 0%, #5A5A5A 50%, #3D3D3D 100%);
     padding: 50px 20px;
     text-align: left;
-    color: #F8F6F0;
+    color: #F4EFEA;
     position: relative;
     overflow: hidden;
-    border-left: 5px solid #2C5282;
+    border-left: 5px solid #A3B18A;
     min-height: 35vh;
     display: flex;
     align-items: center;
@@ -1799,7 +1799,7 @@ body {
 .moda-hero-icon {
     font-size: 6rem;
     margin-bottom: 20px;
-    color: #F8F6F0;
+    color: #F4EFEA;
     position: relative;
     z-index: 2;
 }
@@ -1812,7 +1812,7 @@ body {
     margin-bottom: 15px;
     line-height: 1.2;
     text-transform: uppercase;
-    color: #F8F6F0;
+    color: #F4EFEA;
     position: relative;
     z-index: 2;
 }
@@ -1829,41 +1829,37 @@ body {
 }
 
 .moda-product-card {
-    background: #F8F6F0;
+    background: #F4EFEA;
     border-radius: 6px;
     padding: 40px 30px;
-    box-shadow: 0 4px 20px rgba(26, 54, 93, 0.1);
+    box-shadow: 0 4px 20px rgba(61, 61, 61, 0.1);
     transition: all 0.3s ease;
     height: 100%;
-    border: 2px solid #1A365D;
+    border: 2px solid #3D3D3D;
 }
 
 .moda-product-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 8px 30px rgba(26, 54, 93, 0.2);
+    box-shadow: 0 8px 30px rgba(61, 61, 61, 0.2);
 }
 
 .moda-product-icon {
     font-size: 4rem;
     margin-bottom: 20px;
-    color: #1A365D;
+    color: #3D3D3D;
 }
 
 .moda-btn-ebay {
-    background: linear-gradient(135deg, rgba(248, 246, 240, 0.4) 0%, rgba(26, 54, 93, 0.6) 50%, rgba(248, 246, 240, 0.4) 100%);
-    color: #1A365D;
-    border: 2px solid rgba(26, 54, 93, 0.5);
+    background: linear-gradient(135deg, #C5A059 0%, #D4B878 50%, #C5A059 100%);
+    color: #F4EFEA;
+    border: 2px solid #C5A059;
     padding: 15px 40px;
     border-radius: 30px;
     font-weight: 600;
     font-size: 1.1rem;
     transition: all 0.3s ease;
     width: 100%;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(26, 54, 93, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(197, 160, 89, 0.3);
 }
 
 .moda-btn-ebay::before {
@@ -1873,7 +1869,7 @@ body {
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, #2C5282 0%, #1A365D 50%, #2C5282 100%);
+    background: linear-gradient(90deg, #A3B18A 0%, #8F9E76 50%, #A3B18A 100%);
     opacity: 0.8;
 }
 
@@ -1884,25 +1880,25 @@ body {
     left: 0;
     right: 0;
     height: 2px;
-    background: linear-gradient(90deg, transparent 0%, #2C5282 50%, transparent 100%);
+    background: linear-gradient(90deg, transparent 0%, #A3B18A 50%, transparent 100%);
     opacity: 0.6;
 }
 
 .moda-btn-ebay:hover {
-    background: linear-gradient(135deg, rgba(26, 54, 93, 0.8) 0%, rgba(44, 82, 130, 0.9) 50%, rgba(26, 54, 93, 0.8) 100%);
-    border-color: #2C5282;
-    color: #F8F6F0;
+    background: linear-gradient(135deg, #D4B878 0%, #E5C987 50%, #D4B878 100%);
+    border-color: #A3B18A;
+    color: #3D3D3D;
     transform: scale(1.02);
-    box-shadow: 0 4px 15px rgba(26, 54, 93, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 25px rgba(197, 160, 89, 0.5);
 }
 
 .moda-product-card:hover .moda-btn-ebay {
-    box-shadow: 0 8px 25px rgba(26, 54, 93, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 25px rgba(163, 177, 138, 0.4);
 }
 
 .moda-footer {
-    background: #1A365D;
-    color: #F8F6F0;
+    background: #3D3D3D;
+    color: #F4EFEA;
     padding: 60px 0 30px;
     margin-top: 80px;
     position: relative;
@@ -1916,7 +1912,7 @@ body {
     left: 0;
     right: 0;
     height: 3px;
-    background: #2C5282;
+    background: #C5A059;
 }
 
 .moda-footer::after {
@@ -1926,21 +1922,21 @@ body {
     left: 0;
     right: 0;
     height: 2px;
-    background: linear-gradient(90deg, transparent 0%, #2C5282 50%, transparent 100%);
+    background: linear-gradient(90deg, transparent 0%, #A3B18A 50%, transparent 100%);
 }
 
 .moda-footer a {
-    color: rgba(248, 246, 240, 0.8);
+    color: rgba(244, 239, 234, 0.8);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .moda-footer a:hover {
-    color: #F8F6F0;
+    color: #C5A059;
 }
 
 .moda-footer h5 {
     font-weight: 600;
     margin-bottom: 20px;
-    color: #F8F6F0;
+    color: #C5A059;
 }

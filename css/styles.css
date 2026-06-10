@@ -694,6 +694,19 @@ body {
     color: var(--elettronica-accent);
 }
 
+.elettronica-product-card h3 {
+    color: #1A1A1A;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.elettronica-product-card p {
+    color: #1A1A1A;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
 .elettronica-badge-low {
     background: #888888;
     color: #FFFFFF;

@@ -2220,3 +2220,19 @@ body {
     transform: translateY(-1px);
     box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
 }
+
+/* eBay Disclaimer Styling */
+.disclaimer {
+    border-left: 4px solid #0064d2;
+    background: rgba(0, 100, 210, 0.05);
+    padding: 15px 20px;
+    border-radius: 8px;
+}
+
+.disclaimer p {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.disclaimer strong {
+    color: #0064d2;
+}

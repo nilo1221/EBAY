@@ -2069,3 +2069,46 @@ body {
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
+
+.moda-footer .social-link {
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.moda-footer .social-link:hover {
+    color: #E1306C;
+    transform: scale(1.1);
+    text-shadow: 0 0 15px rgba(225, 48, 108, 0.5);
+}
+
+.moda-btn-home {
+    background: linear-gradient(135deg, #3B82F6 0%, #EC4899 50%, #D4C4A8 100%);
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.moda-btn-home i {
+    transition: transform 0.3s ease;
+}
+
+.moda-btn-home:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.5);
+}
+
+.moda-btn-home:hover i {
+    transform: translateX(2px);
+}
+
+.moda-btn-home:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}

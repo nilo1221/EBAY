@@ -310,7 +310,7 @@ body {
 }
 
 .casa-btn-ebay {
-    background-color: var(--casa-accent);
+    background-color: #00A8E8;
     color: #FFFFFF;
     padding: 16px 32px;
     border: none;
@@ -649,10 +649,10 @@ body {
 }
 
 .casa-hero {
-    background: linear-gradient(135deg, #064E3B 0%, #065F46 50%, #10B981 100%);
+    background: #F0F4F8;
     padding: 80px 20px;
     text-align: left;
-    color: #FFFFFF;
+    color: #1A2B3C;
     position: relative;
     overflow: hidden;
 }
@@ -660,7 +660,7 @@ body {
 .casa-hero-icon {
     font-size: 5rem;
     margin-bottom: 20px;
-    color: #34D399;
+    color: #00A8E8;
     position: relative;
     z-index: 2;
 }
@@ -681,13 +681,13 @@ body {
 }
 
 .casa-product-card.featured:hover {
-    border-color: #34D399;
-    box-shadow: 0 20px 60px rgba(52, 211, 153, 0.3);
+    border-color: #00A8E8;
+    box-shadow: 0 20px 60px rgba(0, 168, 232, 0.3);
 }
 
 .casa-product-card.featured {
-    border: 3px solid #34D399;
-    background: linear-gradient(135deg, rgba(52, 211, 153, 0.05) 0%, rgba(16, 185, 129, 0.05) 100%);
+    border: 3px solid #00A8E8;
+    background: linear-gradient(135deg, rgba(0, 168, 232, 0.05) 0%, rgba(0, 168, 232, 0.02) 100%);
 }
 
 .casa-product-card h3 {
@@ -759,37 +759,37 @@ body {
 }
 
 .casa-footer {
-    background: linear-gradient(135deg, #064E3B 0%, #065F46 100%);
-    color: white;
+    background: #F0F4F8;
+    color: #1A2B3C;
     padding: 60px 0 30px;
     margin-top: 80px;
 }
 
 .casa-footer a {
-    color: rgba(255, 255, 255, 0.8);
+    color: #1A2B3C;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .casa-footer a:hover {
-    color: #34D399;
+    color: #00A8E8;
 }
 
 .casa-footer h5 {
     font-weight: 600;
     margin-bottom: 20px;
-    color: #34D399;
+    color: #00A8E8;
 }
 
 .casa-footer-glass {
-    color: rgba(255, 255, 255, 0.95);
-    background: rgba(255, 255, 255, 0.15);
+    color: #1A2B3C;
+    background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     padding: 15px 20px;
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 168, 232, 0.25);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     margin-top: 15px;
 }
 

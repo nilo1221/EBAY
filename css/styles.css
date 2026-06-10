@@ -1077,11 +1077,11 @@ body {
     margin-bottom: 30px;
     min-height: 0;
     transition: all 0.3s ease;
-    display: none;
+    display: none !important;
 }
 
 .subcategories-display.active {
-    display: block;
+    display: block !important;
 }
 
 .subcategory-grid {

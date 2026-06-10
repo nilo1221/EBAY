@@ -1779,51 +1779,33 @@ body {
 
 /* Nicchia Moda Styles - Palette Moderna Blu/Nero/Viola con Effetti Vetro */
 .moda-body {
-    background: linear-gradient(135deg, #0A0A0A 0%, #1A1A2E 50%, #16213E 100%);
-    color: #E8E8E8;
+    background: linear-gradient(135deg, #F8F6F0 0%, #F5F0E6 50%, #FEF9E7 100%);
+    color: #1A1A2E;
 }
 
 .moda-hero {
-    background: linear-gradient(135deg, rgba(10, 10, 10, 0.9) 0%, rgba(26, 26, 46, 0.85) 50%, rgba(22, 33, 62, 0.9) 100%);
+    background: linear-gradient(135deg, #6C5CE7 0%, #A29BFE 50%, #74B9FF 100%);
     padding: 50px 20px;
     text-align: left;
-    color: #E8E8E8;
+    color: #FFFFFF;
     position: relative;
     overflow: hidden;
-    border-left: 5px solid #6C5CE7;
+    border-left: 5px solid #0A0A0A;
     min-height: 35vh;
     display: flex;
     align-items: center;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-}
-
-.moda-hero::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(108, 92, 231, 0.1) 0%, transparent 50%);
-    animation: float 20s ease-in-out infinite;
-}
-
-@keyframes float {
-    0%, 100% { transform: translate(0, 0) rotate(0deg); }
-    50% { transform: translate(50px, 50px) rotate(180deg); }
 }
 
 .moda-hero-icon {
     font-size: 6rem;
     margin-bottom: 20px;
-    background: linear-gradient(135deg, #6C5CE7 0%, #A29BFE 50%, #6C5CE7 100%);
+    background: linear-gradient(135deg, #FFFFFF 0%, #E8E8E8 50%, #FFFFFF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     position: relative;
     z-index: 2;
-    filter: drop-shadow(0 0 30px rgba(108, 92, 231, 0.5));
+    filter: drop-shadow(0 0 30px rgba(0, 0, 0, 0.3));
     animation: pulse 3s ease-in-out infinite;
 }
 
@@ -1840,13 +1822,13 @@ body {
     margin-bottom: 15px;
     line-height: 1.2;
     text-transform: uppercase;
-    background: linear-gradient(135deg, #6C5CE7 0%, #A29BFE 50%, #74B9FF 100%);
+    background: linear-gradient(135deg, #FFFFFF 0%, #E8E8E8 50%, #FFFFFF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     position: relative;
     z-index: 2;
-    filter: drop-shadow(0 0 20px rgba(108, 92, 231, 0.3));
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.3));
 }
 
 .moda-hero p {
@@ -1854,7 +1836,7 @@ body {
     font-weight: 400;
     letter-spacing: 0.5px;
     margin-bottom: 20px;
-    opacity: 0.9;
+    opacity: 0.95;
     line-height: 1.4;
     position: relative;
     z-index: 2;
@@ -1944,14 +1926,12 @@ body {
 }
 
 .moda-footer {
-    background: linear-gradient(135deg, #0A0A0A 0%, #1A1A2E 50%, #16213E 100%);
-    color: #E8E8E8;
+    background: linear-gradient(135deg, #1A1A2E 0%, #0A0A0A 50%, #16213E 100%);
+    color: #F8F6F0;
     padding: 60px 0 30px;
     margin-top: 80px;
     position: relative;
     overflow: hidden;
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
 }
 
 .moda-footer::before {
@@ -1972,23 +1952,23 @@ body {
     left: 0;
     right: 0;
     height: 2px;
-    background: linear-gradient(90deg, transparent 0%, #6C5CE7 50%, transparent 100%);
+    background: linear-gradient(90deg, transparent 0%, #FEF9E7 50%, transparent 100%);
 }
 
 .moda-footer a {
-    color: rgba(232, 232, 232, 0.8);
+    color: rgba(248, 246, 240, 0.8);
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 .moda-footer a:hover {
-    color: #A29BFE;
-    text-shadow: 0 0 10px rgba(108, 92, 231, 0.5);
+    color: #FEF9E7;
+    text-shadow: 0 0 10px rgba(254, 249, 231, 0.5);
 }
 
 .moda-footer h5 {
     font-weight: 600;
     margin-bottom: 20px;
-    color: #A29BFE;
-    text-shadow: 0 0 15px rgba(108, 92, 231, 0.3);
+    color: #FEF9E7;
+    text-shadow: 0 0 15px rgba(254, 249, 231, 0.3);
 }

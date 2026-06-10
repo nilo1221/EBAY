@@ -2553,19 +2553,21 @@ body {
 .kraken-image-placeholder {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
-    padding: 20px;
+    padding: 0;
     border: 2px dashed rgba(212, 175, 55, 0.3);
     min-height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
-.kraken-image-placeholder img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+.kraken-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 13px;
 }
 
 .kraken-image-placeholder i {

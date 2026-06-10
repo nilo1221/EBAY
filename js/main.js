@@ -247,7 +247,7 @@ function initCategoryFilter() {
             { name: 'Rum Premium', icon: 'fa-wine-bottle', link: 'salotto-distillati/index.html#rum-premium', size: 'bento-medium' },
             { name: 'Vodka Moskovskaya', icon: 'fa-glass-cheers', link: 'salotto-distillati/index.html#vodka-1', size: 'bento-small' },
             { name: 'ORA Blue Vodka', icon: 'fa-glass-cheers', link: 'salotto-distillati/index.html#vodka-2', size: 'bento-small' },
-            { name: 'Vodka 3', icon: 'fa-glass-cheers', link: 'salotto-distillati/index.html#vodka-3', size: 'bento-small' }
+            { name: 'Cîroc Vodka', icon: 'fa-glass-cheers', link: 'salotto-distillati/index.html#vodka-3', size: 'bento-small' }
         ],
         animali: [
             { name: 'Gatti', icon: 'fa-cat', link: 'animali/index.html#gatti', size: 'bento-large' },

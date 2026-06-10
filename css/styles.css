@@ -2756,8 +2756,8 @@ body {
 
 /* Vodka Banner Styles */
 .salotto-vodka-banner {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-    color: #FFFFFF;
+    background: linear-gradient(135deg, #E0F7FA 0%, #B2EBF2 50%, #80DEEA 100%);
+    color: #01579B;
     padding: 30px 0;
     margin: 30px 0;
     position: relative;
@@ -2776,10 +2776,10 @@ body {
 }
 
 .vodka-image-placeholder {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.3);
     border-radius: 15px;
     padding: 0;
-    border: 2px dashed rgba(255, 255, 255, 0.3);
+    border: 2px dashed rgba(1, 87, 155, 0.3);
     min-height: 350px;
     display: flex;
     align-items: center;

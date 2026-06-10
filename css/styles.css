@@ -1596,20 +1596,20 @@ body {
     }
 }
 
-/* Nicchia Climatizzazione Styles - Palette Intimità e Legame */
+/* Nicchia Climatizzazione Styles - Palette Serenità e Natura */
 .climatizzazione-body {
-    background-color: #F5EBE0;
+    background-color: #FAFAFA;
     color: #4A4E69;
 }
 
 .climatizzazione-hero {
-    background: linear-gradient(135deg, #F5EBE0 0%, #E8DDD0 50%, #A05E42 100%);
+    background: linear-gradient(135deg, #FAFAFA 0%, #F0F0F0 50%, #7D8F69 100%);
     padding: 80px 20px;
     text-align: center;
     color: #4A4E69;
     position: relative;
     overflow: hidden;
-    border-left: 5px solid #A05E42;
+    border-left: 5px solid #7D8F69;
     min-height: 35vh;
     display: flex;
     align-items: center;
@@ -1619,10 +1619,10 @@ body {
 .climatizzazione-hero-icon {
     font-size: 6rem;
     margin-bottom: 20px;
-    color: #A05E42;
+    color: #7D8F69;
     position: relative;
     z-index: 2;
-    text-shadow: 0 5px 20px rgba(160, 94, 66, 0.3);
+    text-shadow: 0 5px 20px rgba(125, 143, 105, 0.3);
 }
 
 .climatizzazione-hero h1 {
@@ -1633,7 +1633,7 @@ body {
     margin-bottom: 15px;
     line-height: 1.2;
     text-transform: uppercase;
-    background: linear-gradient(135deg, #A05E42 0%, #8B4E38 50%, #6B3E2E 100%);
+    background: linear-gradient(135deg, #7D8F69 0%, #6B7A5A 50%, #5A6B4B 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -1656,38 +1656,38 @@ body {
     background: white;
     border-radius: var(--radius-lg);
     padding: 40px 30px;
-    box-shadow: 0 10px 40px rgba(160, 94, 66, 0.15);
+    box-shadow: 0 10px 40px rgba(125, 143, 105, 0.15);
     transition: all 0.3s ease;
     height: 100%;
-    border: 2px solid #E8DDD0;
+    border: 2px solid #F0F0F0;
 }
 
 .climatizzazione-product-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 60px rgba(160, 94, 66, 0.25);
+    box-shadow: 0 20px 60px rgba(125, 143, 105, 0.25);
 }
 
 .climatizzazione-product-card.featured:hover {
-    border-color: #A05E42;
-    box-shadow: 0 20px 60px rgba(160, 94, 66, 0.3);
+    border-color: #7D8F69;
+    box-shadow: 0 20px 60px rgba(125, 143, 105, 0.3);
 }
 
 .climatizzazione-product-card.featured {
-    border: 3px solid #A05E42;
-    background: linear-gradient(135deg, rgba(160, 94, 66, 0.05) 0%, rgba(245, 235, 224, 0.02) 100%);
+    border: 3px solid #7D8F69;
+    background: linear-gradient(135deg, rgba(125, 143, 105, 0.05) 0%, rgba(250, 250, 250, 0.02) 100%);
 }
 
 .climatizzazione-product-icon {
     font-size: 4rem;
     margin-bottom: 20px;
-    background: linear-gradient(135deg, #A05E42 0%, #8B4E38 100%);
+    background: linear-gradient(135deg, #7D8F69 0%, #6B7A5A 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .climatizzazione-badge-low {
-    background: linear-gradient(135deg, #E8DDD0 0%, #D4C8B8 100%);
+    background: linear-gradient(135deg, #F0F0F0 0%, #E0E0E0 100%);
     color: #4A4E69;
     padding: 8px 20px;
     border-radius: 50px;
@@ -1696,7 +1696,7 @@ body {
 }
 
 .climatizzazione-badge-middle {
-    background: linear-gradient(135deg, #A05E42 0%, #8B4E38 100%);
+    background: linear-gradient(135deg, #7D8F69 0%, #6B7A5A 100%);
     color: white;
     padding: 8px 20px;
     border-radius: 50px;
@@ -1705,7 +1705,7 @@ body {
 }
 
 .climatizzazione-badge-high {
-    background: linear-gradient(135deg, #4A4E69 0%, #3A3E59 100%);
+    background: linear-gradient(135deg, #D4A373 0%, #C49463 100%);
     color: white;
     padding: 8px 20px;
     border-radius: 50px;
@@ -1714,7 +1714,7 @@ body {
 }
 
 .climatizzazione-btn-ebay {
-    background: linear-gradient(135deg, #A05E42 0%, #8B4E38 100%);
+    background: linear-gradient(135deg, #7D8F69 0%, #6B7A5A 100%);
     color: white;
     border: none;
     padding: 15px 40px;
@@ -1722,19 +1722,19 @@ body {
     font-weight: 600;
     font-size: 1.1rem;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 20px rgba(160, 94, 66, 0.4);
+    box-shadow: 0 5px 20px rgba(125, 143, 105, 0.4);
     width: 100%;
 }
 
 .climatizzazione-btn-ebay:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 30px rgba(160, 94, 66, 0.6);
+    box-shadow: 0 8px 30px rgba(125, 143, 105, 0.6);
     color: white;
 }
 
 .climatizzazione-footer {
     background: #4A4E69;
-    color: #F5EBE0;
+    color: #FAFAFA;
     padding: 60px 0 30px;
     margin-top: 80px;
     position: relative;
@@ -1748,7 +1748,7 @@ body {
     left: 0;
     right: 0;
     height: 3px;
-    background: linear-gradient(90deg, #A05E42 0%, #8B4E38 50%, #A05E42 100%);
+    background: linear-gradient(90deg, #7D8F69 0%, #D4A373 50%, #7D8F69 100%);
 }
 
 .climatizzazione-footer::after {
@@ -1758,21 +1758,21 @@ body {
     left: 0;
     right: 0;
     height: 2px;
-    background: linear-gradient(90deg, transparent 0%, #A05E42 50%, transparent 100%);
+    background: linear-gradient(90deg, transparent 0%, #D4A373 50%, transparent 100%);
 }
 
 .climatizzazione-footer a {
-    color: rgba(245, 235, 224, 0.8);
+    color: rgba(250, 250, 250, 0.8);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .climatizzazione-footer a:hover {
-    color: #A05E42;
+    color: #D4A373;
 }
 
 .climatizzazione-footer h5 {
     font-weight: 600;
     margin-bottom: 20px;
-    color: #A05E42;
+    color: #D4A373;
 }

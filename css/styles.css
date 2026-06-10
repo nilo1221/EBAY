@@ -310,7 +310,7 @@ body {
 }
 
 .alcol-hero {
-    background-color: var(--alcol-hero-bg);
+    background: linear-gradient(135deg, var(--alcol-hero-bg) 0%, #E8DCC8 100%);
     padding: 80px 20px;
     text-align: left;
     color: var(--alcol-text);
@@ -321,13 +321,9 @@ body {
 .alcol-hero-icon {
     font-size: 5rem;
     margin-bottom: 20px;
-    background: linear-gradient(135deg, var(--alcol-gold) 0%, var(--alcol-accent) 50%, #8D6E63 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--alcol-accent);
     position: relative;
     z-index: 2;
-    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.4));
 }
 
 /* Product Cards */
@@ -447,7 +443,7 @@ body {
 }
 
 .casa-hero {
-    background-color: var(--casa-hero-bg);
+    background: linear-gradient(135deg, var(--casa-hero-bg) 0%, #E8F5E9 100%);
     padding: 80px 20px;
     text-align: left;
     color: var(--casa-text);
@@ -458,13 +454,9 @@ body {
 .casa-hero-icon {
     font-size: 5rem;
     margin-bottom: 20px;
-    background: linear-gradient(135deg, var(--casa-sky) 0%, var(--casa-mint) 50%, var(--casa-azure) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--casa-accent);
     position: relative;
     z-index: 2;
-    filter: drop-shadow(2px 2px 4px rgba(70, 130, 180, 0.3));
 }
 
 .casa-product-card {
@@ -613,7 +605,7 @@ body {
 }
 
 .elettronica-hero {
-    background-color: var(--elettronica-hero-bg);
+    background: linear-gradient(135deg, var(--elettronica-hero-bg) 0%, #E3F2FD 100%);
     padding: 80px 20px;
     text-align: left;
     color: var(--elettronica-text);
@@ -624,13 +616,9 @@ body {
 .elettronica-hero-icon {
     font-size: 5rem;
     margin-bottom: 20px;
-    background: linear-gradient(135deg, var(--elettronica-neon-red) 0%, var(--elettronica-electric-purple) 50%, var(--elettronica-trust) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--elettronica-accent);
     position: relative;
     z-index: 2;
-    filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.8));
 }
 
 .elettronica-product-card {
@@ -793,7 +781,7 @@ body {
 }
 
 .animali-hero {
-    background-color: var(--animali-hero-bg);
+    background: linear-gradient(135deg, var(--animali-hero-bg) 0%, #FCE4EC 100%);
     padding: 80px 20px;
     text-align: left;
     color: var(--animali-text);
@@ -804,13 +792,9 @@ body {
 .animali-hero-icon {
     font-size: 5rem;
     margin-bottom: 20px;
-    background: linear-gradient(135deg, var(--animali-orange) 0%, var(--animali-red) 50%, var(--animali-white) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--animali-accent);
     position: relative;
     z-index: 2;
-    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
 }
 
 .animali-product-card {

@@ -1,36 +1,40 @@
 /* Smart Choices Guide - CSS Unificato */
-/* Variabili Globali - Dark Minimalist & Vibrant Accents */
+/* Variabili Globali - Bianco & Pulito */
 :root {
-    /* Dark Mode Base Colors */
-    --bg-primary: #0F0F0F;
-    --bg-secondary: #1A1A1A;
-    --text-primary: #E0E0E0;
-    --text-secondary: #888888;
-    --text-muted: #666666;
+    /* White Mode Base Colors */
+    --bg-primary: #FFFFFF;
+    --bg-secondary: #FAFAFA;
+    --text-primary: #1A1A1A;
+    --text-secondary: #666666;
+    --text-muted: #888888;
     
-    /* Palette Nicchia Alcol (Ambra Caldo) */
-    --alcol-accent: #D4A574;
-    --alcol-primary: #0F0F0F;
-    --alcol-secondary: #1A1A1A;
-    --alcol-text: #E0E0E0;
+    /* Palette Nicchia Alcol (Crema Avorio + Marrone Cuoio) */
+    --alcol-hero-bg: #F4EFEA;
+    --alcol-accent: #8B4513;
+    --alcol-primary: #FFFFFF;
+    --alcol-secondary: #FAFAFA;
+    --alcol-text: #1A1A1A;
     
-    /* Palette Nicchia Tech (Ciano Elettrico) */
-    --elettronica-accent: #00F2FF;
-    --elettronica-primary: #0F0F0F;
-    --elettronica-secondary: #1A1A1A;
-    --elettronica-text: #E0E0E0;
+    /* Palette Nicchia Tech (Azzurro Ghiaccio + Blu Elettrico) */
+    --elettronica-hero-bg: #F0F4F8;
+    --elettronica-accent: #007BFF;
+    --elettronica-primary: #FFFFFF;
+    --elettronica-secondary: #FAFAFA;
+    --elettronica-text: #1A1A1A;
     
-    /* Palette Nicchia Casa (Verde Natura) */
-    --casa-accent: #7ED957;
-    --casa-primary: #0F0F0F;
-    --casa-secondary: #1A1A1A;
-    --casa-text: #E0E0E0;
+    /* Palette Nicchia Casa (Verde Salvia + Verde Foresta) */
+    --casa-hero-bg: #F1F8E9;
+    --casa-accent: #4CAF50;
+    --casa-primary: #FFFFFF;
+    --casa-secondary: #FAFAFA;
+    --casa-text: #1A1A1A;
     
-    /* Palette Nicchia Animali (Corallo Elegante) */
-    --animali-accent: #FF6B6B;
-    --animali-primary: #0F0F0F;
-    --animali-secondary: #1A1A1A;
-    --animali-text: #E0E0E0;
+    /* Palette Nicchia Animali (Rosa Pastello + Fucsia Tenue) */
+    --animali-hero-bg: #FDF2F5;
+    --animali-accent: #D63384;
+    --animali-primary: #FFFFFF;
+    --animali-secondary: #FAFAFA;
+    --animali-text: #1A1A1A;
     
     /* Spaziature */
     --spacing-xs: 0.5rem;
@@ -46,10 +50,10 @@
     --radius-xl: 30px;
     
     /* Shadows */
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
-    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
-    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
-    --shadow-xl: 0 12px 48px rgba(0, 0, 0, 0.6);
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.12);
+    --shadow-xl: 0 12px 48px rgba(0, 0, 0, 0.15);
 }
 
 /* Reset e Base */
@@ -60,7 +64,7 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--bg-primary);
     color: var(--text-primary);
     line-height: 1.6;
@@ -72,11 +76,11 @@ body {
 
 /* Homepage Styles */
 .hero-section {
-    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+    background-color: var(--bg-secondary);
     color: var(--text-primary);
-    padding: var(--spacing-xl) 0;
+    padding: 80px 20px;
+    text-align: left;
     margin-bottom: var(--spacing-xl);
-    box-shadow: var(--shadow-lg);
 }
 
 .hero-section h1 {
@@ -186,126 +190,109 @@ body {
 
 /* Buttons */
 .btn-ebay {
-    background-color: transparent;
-    border: 2px solid var(--text-primary);
-    color: var(--text-primary);
-    padding: 12px 24px;
-    border-radius: 12px;
+    background-color: var(--text-primary);
+    color: #FFFFFF;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 8px;
     font-weight: 600;
     font-size: 1.1rem;
-    transition: all 0.3s ease;
+    transition: transform 0.2s;
     text-decoration: none;
     display: inline-block;
 }
 
 .btn-ebay:hover {
-    background-color: var(--text-primary);
-    color: var(--bg-primary);
-    box-shadow: 0 0 20px var(--text-primary);
-    transform: translateY(-2px);
+    transform: scale(1.05);
 }
 
 /* Nicchia-specific buttons with accent colors */
 .alcol-btn-ebay {
-    background-color: transparent;
-    border: 2px solid var(--alcol-accent);
-    color: var(--alcol-accent);
-    padding: 12px 24px;
-    border-radius: 12px;
+    background-color: var(--alcol-accent);
+    color: #FFFFFF;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 8px;
     font-weight: 600;
     font-size: 1.1rem;
-    transition: all 0.3s ease;
+    transition: transform 0.2s;
     text-decoration: none;
     display: inline-block;
 }
 
 .alcol-btn-ebay:hover {
-    background-color: var(--alcol-accent);
-    color: var(--alcol-primary);
-    box-shadow: 0 0 20px var(--alcol-accent);
-    transform: translateY(-2px);
+    transform: scale(1.05);
 }
 
 .casa-btn-ebay {
-    background-color: transparent;
-    border: 2px solid var(--casa-accent);
-    color: var(--casa-accent);
-    padding: 12px 24px;
-    border-radius: 12px;
+    background-color: var(--casa-accent);
+    color: #FFFFFF;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 8px;
     font-weight: 600;
     font-size: 1.1rem;
-    transition: all 0.3s ease;
+    transition: transform 0.2s;
     text-decoration: none;
     display: inline-block;
 }
 
 .casa-btn-ebay:hover {
-    background-color: var(--casa-accent);
-    color: var(--casa-primary);
-    box-shadow: 0 0 20px var(--casa-accent);
-    transform: translateY(-2px);
+    transform: scale(1.05);
 }
 
 .elettronica-btn-ebay {
-    background-color: transparent;
-    border: 2px solid var(--elettronica-accent);
-    color: var(--elettronica-accent);
-    padding: 12px 24px;
-    border-radius: 12px;
+    background-color: var(--elettronica-accent);
+    color: #FFFFFF;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 8px;
     font-weight: 600;
     font-size: 1.1rem;
-    transition: all 0.3s ease;
+    transition: transform 0.2s;
     text-decoration: none;
     display: inline-block;
 }
 
 .elettronica-btn-ebay:hover {
-    background-color: var(--elettronica-accent);
-    color: var(--elettronica-primary);
-    box-shadow: 0 0 20px var(--elettronica-accent);
-    transform: translateY(-2px);
+    transform: scale(1.05);
 }
 
 .animali-btn-ebay {
-    background-color: transparent;
-    border: 2px solid var(--animali-accent);
-    color: var(--animali-accent);
-    padding: 12px 24px;
-    border-radius: 12px;
+    background-color: var(--animali-accent);
+    color: #FFFFFF;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 8px;
     font-weight: 600;
     font-size: 1.1rem;
-    transition: all 0.3s ease;
+    transition: transform 0.2s;
     text-decoration: none;
     display: inline-block;
 }
 
 .animali-btn-ebay:hover {
-    background-color: var(--animali-accent);
-    color: var(--animali-primary);
-    box-shadow: 0 0 20px var(--animali-accent);
-    transform: translateY(-2px);
+    transform: scale(1.05);
 }
 
 /* Footer */
 .footer {
-    background: rgba(15, 15, 15, 0.9);
-    -webkit-backdrop-filter: blur(15px);
-    backdrop-filter: blur(15px);
+    background: #FAFAFA;
     color: var(--text-primary);
     padding: var(--spacing-xl) 0;
     text-align: center;
     margin-top: 60px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .footer a {
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--text-secondary);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer a:hover {
-    color: white;
+    color: var(--text-primary);
 }
 
 .disclaimer {
@@ -323,32 +310,12 @@ body {
 }
 
 .alcol-hero {
-    background: linear-gradient(135deg, var(--alcol-primary) 0%, var(--alcol-secondary) 100%);
-    padding: 100px 0;
-    text-align: center;
+    background-color: var(--alcol-hero-bg);
+    padding: 80px 20px;
+    text-align: left;
     color: var(--alcol-text);
     position: relative;
     overflow: hidden;
-    box-shadow: var(--shadow-lg);
-}
-
-.alcol-hero h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    position: relative;
-    z-index: 2;
-    color: var(--alcol-text);
-    letter-spacing: 1px;
-}
-
-.alcol-hero p {
-    font-size: 1.4rem;
-    opacity: 0.95;
-    position: relative;
-    z-index: 2;
-    color: var(--alcol-text);
-    font-weight: 300;
 }
 
 .alcol-hero-icon {
@@ -369,24 +336,22 @@ body {
 }
 
 .product-card {
-    background: var(--bg-secondary);
+    background: #FFFFFF;
     border-radius: var(--radius-lg);
     padding: 40px 30px;
-    box-shadow: var(--shadow-md);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
     transition: all 0.3s ease;
     height: 100%;
-    border: 2px solid transparent;
+    border: none;
 }
 
 .product-card:hover {
     transform: translateY(-10px);
-    box-shadow: var(--shadow-lg);
-    border-color: var(--alcol-accent);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .product-card.featured:hover {
-    border-color: var(--alcol-accent);
-    box-shadow: 0 0 30px var(--alcol-accent);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .product-card.featured {
@@ -482,32 +447,12 @@ body {
 }
 
 .casa-hero {
-    background: linear-gradient(135deg, var(--casa-primary) 0%, var(--casa-secondary) 100%);
-    padding: 100px 0;
-    text-align: center;
+    background-color: var(--casa-hero-bg);
+    padding: 80px 20px;
+    text-align: left;
     color: var(--casa-text);
     position: relative;
     overflow: hidden;
-    box-shadow: var(--shadow-lg);
-}
-
-.casa-hero h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    position: relative;
-    z-index: 2;
-    color: var(--casa-text);
-    letter-spacing: 1px;
-}
-
-.casa-hero p {
-    font-size: 1.4rem;
-    opacity: 0.95;
-    position: relative;
-    z-index: 2;
-    color: var(--casa-text);
-    font-weight: 300;
 }
 
 .casa-hero-icon {
@@ -668,33 +613,12 @@ body {
 }
 
 .elettronica-hero {
-    background: linear-gradient(135deg, var(--elettronica-primary) 0%, var(--elettronica-secondary) 100%);
-    padding: 100px 0;
-    text-align: center;
+    background-color: var(--elettronica-hero-bg);
+    padding: 80px 20px;
+    text-align: left;
     color: var(--elettronica-text);
     position: relative;
     overflow: hidden;
-    box-shadow: var(--shadow-lg);
-}
-
-.elettronica-hero h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    position: relative;
-    z-index: 2;
-    color: var(--elettronica-text);
-    letter-spacing: 1px;
-}
-
-.elettronica-hero p {
-    font-size: 1.4rem;
-    opacity: 0.95;
-    position: relative;
-    z-index: 2;
-    color: var(--elettronica-text);
-    font-weight: 300;
-    letter-spacing: 1px;
 }
 
 .elettronica-hero-icon {
@@ -869,32 +793,12 @@ body {
 }
 
 .animali-hero {
-    background: linear-gradient(135deg, var(--animali-primary) 0%, var(--animali-secondary) 100%);
-    padding: 100px 0;
-    text-align: center;
+    background-color: var(--animali-hero-bg);
+    padding: 80px 20px;
+    text-align: left;
     color: var(--animali-text);
     position: relative;
     overflow: hidden;
-    box-shadow: var(--shadow-lg);
-}
-
-.animali-hero h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    position: relative;
-    z-index: 2;
-    color: var(--animali-text);
-    letter-spacing: 1px;
-}
-
-.animali-hero p {
-    font-size: 1.4rem;
-    opacity: 0.95;
-    position: relative;
-    z-index: 2;
-    color: var(--animali-text);
-    font-weight: 300;
 }
 
 .animali-hero-icon {

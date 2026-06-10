@@ -603,6 +603,11 @@ body {
     background-clip: text;
 }
 
+.product-icon svg {
+    width: 4rem;
+    height: 4rem;
+}
+
 /* Badges */
 .badge-low {
     background: linear-gradient(135deg, var(--alcol-primary) 0%, #8D6E63 100%);

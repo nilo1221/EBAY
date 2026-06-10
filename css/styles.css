@@ -39,17 +39,18 @@
     --casa-secondary: #FAFAFA;
     --casa-text: #1A1A1A;
     
-    /* Palette Nicchia Animali (Calda & Accogliente) */
-    --animali-hero-bg: #FBE9E7;
-    --animali-accent: #8D6E63;
+    /* Palette Nicchia Animali (Naturale & Calda) */
+    --animali-hero-bg: #FFF8E1;
+    --animali-accent: #7CB342;
+    --animali-olive: #7CB342;
     --animali-brown: #8D6E63;
-    --animali-beige: #D7CCC8;
     --animali-orange: #FF8A65;
-    --animali-cream: #FBE9E7;
+    --animali-beige: #F5F5DC;
+    --animali-cream: #FFF8E1;
     --animali-white: #FFFFFF;
     --animali-black: #1A1A1A;
-    --animali-primary: #FBE9E7;
-    --animali-secondary: #D7CCC8;
+    --animali-primary: #FFF8E1;
+    --animali-secondary: #F5F5DC;
     --animali-text: #1A1A1A;
     
     /* Spaziature */
@@ -1142,14 +1143,14 @@ body {
 }
 
 .subcategory-grid .bento-item[data-category="animali"] {
-    background: linear-gradient(135deg, #FBE9E7 0%, #D7CCC8 100%);
-    border-color: #8D6E63;
+    background: linear-gradient(135deg, #FFF8E1 0%, #F5F5DC 100%);
+    border-color: #7CB342;
 }
 
 .subcategory-grid .bento-item[data-category="animali"]:hover {
-    background: linear-gradient(135deg, #D7CCC8 0%, #BCAAA4 100%);
-    border-color: #FF8A65;
-    box-shadow: 0 8px 20px rgba(141, 110, 99, 0.3);
+    background: linear-gradient(135deg, #F5F5DC 0%, #E8E4C9 100%);
+    border-color: #8D6E63;
+    box-shadow: 0 8px 20px rgba(124, 179, 66, 0.3);
 }
 
 .subcategory-grid .bento-item[data-category="moda"] {
@@ -1405,16 +1406,16 @@ body {
 
 /* Nicchia Animali Styles */
 .animali-body {
-    background: linear-gradient(135deg, #FBE9E7 0%, #D7CCC8 50%, #BCAAA4 100%);
+    background: linear-gradient(135deg, #FFF8E1 0%, #F5F5DC 50%, #E8E4C9 100%);
     color: var(--animali-text);
 }
 
 .animali-hero {
-    background: linear-gradient(135deg, rgba(141, 110, 99, 0.8) 0%, rgba(215, 204, 200, 0.7) 50%, rgba(255, 138, 101, 0.6) 100%);
+    background: linear-gradient(135deg, rgba(124, 179, 66, 0.8) 0%, rgba(141, 110, 99, 0.7) 50%, rgba(255, 138, 101, 0.6) 100%);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    box-shadow: 0 8px 32px rgba(141, 110, 99, 0.2);
+    box-shadow: 0 8px 32px rgba(124, 179, 66, 0.2);
     padding: 80px 20px;
     text-align: left;
     color: #FFFFFF;
@@ -1437,16 +1438,16 @@ body {
     -webkit-backdrop-filter: blur(10px);
     border-radius: var(--radius-lg);
     padding: 40px 30px;
-    box-shadow: 0 10px 40px rgba(141, 110, 99, 0.15);
+    box-shadow: 0 10px 40px rgba(124, 179, 66, 0.15);
     transition: all 0.3s ease;
     height: 100%;
-    border: 2px solid var(--animali-brown);
+    border: 2px solid var(--animali-olive);
 }
 
 .animali-product-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 60px rgba(141, 110, 99, 0.3);
-    border-color: var(--animali-orange);
+    box-shadow: 0 20px 60px rgba(124, 179, 66, 0.3);
+    border-color: var(--animali-brown);
 }
 
 .animali-product-card.featured:hover {
@@ -1475,34 +1476,24 @@ body {
 .animali-product-icon {
     font-size: 4rem;
     margin-bottom: 20px;
-    background: linear-gradient(135deg, var(--animali-brown) 0%, var(--animali-orange) 100%);
+    background: linear-gradient(135deg, var(--animali-olive) 0%, var(--animali-brown) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .animali-badge-low {
-    background: linear-gradient(135deg, var(--animali-beige) 0%, var(--animali-brown) 100%);
+    background: linear-gradient(135deg, var(--animali-olive) 0%, var(--animali-orange) 100%);
     color: var(--animali-white);
     padding: 8px 20px;
     border-radius: 50px;
     font-weight: 600;
     font-size: 0.9rem;
-    box-shadow: 0 2px 8px rgba(141, 110, 99, 0.3);
+    box-shadow: 0 2px 8px rgba(124, 179, 66, 0.3);
 }
 
 .animali-badge-middle {
-    background: linear-gradient(135deg, var(--animali-brown) 0%, var(--animali-orange) 100%);
-    color: var(--animali-white);
-    padding: 8px 20px;
-    border-radius: 50px;
-    font-weight: 600;
-    font-size: 0.9rem;
-    box-shadow: 0 2px 8px rgba(141, 110, 99, 0.3);
-}
-
-.animali-badge-high {
-    background: linear-gradient(135deg, var(--animali-orange) 0%, var(--animali-black) 100%);
+    background: linear-gradient(135deg, var(--animali-orange) 0%, var(--animali-brown) 100%);
     color: var(--animali-white);
     padding: 8px 20px;
     border-radius: 50px;
@@ -1511,15 +1502,25 @@ body {
     box-shadow: 0 2px 8px rgba(255, 138, 101, 0.3);
 }
 
+.animali-badge-high {
+    background: linear-gradient(135deg, var(--animali-brown) 0%, var(--animali-black) 100%);
+    color: var(--animali-white);
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 8px rgba(141, 110, 99, 0.3);
+}
+
 .animali-btn-ebay {
-    background: linear-gradient(135deg, var(--animali-brown) 0%, var(--animali-orange) 100%);
+    background: linear-gradient(135deg, var(--animali-olive) 0%, var(--animali-orange) 100%);
     color: var(--animali-white);
     border: none;
     padding: 20px 50px;
     border-radius: 50px;
     font-weight: 700;
     font-size: 1.3rem;
-    box-shadow: 0 8px 25px rgba(141, 110, 99, 0.5), 0 0 30px rgba(141, 110, 99, 0.3);
+    box-shadow: 0 8px 25px rgba(124, 179, 66, 0.5), 0 0 30px rgba(124, 179, 66, 0.3);
     transition: all 0.3s ease;
     width: 100%;
     text-transform: uppercase;
@@ -1560,11 +1561,11 @@ body {
 
 .animali-btn-ebay:active {
     transform: translateY(-2px) scale(1.02);
-    box-shadow: 0 8px 30px rgba(141, 110, 99, 0.4), 0 0 40px rgba(141, 110, 99, 0.2);
+    box-shadow: 0 8px 30px rgba(124, 179, 66, 0.4), 0 0 40px rgba(124, 179, 66, 0.2);
 }
 
 .animali-footer {
-    background: linear-gradient(135deg, rgba(141, 110, 99, 0.8) 0%, rgba(215, 204, 200, 0.7) 100%);
+    background: linear-gradient(135deg, rgba(124, 179, 66, 0.8) 0%, rgba(141, 110, 99, 0.7) 100%);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);

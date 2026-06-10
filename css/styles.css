@@ -1,53 +1,36 @@
 /* Smart Choices Guide - CSS Unificato */
-/* Variabili Globali - Palette eBay Unificata */
+/* Variabili Globali - Dark Minimalist & Vibrant Accents */
 :root {
-    /* Palette eBay Unificata */
-    --primary-color: #0064D2;
-    --secondary-color: #FFFFFF;
-    --accent-color: #E53238;
-    --neutral-color: #F5F5F5;
-    --text-color: #333333;
-    --text-light: #666666;
+    /* Dark Mode Base Colors */
+    --bg-primary: #0F0F0F;
+    --bg-secondary: #1A1A1A;
+    --text-primary: #E0E0E0;
+    --text-secondary: #888888;
+    --text-muted: #666666;
     
-    /* Palette Nicchia Alcol (unificata) */
-    --alcol-primary: #0064D2;
-    --alcol-secondary: #FFFFFF;
-    --alcol-accent: #E53238;
-    --alcol-trust: #333333;
-    --alcol-gold: #0064D2;
-    --alcol-wood-dark: #333333;
-    --alcol-wood-medium: #666666;
-    --alcol-wood-light: #F5F5F5;
+    /* Palette Nicchia Alcol (Ambra Caldo) */
+    --alcol-accent: #D4A574;
+    --alcol-primary: #0F0F0F;
+    --alcol-secondary: #1A1A1A;
+    --alcol-text: #E0E0E0;
     
-    /* Palette Nicchia Casa e Pulizia (unificata) */
-    --casa-primary: #0064D2;
-    --casa-secondary: #FFFFFF;
-    --casa-accent: #E53238;
-    --casa-trust: #333333;
-    --casa-neutral: #F5F5F5;
-    --casa-sky: #0064D2;
-    --casa-mint: #E53238;
-    --casa-azure: #333333;
+    /* Palette Nicchia Tech (Ciano Elettrico) */
+    --elettronica-accent: #00F2FF;
+    --elettronica-primary: #0F0F0F;
+    --elettronica-secondary: #1A1A1A;
+    --elettronica-text: #E0E0E0;
     
-    /* Palette Nicchia RAM/Tech (unificata) */
-    --elettronica-primary: #0064D2;
-    --elettronica-secondary: #FFFFFF;
-    --elettronica-accent: #E53238;
-    --elettronica-trust: #333333;
-    --elettronica-white: #FFFFFF;
-    --elettronica-neon-red: #E53238;
-    --elettronica-deep-black: #333333;
-    --elettronica-electric-purple: #0064D2;
+    /* Palette Nicchia Casa (Verde Natura) */
+    --casa-accent: #7ED957;
+    --casa-primary: #0F0F0F;
+    --casa-secondary: #1A1A1A;
+    --casa-text: #E0E0E0;
     
-    /* Palette Nicchia Animali (unificata) */
-    --animali-primary: #0064D2;
-    --animali-secondary: #FFFFFF;
-    --animali-accent: #E53238;
-    --animali-trust: #333333;
-    --animali-white: #FFFFFF;
-    --animali-orange: #E53238;
-    --animali-black: #333333;
-    --animali-red: #E53238;
+    /* Palette Nicchia Animali (Corallo Elegante) */
+    --animali-accent: #FF6B6B;
+    --animali-primary: #0F0F0F;
+    --animali-secondary: #1A1A1A;
+    --animali-text: #E0E0E0;
     
     /* Spaziature */
     --spacing-xs: 0.5rem;
@@ -63,10 +46,10 @@
     --radius-xl: 30px;
     
     /* Shadows */
-    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
-    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.15);
-    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.2);
-    --shadow-xl: 0 12px 48px rgba(0, 0, 0, 0.25);
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+    --shadow-xl: 0 12px 48px rgba(0, 0, 0, 0.6);
 }
 
 /* Reset e Base */
@@ -78,7 +61,8 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #ffffff;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
     line-height: 1.6;
 }
 
@@ -88,11 +72,11 @@ body {
 
 /* Homepage Styles */
 .hero-section {
-    background: linear-gradient(135deg, #0064D2 0%, #0056b3 50%, #E53238 100%);
-    color: #FFFFFF;
+    background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+    color: var(--text-primary);
     padding: var(--spacing-xl) 0;
     margin-bottom: var(--spacing-xl);
-    box-shadow: 0 4px 20px rgba(0, 100, 210, 0.3);
+    box-shadow: var(--shadow-lg);
 }
 
 .hero-section h1 {
@@ -202,32 +186,116 @@ body {
 
 /* Buttons */
 .btn-ebay {
-    background: linear-gradient(135deg, #0064D2 0%, #E53238 100%);
-    color: #FFFFFF;
-    border: none;
-    padding: 15px 40px;
-    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid var(--text-primary);
+    color: var(--text-primary);
+    padding: 12px 24px;
+    border-radius: 12px;
     font-weight: 600;
     font-size: 1.1rem;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 20px rgba(0, 100, 210, 0.4);
     text-decoration: none;
     display: inline-block;
 }
 
 .btn-ebay:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 30px rgba(0, 100, 210, 0.6);
-    color: #FFFFFF;
+    background-color: var(--text-primary);
+    color: var(--bg-primary);
+    box-shadow: 0 0 20px var(--text-primary);
+    transform: translateY(-2px);
+}
+
+/* Nicchia-specific buttons with accent colors */
+.alcol-btn-ebay {
+    background-color: transparent;
+    border: 2px solid var(--alcol-accent);
+    color: var(--alcol-accent);
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.alcol-btn-ebay:hover {
+    background-color: var(--alcol-accent);
+    color: var(--alcol-primary);
+    box-shadow: 0 0 20px var(--alcol-accent);
+    transform: translateY(-2px);
+}
+
+.casa-btn-ebay {
+    background-color: transparent;
+    border: 2px solid var(--casa-accent);
+    color: var(--casa-accent);
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.casa-btn-ebay:hover {
+    background-color: var(--casa-accent);
+    color: var(--casa-primary);
+    box-shadow: 0 0 20px var(--casa-accent);
+    transform: translateY(-2px);
+}
+
+.elettronica-btn-ebay {
+    background-color: transparent;
+    border: 2px solid var(--elettronica-accent);
+    color: var(--elettronica-accent);
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.elettronica-btn-ebay:hover {
+    background-color: var(--elettronica-accent);
+    color: var(--elettronica-primary);
+    box-shadow: 0 0 20px var(--elettronica-accent);
+    transform: translateY(-2px);
+}
+
+.animali-btn-ebay {
+    background-color: transparent;
+    border: 2px solid var(--animali-accent);
+    color: var(--animali-accent);
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.animali-btn-ebay:hover {
+    background-color: var(--animali-accent);
+    color: var(--animali-primary);
+    box-shadow: 0 0 20px var(--animali-accent);
+    transform: translateY(-2px);
 }
 
 /* Footer */
 .footer {
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
+    background: rgba(15, 15, 15, 0.9);
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    color: var(--text-primary);
     padding: var(--spacing-xl) 0;
     text-align: center;
     margin-top: 60px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer a {
@@ -250,17 +318,18 @@ body {
 
 /* Nicchia Alcol Styles */
 .alcol-body {
-    background-color: var(--alcol-secondary);
+    background-color: var(--alcol-primary);
+    color: var(--alcol-text);
 }
 
 .alcol-hero {
-    background: linear-gradient(135deg, #0064D2 0%, #0056b3 50%, #E53238 100%);
+    background: linear-gradient(135deg, var(--alcol-primary) 0%, var(--alcol-secondary) 100%);
     padding: 100px 0;
     text-align: center;
-    color: #fff;
+    color: var(--alcol-text);
     position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 100, 210, 0.3);
+    box-shadow: var(--shadow-lg);
 }
 
 .alcol-hero h1 {
@@ -269,8 +338,7 @@ body {
     margin-bottom: 20px;
     position: relative;
     z-index: 2;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    color: var(--alcol-text);
     letter-spacing: 1px;
 }
 
@@ -279,8 +347,7 @@ body {
     opacity: 0.95;
     position: relative;
     z-index: 2;
-    color: #fff;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    color: var(--alcol-text);
     font-weight: 300;
 }
 
@@ -302,23 +369,24 @@ body {
 }
 
 .product-card {
-    background: white;
+    background: var(--bg-secondary);
     border-radius: var(--radius-lg);
     padding: 40px 30px;
-    box-shadow: 0 10px 40px rgba(93, 64, 55, 0.15);
+    box-shadow: var(--shadow-md);
     transition: all 0.3s ease;
     height: 100%;
-    border: 2px solid var(--alcol-accent);
+    border: 2px solid transparent;
 }
 
 .product-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 60px rgba(93, 64, 55, 0.25);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--alcol-accent);
 }
 
 .product-card.featured:hover {
-    border-color: var(--alcol-gold);
-    box-shadow: 0 20px 60px rgba(201, 162, 39, 0.3);
+    border-color: var(--alcol-accent);
+    box-shadow: 0 0 30px var(--alcol-accent);
 }
 
 .product-card.featured {
@@ -409,17 +477,18 @@ body {
 
 /* Nicchia Casa e Pulizia Styles */
 .casa-body {
-    background-color: var(--casa-secondary);
+    background-color: var(--casa-primary);
+    color: var(--casa-text);
 }
 
 .casa-hero {
-    background: linear-gradient(135deg, #0064D2 0%, #0056b3 50%, #E53238 100%);
+    background: linear-gradient(135deg, var(--casa-primary) 0%, var(--casa-secondary) 100%);
     padding: 100px 0;
     text-align: center;
-    color: #fff;
+    color: var(--casa-text);
     position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 100, 210, 0.3);
+    box-shadow: var(--shadow-lg);
 }
 
 .casa-hero h1 {
@@ -428,8 +497,7 @@ body {
     margin-bottom: 20px;
     position: relative;
     z-index: 2;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    color: var(--casa-text);
     letter-spacing: 1px;
 }
 
@@ -438,8 +506,7 @@ body {
     opacity: 0.95;
     position: relative;
     z-index: 2;
-    color: #fff;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    color: var(--casa-text);
     font-weight: 300;
 }
 
@@ -596,17 +663,18 @@ body {
 
 /* Nicchia RAM/Tech Styles */
 .elettronica-body {
-    background-color: var(--elettronica-secondary);
+    background-color: var(--elettronica-primary);
+    color: var(--elettronica-text);
 }
 
 .elettronica-hero {
-    background: linear-gradient(135deg, #0064D2 0%, #0056b3 50%, #E53238 100%);
+    background: linear-gradient(135deg, var(--elettronica-primary) 0%, var(--elettronica-secondary) 100%);
     padding: 100px 0;
     text-align: center;
-    color: #fff;
+    color: var(--elettronica-text);
     position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 100, 210, 0.3);
+    box-shadow: var(--shadow-lg);
 }
 
 .elettronica-hero h1 {
@@ -615,8 +683,7 @@ body {
     margin-bottom: 20px;
     position: relative;
     z-index: 2;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    color: var(--elettronica-text);
     letter-spacing: 1px;
 }
 
@@ -625,8 +692,7 @@ body {
     opacity: 0.95;
     position: relative;
     z-index: 2;
-    color: #fff;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    color: var(--elettronica-text);
     font-weight: 300;
     letter-spacing: 1px;
 }
@@ -798,17 +864,18 @@ body {
 
 /* Nicchia Animali Styles */
 .animali-body {
-    background-color: var(--animali-secondary);
+    background-color: var(--animali-primary);
+    color: var(--animali-text);
 }
 
 .animali-hero {
-    background: linear-gradient(135deg, #0064D2 0%, #0056b3 50%, #E53238 100%);
+    background: linear-gradient(135deg, var(--animali-primary) 0%, var(--animali-secondary) 100%);
     padding: 100px 0;
     text-align: center;
-    color: #fff;
+    color: var(--animali-text);
     position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 20px rgba(0, 100, 210, 0.3);
+    box-shadow: var(--shadow-lg);
 }
 
 .animali-hero h1 {
@@ -817,8 +884,7 @@ body {
     margin-bottom: 20px;
     position: relative;
     z-index: 2;
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    color: var(--animali-text);
     letter-spacing: 1px;
 }
 
@@ -827,8 +893,7 @@ body {
     opacity: 0.95;
     position: relative;
     z-index: 2;
-    color: #fff;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    color: var(--animali-text);
     font-weight: 300;
 }
 

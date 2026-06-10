@@ -91,25 +91,12 @@ body {
 
 /* Homepage Styles */
 .hero-section {
-    background: linear-gradient(135deg, #3E2723 0%, #5D4037 50%, #6D4C41 100%);
+    background: linear-gradient(135deg, #0F172A 0%, #1E3A8A 50%, #3B82F6 100%);
     color: #FFFFFF;
     padding: 120px 20px;
     text-align: center;
     margin-bottom: var(--spacing-xl);
-    border-bottom: 1px solid #3E2723;
-    position: relative;
-    overflow: hidden;
-}
-
-.hero-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at 30% 50%, rgba(255, 179, 0, 0.15) 0%, transparent 50%);
-    pointer-events: none;
+    border-bottom: 1px solid #1E3A8A;
 }
 
 .hero-section h1 {
@@ -133,14 +120,14 @@ body {
 }
 
 .bento-item {
-    background: #F5E6D3;
+    background: #F8FAFC;
     border-radius: var(--radius-lg);
     padding: 30px;
     box-shadow: var(--shadow-md);
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
-    border: 2px solid #D7CCC8;
+    border: 2px solid #E2E8F0;
 }
 
 .bento-item:hover {
@@ -182,35 +169,35 @@ body {
 
 /* Bento Icon Gradients */
 .bento-icon-alcol {
-    background: linear-gradient(135deg, #FFB300 0%, #FF8F00 100%);
+    background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .bento-icon-elettronica {
-    background: linear-gradient(135deg, #FFB300 0%, #FF8F00 100%);
+    background: linear-gradient(135deg, #3B82F6 0%, #1E3A8A 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .bento-icon-casa {
-    background: linear-gradient(135deg, #FFB300 0%, #FF8F00 100%);
+    background: linear-gradient(135deg, #87CEEB 0%, #5F9EA0 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .bento-icon-animali {
-    background: linear-gradient(135deg, #FFB300 0%, #FF8F00 100%);
+    background: linear-gradient(135deg, #FF69B4 0%, #DB7093 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .bento-icon-sport {
-    background: linear-gradient(135deg, #FFB300 0%, #FF8F00 100%);
+    background: linear-gradient(135deg, #3B82F6 0%, #1E3A8A 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -258,24 +245,11 @@ body {
 
 .carousel-item {
     height: 400px;
-    background: linear-gradient(135deg, #4A148C 0%, #6A1B9A 50%, #7B1FA2 100%);
+    background: linear-gradient(135deg, #1E293B 0%, #334155 50%, #475569 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     color: #FFFFFF;
-    position: relative;
-    overflow: hidden;
-}
-
-.carousel-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at 50% 50%, rgba(255, 179, 0, 0.1) 0%, transparent 60%);
-    pointer-events: none;
 }
 
 .carousel-item h3 {
@@ -388,25 +362,12 @@ body {
 
 /* Footer */
 .footer {
-    background: linear-gradient(135deg, #3E2723 0%, #5D4037 100%);
+    background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
     color: #FFFFFF;
     padding: var(--spacing-xl) 0;
     text-align: center;
     margin-top: 60px;
-    border-top: 1px solid #3E2723;
-    position: relative;
-    overflow: hidden;
-}
-
-.footer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at 70% 30%, rgba(255, 179, 0, 0.1) 0%, transparent 50%);
-    pointer-events: none;
+    border-top: 1px solid #1E293B;
 }
 
 .footer a {
@@ -688,7 +649,7 @@ body {
 }
 
 .casa-hero {
-    background: linear-gradient(135deg, #3E2723 0%, #5D4037 50%, #6D4C41 100%);
+    background: linear-gradient(135deg, #064E3B 0%, #065F46 50%, #10B981 100%);
     padding: 80px 20px;
     text-align: left;
     color: #FFFFFF;
@@ -699,19 +660,19 @@ body {
 .casa-hero-icon {
     font-size: 5rem;
     margin-bottom: 20px;
-    color: #FFB300;
+    color: #34D399;
     position: relative;
     z-index: 2;
 }
 
 .casa-product-card {
-    background: #F5E6D3;
+    background: white;
     border-radius: var(--radius-lg);
     padding: 40px 30px;
     box-shadow: 0 10px 40px rgba(135, 206, 235, 0.15);
     transition: all 0.3s ease;
     height: 100%;
-    border: 2px solid #D7CCC8;
+    border: 2px solid var(--casa-neutral);
 }
 
 .casa-product-card:hover {
@@ -720,13 +681,13 @@ body {
 }
 
 .casa-product-card.featured:hover {
-    border-color: #FFB300;
-    box-shadow: 0 20px 60px rgba(255, 179, 0, 0.3);
+    border-color: #34D399;
+    box-shadow: 0 20px 60px rgba(52, 211, 153, 0.3);
 }
 
 .casa-product-card.featured {
-    border: 3px solid #FFB300;
-    background: linear-gradient(135deg, rgba(255, 179, 0, 0.05) 0%, rgba(255, 143, 0, 0.05) 100%);
+    border: 3px solid #34D399;
+    background: linear-gradient(135deg, rgba(52, 211, 153, 0.05) 0%, rgba(16, 185, 129, 0.05) 100%);
 }
 
 .casa-product-card h3 {
@@ -798,7 +759,7 @@ body {
 }
 
 .casa-footer {
-    background: linear-gradient(135deg, #3E2723 0%, #5D4037 100%);
+    background: linear-gradient(135deg, #064E3B 0%, #065F46 100%);
     color: white;
     padding: 60px 0 30px;
     margin-top: 80px;
@@ -811,13 +772,13 @@ body {
 }
 
 .casa-footer a:hover {
-    color: #FFB300;
+    color: #34D399;
 }
 
 .casa-footer h5 {
     font-weight: 600;
     margin-bottom: 20px;
-    color: #FFB300;
+    color: #34D399;
 }
 
 .casa-footer-glass {
@@ -863,7 +824,7 @@ body {
 }
 
 .elettronica-hero {
-    background: linear-gradient(135deg, #3E2723 0%, #5D4037 50%, #6D4C41 100%);
+    background: linear-gradient(135deg, #0F172A 0%, #1E3A8A 50%, #3B82F6 100%);
     padding: 80px 20px;
     text-align: left;
     color: #FFFFFF;
@@ -880,13 +841,13 @@ body {
 }
 
 .elettronica-product-card {
-    background: #F5E6D3;
+    background: #FAF9F6;
     border-radius: var(--radius-lg);
     padding: 40px 30px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     height: 100%;
-    border: 2px solid #D7CCC8;
+    border: 1px solid #E0E0E0;
 }
 
 .elettronica-product-card:hover {
@@ -895,19 +856,19 @@ body {
 }
 
 .elettronica-product-card.featured:hover {
-    border-color: #FFB300;
-    box-shadow: 0 20px 40px rgba(255, 179, 0, 0.2);
+    border-color: #60A5FA;
+    box-shadow: 0 20px 40px rgba(96, 165, 250, 0.2);
 }
 
 .elettronica-product-card.featured {
-    border: 2px solid #FFB300;
-    background: #F5E6D3;
+    border: 2px solid #60A5FA;
+    background: #FAF9F6;
 }
 
 .elettronica-product-icon {
     font-size: 4rem;
     margin-bottom: 20px;
-    color: #FFB300;
+    color: #60A5FA;
 }
 
 .elettronica-product-card h3 {
@@ -970,7 +931,7 @@ body {
 }
 
 .elettronica-footer {
-    background: linear-gradient(135deg, #3E2723 0%, #5D4037 100%);
+    background: linear-gradient(135deg, #0F172A 0%, #1E293B 100%);
     color: white;
     padding: 60px 0 30px;
     margin-top: 80px;
@@ -983,13 +944,13 @@ body {
 }
 
 .elettronica-footer a:hover {
-    color: #FFB300;
+    color: #60A5FA;
 }
 
 .elettronica-footer h5 {
     font-weight: 600;
     margin-bottom: 20px;
-    color: #FFB300;
+    color: #60A5FA;
 }
 
 .elettronica-footer-glass {
@@ -1049,7 +1010,7 @@ body {
 }
 
 .animali-hero {
-    background: linear-gradient(135deg, #3E2723 0%, #5D4037 50%, #6D4C41 100%);
+    background: linear-gradient(135deg, #9A3412 0%, #C2410C 50%, #EA580C 100%);
     padding: 80px 20px;
     text-align: left;
     color: #FFFFFF;
@@ -1060,19 +1021,19 @@ body {
 .animali-hero-icon {
     font-size: 5rem;
     margin-bottom: 20px;
-    color: #FFB300;
+    color: #FB923C;
     position: relative;
     z-index: 2;
 }
 
 .animali-product-card {
-    background: #F5E6D3;
+    background: white;
     border-radius: var(--radius-lg);
     padding: 40px 30px;
     box-shadow: 0 10px 40px rgba(255, 107, 53, 0.15);
     transition: all 0.3s ease;
     height: 100%;
-    border: 2px solid #D7CCC8;
+    border: 2px solid var(--animali-trust);
 }
 
 .animali-product-card:hover {
@@ -1081,13 +1042,13 @@ body {
 }
 
 .animali-product-card.featured:hover {
-    border-color: #FFB300;
-    box-shadow: 0 20px 60px rgba(255, 179, 0, 0.3);
+    border-color: #FB923C;
+    box-shadow: 0 20px 60px rgba(251, 146, 60, 0.3);
 }
 
 .animali-product-card.featured {
-    border: 3px solid #FFB300;
-    background: linear-gradient(135deg, rgba(255, 179, 0, 0.05) 0%, rgba(255, 143, 0, 0.05) 100%);
+    border: 3px solid #FB923C;
+    background: linear-gradient(135deg, rgba(251, 146, 60, 0.05) 0%, rgba(234, 88, 12, 0.05) 100%);
 }
 
 .animali-product-card h3 {
@@ -1159,7 +1120,7 @@ body {
 }
 
 .animali-footer {
-    background: linear-gradient(135deg, #3E2723 0%, #5D4037 100%);
+    background: linear-gradient(135deg, #9A3412 0%, #C2410C 100%);
     color: white;
     padding: 60px 0 30px;
     margin-top: 80px;
@@ -1172,13 +1133,13 @@ body {
 }
 
 .animali-footer a:hover {
-    color: #FFB300;
+    color: #FB923C;
 }
 
 .animali-footer h5 {
     font-weight: 600;
     margin-bottom: 20px;
-    color: #FFB300;
+    color: #FB923C;
 }
 
 .animali-footer-glass {

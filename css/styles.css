@@ -2752,6 +2752,47 @@ body {
     padding: 0;
     border: 2px dashed rgba(212, 175, 55, 0.3);
     min-height: 350px;
+}
+
+/* Vodka Banner Styles */
+.salotto-vodka-banner {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+    color: #FFFFFF;
+    padding: 30px 0;
+    margin: 30px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.salotto-vodka-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 70% 50%, rgba(255, 255, 255, 0.15) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.vodka-image-placeholder {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 0;
+    border: 2px dashed rgba(255, 255, 255, 0.3);
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vodka-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.kraken-image-placeholder {
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -344,7 +344,7 @@ body {
 }
 
 .animali-btn-ebay {
-    background-color: var(--animali-accent);
+    background-color: #FF8C42;
     color: #FFFFFF;
     padding: 16px 32px;
     border: none;
@@ -1010,10 +1010,10 @@ body {
 }
 
 .animali-hero {
-    background: linear-gradient(135deg, #9A3412 0%, #C2410C 50%, #EA580C 100%);
+    background: #E8F6F3;
     padding: 80px 20px;
     text-align: left;
-    color: #FFFFFF;
+    color: #333333;
     position: relative;
     overflow: hidden;
 }
@@ -1021,7 +1021,7 @@ body {
 .animali-hero-icon {
     font-size: 5rem;
     margin-bottom: 20px;
-    color: #FB923C;
+    color: #4A90E2;
     position: relative;
     z-index: 2;
 }
@@ -1042,13 +1042,13 @@ body {
 }
 
 .animali-product-card.featured:hover {
-    border-color: #FB923C;
-    box-shadow: 0 20px 60px rgba(251, 146, 60, 0.3);
+    border-color: #FF8C42;
+    box-shadow: 0 20px 60px rgba(255, 140, 66, 0.3);
 }
 
 .animali-product-card.featured {
-    border: 3px solid #FB923C;
-    background: linear-gradient(135deg, rgba(251, 146, 60, 0.05) 0%, rgba(234, 88, 12, 0.05) 100%);
+    border: 3px solid #FF8C42;
+    background: linear-gradient(135deg, rgba(255, 140, 66, 0.05) 0%, rgba(255, 140, 66, 0.02) 100%);
 }
 
 .animali-product-card h3 {
@@ -1120,37 +1120,37 @@ body {
 }
 
 .animali-footer {
-    background: linear-gradient(135deg, #9A3412 0%, #C2410C 100%);
-    color: white;
+    background: #E8F6F3;
+    color: #333333;
     padding: 60px 0 30px;
     margin-top: 80px;
 }
 
 .animali-footer a {
-    color: rgba(255, 255, 255, 0.8);
+    color: #333333;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .animali-footer a:hover {
-    color: #FB923C;
+    color: #FF8C42;
 }
 
 .animali-footer h5 {
     font-weight: 600;
     margin-bottom: 20px;
-    color: #FB923C;
+    color: #FF8C42;
 }
 
 .animali-footer-glass {
-    color: rgba(255, 255, 255, 0.95);
-    background: rgba(255, 255, 255, 0.1);
+    color: #333333;
+    background: rgba(255, 255, 255, 0.5);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     padding: 15px 20px;
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(74, 144, 226, 0.25);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     margin-top: 15px;
 }
 

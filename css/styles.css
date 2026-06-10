@@ -2341,3 +2341,190 @@ body {
 .disclaimer strong {
     color: #0064d2;
 }
+
+/* Sport Niche Styles */
+.sport-hero {
+    background: linear-gradient(135deg, #1E3A5F 0%, #2E8B57 50%, #3CB371 100%);
+    padding: 50px 20px;
+    text-align: left;
+    color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 30px 30px;
+    min-height: 35vh;
+    display: flex;
+    align-items: center;
+}
+
+.sport-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.15) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.sport-product-card {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(46, 139, 87, 0.2);
+}
+
+.sport-product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(46, 139, 87, 0.3);
+}
+
+.sport-badge-entry {
+    background: linear-gradient(135deg, #81C784 0%, #66BB6A 100%);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.sport-badge-top {
+    background: linear-gradient(135deg, #42A5F5 0%, #2196F3 100%);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.sport-badge-premium {
+    background: linear-gradient(135deg, #D4AF37 0%, #FFD700 100%);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.sport-product-icon {
+    font-size: 4rem;
+    color: #2E8B57;
+    margin-bottom: 20px;
+}
+
+.sport-btn-ebay {
+    background: linear-gradient(135deg, rgba(46, 139, 87, 0.8) 0%, rgba(212, 175, 55, 0.7) 30%, rgba(30, 58, 95, 0.8) 70%, rgba(60, 179, 113, 0.8) 100%);
+    color: #FFFFFF;
+    padding: 16px 32px;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 8px 32px rgba(46, 139, 87, 0.4), inset 0 1px 0 rgba(212, 175, 55, 0.2);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.sport-btn-ebay i {
+    transition: transform 0.3s ease;
+}
+
+.sport-btn-ebay:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 40px rgba(212, 175, 55, 0.5), inset 0 1px 0 rgba(212, 175, 55, 0.3);
+    background: linear-gradient(135deg, rgba(46, 139, 87, 0.9) 0%, rgba(212, 175, 55, 0.8) 30%, rgba(30, 58, 95, 0.9) 70%, rgba(60, 179, 113, 0.9) 100%);
+}
+
+.sport-btn-ebay:hover i {
+    transform: translateX(3px);
+}
+
+.sport-btn-ebay:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(46, 139, 87, 0.3);
+}
+
+.sport-footer {
+    background: linear-gradient(135deg, #1E3A5F 0%, #2E8B57 100%);
+    color: white;
+    padding: 60px 0 30px;
+    margin-top: 80px;
+}
+
+.sport-footer p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.sport-footer a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.sport-footer a:hover {
+    color: #3B82F6;
+    text-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+.sport-footer h5 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.sport-footer .social-link {
+    color: rgba(255, 255, 255, 0.8);
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.sport-footer .social-link:hover {
+    color: #E1306C;
+    transform: scale(1.1);
+    text-shadow: 0 0 15px rgba(225, 48, 108, 0.5);
+}
+
+.sport-btn-home {
+    background: linear-gradient(135deg, rgba(46, 139, 87, 0.8) 0%, rgba(212, 175, 55, 0.7) 30%, rgba(30, 58, 95, 0.8) 70%, rgba(60, 179, 113, 0.8) 100%);
+    color: #FFFFFF;
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(46, 139, 87, 0.3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.sport-btn-home i {
+    transition: transform 0.3s ease;
+}
+
+.sport-btn-home:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
+}
+
+.sport-btn-home:hover i {
+    transform: translateX(2px);
+}
+
+.sport-btn-home:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(46, 139, 87, 0.3);
+}

@@ -216,6 +216,13 @@ function initCategoryFilter() {
     const subcategoryGrid = document.getElementById('subcategoryGrid');
     const subcategoriesDisplay = document.getElementById('subcategoriesDisplay');
 
+    console.log('Category Filter init:', filterBtns.length, subcategoryGrid, subcategoriesDisplay);
+
+    if (!filterBtns.length || !subcategoryGrid || !subcategoriesDisplay) {
+        console.error('Elementi del filtro categorie non trovati');
+        return;
+    }
+
     // Dati sottocategorie per il filtro
     const subcategoriesData = {
         casa: [
@@ -270,6 +277,7 @@ function initCategoryFilter() {
     filterBtns.forEach(btn => {
         btn.addEventListener('click', function() {
             const category = this.dataset.category;
+            console.log('Clicked category:', category);
             
             // Rimuovi active da tutti
             filterBtns.forEach(b => b.classList.remove('active'));
@@ -280,10 +288,12 @@ function initCategoryFilter() {
 
             // Mostra sottocategorie
             const subcategories = subcategoriesData[category] || [];
+            console.log('Subcategories for', category, ':', subcategories);
             subcategoryGrid.innerHTML = '';
 
             if (subcategories.length > 0) {
                 subcategoriesDisplay.classList.add('active');
+                console.log('Adding active class to display');
 
                 subcategories.forEach((sub, index) => {
                     const subItem = document.createElement('a');
@@ -298,6 +308,7 @@ function initCategoryFilter() {
                     `;
                     subcategoryGrid.appendChild(subItem);
                 });
+                console.log('Added', subcategories.length, 'subcategory items');
             }
         });
     });

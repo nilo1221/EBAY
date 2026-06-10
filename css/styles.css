@@ -168,7 +168,7 @@ body {
 }
 
 /* Bento Icon Gradients */
-.bento-icon-alcol {
+.bento-icon-salotto {
     background: linear-gradient(135deg, #D4AF37 0%, #B8860B 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -292,7 +292,7 @@ body {
 }
 
 /* Nicchia-specific buttons with accent colors */
-.alcol-btn-ebay {
+.salotto-btn-ebay {
     background: linear-gradient(135deg, rgba(139, 69, 19, 0.8) 0%, rgba(212, 175, 55, 0.9) 30%, rgba(204, 85, 0, 0.8) 70%, rgba(212, 165, 116, 0.8) 100%);
     color: #FFFFFF;
     padding: 16px 32px;
@@ -308,21 +308,21 @@ body {
     backdrop-filter: blur(10px);
 }
 
-.alcol-btn-ebay i {
+.salotto-btn-ebay i {
     transition: transform 0.3s ease;
 }
 
-.alcol-btn-ebay:hover {
+.salotto-btn-ebay:hover {
     transform: translateY(-3px);
     box-shadow: 0 12px 40px rgba(212, 175, 55, 0.6), inset 0 1px 0 rgba(212, 175, 55, 0.4);
     background: linear-gradient(135deg, rgba(139, 69, 19, 0.9) 0%, rgba(212, 175, 55, 1) 30%, rgba(204, 85, 0, 0.9) 70%, rgba(212, 165, 116, 0.9) 100%);
 }
 
-.alcol-btn-ebay:hover i {
+.salotto-btn-ebay:hover i {
     transform: translateX(3px);
 }
 
-.alcol-btn-ebay:active {
+.salotto-btn-ebay:active {
     transform: translateY(-1px);
     box-shadow: 0 4px 15px rgba(204, 85, 0, 0.3);
 }
@@ -461,12 +461,12 @@ body {
 }
 
 /* Nicchia Alcol Styles */
-.alcol-body {
+.salotto-body {
     background-color: var(--alcol-primary);
     color: var(--alcol-text);
 }
 
-.alcol-footer {
+.salotto-footer {
     background: linear-gradient(135deg, #0D0D0D 0%, #1A1A1A 25%, #3E2723 50%, #2D1B15 75%, #1A0F0A 100%);
     color: white;
     padding: 60px 0 30px;
@@ -475,7 +475,7 @@ body {
     overflow: hidden;
 }
 
-.alcol-footer::before {
+.salotto-footer::before {
     content: '';
     position: absolute;
     top: 0;
@@ -486,23 +486,23 @@ body {
     pointer-events: none;
 }
 
-.alcol-footer a {
+.salotto-footer a {
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
-.alcol-footer a:hover {
+.salotto-footer a:hover {
     color: #8B4513;
 }
 
-.alcol-footer h5 {
+.salotto-footer h5 {
     font-weight: 600;
     margin-bottom: 20px;
     color: #8B4513;
 }
 
-.alcol-footer-glass {
+.salotto-footer-glass {
     color: rgba(255, 255, 255, 0.95);
     background: rgba(139, 69, 19, 0.15);
     -webkit-backdrop-filter: blur(10px);
@@ -514,14 +514,14 @@ body {
     margin-top: 15px;
 }
 
-.alcol-footer-bottom {
+.salotto-footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 20px;
     margin-top: 30px;
     text-align: center;
 }
 
-.alcol-social-links a {
+.salotto-social-links a {
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -533,12 +533,12 @@ body {
     transition: all 0.3s ease;
 }
 
-.alcol-social-links a:hover {
+.salotto-social-links a:hover {
     background: var(--alcol-gold);
     color: #3E2723;
 }
 
-.alcol-hero {
+.salotto-hero {
     background: linear-gradient(135deg, #1A1A2E 0%, #2C3E50 50%, #3E2723 100%);
     padding: 50px 20px;
     text-align: left;
@@ -551,7 +551,7 @@ body {
     align-items: center;
 }
 
-.alcol-hero::before {
+.salotto-hero::before {
     content: '';
     position: absolute;
     top: 0;
@@ -562,7 +562,7 @@ body {
     pointer-events: none;
 }
 
-.alcol-hero-icon {
+.salotto-hero-icon {
     font-size: 3.5rem;
     margin-bottom: 15px;
     color: #CC5500;
@@ -571,7 +571,7 @@ body {
     text-shadow: 0 3px 15px rgba(204, 85, 0, 0.3);
 }
 
-.alcol-hero h1 {
+.salotto-hero h1 {
     font-family: 'Playfair Display', serif;
     font-size: 2.5rem;
     font-weight: 700;
@@ -587,7 +587,7 @@ body {
     z-index: 2;
 }
 
-.alcol-hero p {
+.salotto-hero p {
     font-size: 1.1rem;
     font-weight: 400;
     letter-spacing: 0.5px;
@@ -598,7 +598,7 @@ body {
     z-index: 2;
 }
 
-.alcol-hero .btn-ebay {
+.salotto-hero .btn-ebay {
     font-size: 1.3rem;
     padding: 18px 50px;
     font-weight: 700;
@@ -2133,7 +2133,7 @@ body {
 }
 
 /* Generic footer styles for all niches */
-.alcol-footer p,
+.salotto-footer p,
 .casa-footer p,
 .elettronica-footer p,
 .animali-footer p,
@@ -2141,7 +2141,7 @@ body {
     color: rgba(255, 255, 255, 0.9);
 }
 
-.alcol-footer a,
+.salotto-footer a,
 .casa-footer a,
 .elettronica-footer a,
 .animali-footer a,
@@ -2151,7 +2151,7 @@ body {
     transition: all 0.3s ease;
 }
 
-.alcol-footer a:hover,
+.salotto-footer a:hover,
 .casa-footer a:hover,
 .elettronica-footer a:hover,
 .animali-footer a:hover,
@@ -2160,7 +2160,7 @@ body {
     text-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
 }
 
-.alcol-footer h5,
+.salotto-footer h5,
 .casa-footer h5,
 .elettronica-footer h5,
 .animali-footer h5,
@@ -2169,7 +2169,7 @@ body {
     margin-bottom: 20px;
 }
 
-.alcol-footer .social-link,
+.salotto-footer .social-link,
 .casa-footer .social-link,
 .elettronica-footer .social-link,
 .animali-footer .social-link,
@@ -2179,7 +2179,7 @@ body {
     display: inline-block;
 }
 
-.alcol-footer .social-link:hover,
+.salotto-footer .social-link:hover,
 .casa-footer .social-link:hover,
 .elettronica-footer .social-link:hover,
 .animali-footer .social-link:hover,
@@ -2189,7 +2189,7 @@ body {
     text-shadow: 0 0 15px rgba(225, 48, 108, 0.5);
 }
 
-.alcol-btn-home {
+.salotto-btn-home {
     background: linear-gradient(135deg, rgba(139, 69, 19, 0.8) 0%, rgba(212, 175, 55, 0.9) 30%, rgba(204, 85, 0, 0.8) 70%, rgba(212, 165, 116, 0.8) 100%);
     color: #FFFFFF;
     border: 1px solid rgba(212, 175, 55, 0.4);
@@ -2264,7 +2264,7 @@ body {
     backdrop-filter: blur(10px);
 }
 
-.alcol-btn-home i,
+.salotto-btn-home i,
 .casa-btn-home i,
 .elettronica-btn-home i,
 .animali-btn-home i,
@@ -2272,7 +2272,7 @@ body {
     transition: transform 0.3s ease;
 }
 
-.alcol-btn-home:hover {
+.salotto-btn-home:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(139, 69, 19, 0.5);
 }
@@ -2297,7 +2297,7 @@ body {
     box-shadow: 0 8px 25px rgba(125, 143, 105, 0.5);
 }
 
-.alcol-btn-home:hover i,
+.salotto-btn-home:hover i,
 .casa-btn-home:hover i,
 .elettronica-btn-home:hover i,
 .animali-btn-home:hover i,
@@ -2305,7 +2305,7 @@ body {
     transform: translateX(2px);
 }
 
-.alcol-btn-home:active {
+.salotto-btn-home:active {
     transform: translateY(-1px);
     box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
 }
@@ -2534,7 +2534,7 @@ body {
 }
 
 /* Alcol Kraken Banner Styles */
-.alcol-kraken-banner {
+.salotto-kraken-banner {
     background: linear-gradient(135deg, #1A1A2E 0%, #2C3E50 50%, #3E2723 100%);
     color: #FFFFFF;
     padding: 30px 0;
@@ -2543,7 +2543,7 @@ body {
     overflow: hidden;
 }
 
-.alcol-kraken-banner::before {
+.salotto-kraken-banner::before {
     content: '';
     position: absolute;
     top: 0;
@@ -2579,7 +2579,7 @@ body {
 }
 
 /* Alcol Additional Bottles Styles */
-.alcol-additional-bottles {
+.salotto-additional-bottles {
     background: rgba(255, 255, 255, 0.5);
     padding: 40px 0;
     border-radius: 20px;
@@ -2604,7 +2604,7 @@ body {
     color: #8B4513;
 }
 
-.alcol-btn-ebay.btn-sm {
+.salotto-btn-ebay.btn-sm {
     padding: 10px 20px;
     font-size: 0.9rem;
 }

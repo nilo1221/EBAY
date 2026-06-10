@@ -1007,6 +1007,89 @@ body {
     color: var(--casa-trust);
 }
 
+/* Liquori Section Styles */
+.liquori-image-section {
+    background: linear-gradient(135deg, #1A1A2E 0%, #2C3E50 50%, #3E2723 100%);
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+    overflow: hidden;
+}
+
+.liquori-image-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 70% 50%, rgba(212, 175, 55, 0.15) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.liquori-placeholder {
+    position: relative;
+    z-index: 2;
+}
+
+.liquori-placeholder i {
+    color: #D4AF37;
+    text-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+}
+
+.liquori-placeholder h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    background: linear-gradient(135deg, #D4AF37 0%, #CC5500 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.liquori-mini-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    padding: 20px 10px;
+    text-decoration: none;
+    color: #1A1A1A;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid #E0E0E0;
+    height: 100%;
+}
+
+.liquori-mini-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3);
+    border-color: #D4AF37;
+}
+
+.liquori-mini-card.featured {
+    background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(204, 85, 0, 0.15) 100%);
+    border: 2px solid #D4AF37;
+}
+
+.liquori-mini-card.featured:hover {
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.5);
+}
+
+.liquori-mini-card i {
+    color: #8B4513;
+    margin-bottom: 8px;
+}
+
+.liquori-mini-card span {
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
 /* Nicchia RAM/Tech Styles */
 .elettronica-body {
     background-color: var(--elettronica-primary);

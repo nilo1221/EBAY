@@ -12,6 +12,8 @@
     /* Palette Nicchia Alcol (Crema Avorio + Marrone Cuoio) */
     --alcol-hero-bg: #F4EFEA;
     --alcol-accent: #8B4513;
+    --alcol-gold: #D4AF37;
+    --alcol-trust: #C5A059;
     --alcol-primary: #FFFFFF;
     --alcol-secondary: #FAFAFA;
     --alcol-text: #1A1A1A;
@@ -19,6 +21,8 @@
     /* Palette Nicchia Tech (Azzurro Ghiaccio + Blu Elettrico) */
     --elettronica-hero-bg: #1E88E5;
     --elettronica-accent: #007BFF;
+    --elettronica-neon-red: #FF1744;
+    --elettronica-white: #FFFFFF;
     --elettronica-primary: #FFFFFF;
     --elettronica-secondary: #FAFAFA;
     --elettronica-text: #1A1A1A;
@@ -26,6 +30,11 @@
     /* Palette Nicchia Casa (Verde Salvia + Verde Foresta) */
     --casa-hero-bg: #F1F8E9;
     --casa-accent: #4CAF50;
+    --casa-sky: #87CEEB;
+    --casa-mint: #98FF98;
+    --casa-azure: #007FFF;
+    --casa-neutral: #E0E0E0;
+    --casa-trust: #2E7D32;
     --casa-primary: #FFFFFF;
     --casa-secondary: #FAFAFA;
     --casa-text: #1A1A1A;
@@ -33,6 +42,11 @@
     /* Palette Nicchia Animali (Rosa Pastello + Fucsia Tenue) */
     --animali-hero-bg: #FDF2F5;
     --animali-accent: #D63384;
+    --animali-orange: #FF6B35;
+    --animali-red: #CC3333;
+    --animali-trust: #FF8C42;
+    --animali-white: #FFFFFF;
+    --animali-black: #1A1A1A;
     --animali-primary: #FFFFFF;
     --animali-secondary: #FAFAFA;
     --animali-text: #1A1A1A;

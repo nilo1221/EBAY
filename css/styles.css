@@ -1790,7 +1790,6 @@ body {
     color: #FFFFFF;
     position: relative;
     overflow: hidden;
-    border-left: 5px solid #8B5CF6;
     min-height: 35vh;
     display: flex;
     align-items: center;
@@ -1803,19 +1802,19 @@ body {
     right: -50%;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle, rgba(139, 92, 246, 0.3) 0%, transparent 70%);
+    background: radial-gradient(circle, rgba(59, 130, 246, 0.3) 0%, transparent 70%);
 }
 
 .moda-hero-icon {
     font-size: 6rem;
     margin-bottom: 20px;
-    background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 50%, #06B6D4 100%);
+    background: linear-gradient(135deg, #3B82F6 0%, #EC4899 50%, #D4C4A8 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     position: relative;
     z-index: 2;
-    filter: drop-shadow(0 0 30px rgba(139, 92, 246, 0.5));
+    filter: drop-shadow(0 0 30px rgba(59, 130, 246, 0.5));
 }
 
 .moda-hero h1 {
@@ -1826,7 +1825,7 @@ body {
     margin-bottom: 15px;
     line-height: 1.2;
     text-transform: uppercase;
-    background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 50%, #06B6D4 100%);
+    background: linear-gradient(135deg, #3B82F6 0%, #EC4899 50%, #D4C4A8 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -1867,14 +1866,14 @@ body {
     left: 0;
     right: 0;
     height: 2px;
-    background: linear-gradient(90deg, #8B5CF6 0%, #EC4899 50%, #06B6D4 100%);
+    background: linear-gradient(90deg, #3B82F6 0%, #EC4899 50%, #D4C4A8 100%);
     opacity: 0;
     transition: opacity 0.4s ease;
 }
 
 .moda-product-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 15px 50px rgba(139, 92, 246, 0.15);
+    box-shadow: 0 15px 50px rgba(59, 130, 246, 0.15);
     border-color: #E8E8E8;
 }
 
@@ -1885,15 +1884,15 @@ body {
 .moda-product-icon {
     font-size: 3rem;
     margin-bottom: 25px;
-    background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 50%, #06B6D4 100%);
+    background: linear-gradient(135deg, #3B82F6 0%, #EC4899 50%, #D4C4A8 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    filter: drop-shadow(0 0 15px rgba(139, 92, 246, 0.2));
+    filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.2));
 }
 
 .moda-btn-ebay {
-    background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 50%, #06B6D4 100%);
+    background: linear-gradient(135deg, #3B82F6 0%, #EC4899 50%, #D4C4A8 100%);
     color: #FFFFFF;
     border: none;
     padding: 15px 40px;
@@ -1902,7 +1901,7 @@ body {
     font-size: 1.1rem;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     width: 100%;
-    box-shadow: 0 8px 25px rgba(139, 92, 246, 0.4);
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.4);
     position: relative;
     overflow: hidden;
 }
@@ -1920,7 +1919,7 @@ body {
 
 .moda-btn-ebay:hover {
     transform: translateY(-5px) scale(1.02);
-    box-shadow: 0 15px 40px rgba(139, 92, 246, 0.6);
+    box-shadow: 0 15px 40px rgba(59, 130, 246, 0.6);
 }
 
 .moda-btn-ebay:hover::before {
@@ -1936,27 +1935,6 @@ body {
     overflow: hidden;
 }
 
-.moda-footer::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, #8B5CF6 0%, #EC4899 50%, #06B6D4 100%);
-    box-shadow: 0 0 20px rgba(139, 92, 246, 0.5);
-}
-
-.moda-footer::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 2px;
-    background: linear-gradient(90deg, transparent 0%, #8B5CF6 50%, transparent 100%);
-}
-
 .moda-footer a {
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
@@ -1964,14 +1942,14 @@ body {
 }
 
 .moda-footer a:hover {
-    color: #EC4899;
-    text-shadow: 0 0 10px rgba(236, 72, 153, 0.5);
+    color: #3B82F6;
+    text-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
 }
 
 .moda-footer h5 {
     font-weight: 600;
     margin-bottom: 20px;
-    background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%);
+    background: linear-gradient(135deg, #3B82F6 0%, #EC4899 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

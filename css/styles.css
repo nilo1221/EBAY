@@ -7,6 +7,7 @@
     --text-primary: #1A1A1A;
     --text-secondary: #666666;
     --text-muted: #888888;
+    --accent-gold: #C5A059;
     
     /* Palette Nicchia Alcol (Crema Avorio + Marrone Cuoio) */
     --alcol-hero-bg: #F4EFEA;
@@ -76,10 +77,10 @@ body {
 
 /* Homepage Styles */
 .hero-section {
-    background-color: var(--bg-secondary);
+    background-color: var(--bg-primary);
     color: var(--text-primary);
-    padding: 80px 20px;
-    text-align: left;
+    padding: 100px 20px;
+    text-align: center;
     margin-bottom: var(--spacing-xl);
 }
 
@@ -104,7 +105,7 @@ body {
 }
 
 .bento-item {
-    background: white;
+    background: #F9F9F9;
     border-radius: var(--radius-lg);
     padding: 30px;
     box-shadow: var(--shadow-md);
@@ -115,9 +116,40 @@ body {
 }
 
 .bento-item:hover {
-    transform: translateY(-5px);
+    transform: translateY(-10px);
     box-shadow: var(--shadow-lg);
-    border-color: #0064D2;
+}
+
+.bento-item[data-category="alcol"]:hover {
+    border-color: var(--alcol-accent);
+}
+
+.bento-item[data-category="alcol"]:hover h3 {
+    color: var(--alcol-accent);
+}
+
+.bento-item[data-category="elettronica"]:hover {
+    border-color: var(--elettronica-accent);
+}
+
+.bento-item[data-category="elettronica"]:hover h3 {
+    color: var(--elettronica-accent);
+}
+
+.bento-item[data-category="casa"]:hover {
+    border-color: var(--casa-accent);
+}
+
+.bento-item[data-category="casa"]:hover h3 {
+    color: var(--casa-accent);
+}
+
+.bento-item[data-category="animali"]:hover {
+    border-color: var(--animali-accent);
+}
+
+.bento-item[data-category="animali"]:hover h3 {
+    color: var(--animali-accent);
 }
 
 .bento-large {
@@ -190,7 +222,7 @@ body {
 
 /* Buttons */
 .btn-ebay {
-    background-color: var(--text-primary);
+    background-color: var(--accent-gold);
     color: #FFFFFF;
     padding: 16px 32px;
     border: none;

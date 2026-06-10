@@ -1933,6 +1933,10 @@ body {
     overflow: hidden;
 }
 
+.moda-footer p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
 .moda-footer a {
     color: rgba(255, 255, 255, 0.8);
     text-decoration: none;

@@ -1847,14 +1847,17 @@ body {
 
 .moda-product-card {
     background: #FFFFFF;
-    border-radius: 12px;
-    padding: 40px 30px;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 0;
+    padding: 50px 30px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     height: 100%;
-    border: 2px solid #F0F0F0;
+    border: 1px solid #F5F5F5;
     position: relative;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .moda-product-card::before {
@@ -1863,16 +1866,16 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
+    height: 2px;
     background: linear-gradient(90deg, #8B5CF6 0%, #EC4899 50%, #06B6D4 100%);
     opacity: 0;
     transition: opacity 0.4s ease;
 }
 
 .moda-product-card:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 20px 60px rgba(139, 92, 246, 0.2);
-    border-color: #E5E5E5;
+    transform: translateY(-8px);
+    box-shadow: 0 15px 50px rgba(139, 92, 246, 0.15);
+    border-color: #E8E8E8;
 }
 
 .moda-product-card:hover::before {
@@ -1880,13 +1883,13 @@ body {
 }
 
 .moda-product-icon {
-    font-size: 4rem;
-    margin-bottom: 20px;
+    font-size: 3rem;
+    margin-bottom: 25px;
     background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 50%, #06B6D4 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    filter: drop-shadow(0 0 20px rgba(139, 92, 246, 0.3));
+    filter: drop-shadow(0 0 15px rgba(139, 92, 246, 0.2));
 }
 
 .moda-btn-ebay {

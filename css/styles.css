@@ -914,13 +914,32 @@ body {
     background: linear-gradient(135deg, #8D6E63 0%, #FF8A65 100%);
     color: white;
     border: none;
-    padding: 15px 40px;
+    padding: 20px 50px;
     border-radius: 50px;
-    font-weight: 600;
-    font-size: 1.1rem;
+    font-weight: 700;
+    font-size: 1.3rem;
+    box-shadow: 0 8px 25px rgba(141, 110, 99, 0.5), 0 0 30px rgba(141, 110, 99, 0.3);
     transition: all 0.3s ease;
-    box-shadow: 0 5px 20px rgba(141, 110, 99, 0.4);
     width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+.casa-btn-ebay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.5s ease;
+}
+
+.casa-btn-ebay:hover::before {
+    left: 100%;
 }
 
 .casa-btn-ebay i {
@@ -928,8 +947,9 @@ body {
 }
 
 .casa-btn-ebay:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(141, 110, 99, 0.6);
+    transform: translateY(-5px) scale(1.05);
+    background: linear-gradient(135deg, #FF8A65 0%, #8D6E63 100%);
+    box-shadow: 0 15px 45px rgba(255, 138, 101, 0.6), 0 0 50px rgba(255, 138, 101, 0.4);
     color: white;
 }
 
@@ -938,8 +958,8 @@ body {
 }
 
 .casa-btn-ebay:active {
-    transform: translateY(-1px);
-    box-shadow: 0 5px 20px rgba(141, 110, 99, 0.4);
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 8px 30px rgba(141, 110, 99, 0.4), 0 0 40px rgba(141, 110, 99, 0.2);
 }
 
 .casa-footer {

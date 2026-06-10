@@ -293,17 +293,19 @@ body {
 
 /* Nicchia-specific buttons with accent colors */
 .alcol-btn-ebay {
-    background-color: var(--alcol-accent);
+    background: linear-gradient(135deg, rgba(139, 69, 19, 0.8) 0%, rgba(204, 85, 0, 0.8) 50%, rgba(212, 165, 116, 0.8) 100%);
     color: #FFFFFF;
     padding: 16px 32px;
-    border: none;
-    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
     font-weight: 600;
     font-size: 1.1rem;
     transition: all 0.3s ease;
     text-decoration: none;
     display: inline-block;
-    box-shadow: 0 4px 15px rgba(204, 85, 0, 0.3);
+    box-shadow: 0 8px 32px rgba(139, 69, 19, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .alcol-btn-ebay i {
@@ -312,7 +314,8 @@ body {
 
 .alcol-btn-ebay:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(204, 85, 0, 0.6);
+    box-shadow: 0 12px 40px rgba(139, 69, 19, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    background: linear-gradient(135deg, rgba(139, 69, 19, 0.9) 0%, rgba(204, 85, 0, 0.9) 50%, rgba(212, 165, 116, 0.9) 100%);
 }
 
 .alcol-btn-ebay:hover i {
@@ -325,17 +328,19 @@ body {
 }
 
 .casa-btn-ebay {
-    background-color: #00A8E8;
+    background: linear-gradient(135deg, rgba(0, 168, 232, 0.8) 0%, rgba(0, 119, 182, 0.8) 50%, rgba(0, 180, 216, 0.8) 100%);
     color: #FFFFFF;
     padding: 16px 32px;
-    border: none;
-    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
     font-weight: 600;
     font-size: 1.1rem;
     transition: all 0.3s ease;
     text-decoration: none;
     display: inline-block;
-    box-shadow: 0 4px 15px rgba(0, 168, 232, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 168, 232, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 .casa-btn-ebay i {
@@ -344,7 +349,8 @@ body {
 
 .casa-btn-ebay:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(0, 168, 232, 0.6);
+    box-shadow: 0 12px 40px rgba(0, 168, 232, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    background: linear-gradient(135deg, rgba(0, 168, 232, 0.9) 0%, rgba(0, 119, 182, 0.9) 50%, rgba(0, 180, 216, 0.9) 100%);
 }
 
 .casa-btn-ebay:hover i {
@@ -357,17 +363,19 @@ body {
 }
 
 .elettronica-btn-ebay {
-    background-color: var(--elettronica-accent);
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(30, 41, 59, 0.8) 50%, rgba(51, 65, 85, 0.8) 100%);
     color: #FFFFFF;
     padding: 16px 32px;
-    border: none;
-    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
     font-weight: 600;
     font-size: 1.1rem;
     transition: all 0.3s ease;
     text-decoration: none;
     display: inline-block;
-    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(15, 23, 42, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 .elettronica-btn-ebay i {
@@ -376,7 +384,8 @@ body {
 
 .elettronica-btn-ebay:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(0, 123, 255, 0.6);
+    box-shadow: 0 12px 40px rgba(15, 23, 42, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.9) 0%, rgba(30, 41, 59, 0.9) 50%, rgba(51, 65, 85, 0.9) 100%);
 }
 
 .elettronica-btn-ebay:hover i {
@@ -389,17 +398,19 @@ body {
 }
 
 .animali-btn-ebay {
-    background-color: #FF8C42;
+    background: linear-gradient(135deg, rgba(255, 140, 66, 0.8) 0%, rgba(255, 107, 53, 0.8) 50%, rgba(247, 147, 30, 0.8) 100%);
     color: #FFFFFF;
     padding: 16px 32px;
-    border: none;
-    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
     font-weight: 600;
     font-size: 1.1rem;
     transition: all 0.3s ease;
     text-decoration: none;
     display: inline-block;
-    box-shadow: 0 4px 15px rgba(255, 140, 66, 0.3);
+    box-shadow: 0 8px 32px rgba(255, 140, 66, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 .animali-btn-ebay i {
@@ -408,7 +419,8 @@ body {
 
 .animali-btn-ebay:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 35px rgba(255, 140, 66, 0.6);
+    box-shadow: 0 12px 40px rgba(255, 140, 66, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    background: linear-gradient(135deg, rgba(255, 140, 66, 0.9) 0%, rgba(255, 107, 53, 0.9) 50%, rgba(247, 147, 30, 0.9) 100%);
 }
 
 .animali-btn-ebay:hover i {
@@ -1813,16 +1825,18 @@ body {
 }
 
 .climatizzazione-btn-ebay {
-    background: linear-gradient(135deg, #7D8F69 0%, #6B7A5A 100%);
+    background: linear-gradient(135deg, rgba(125, 143, 105, 0.8) 0%, rgba(107, 122, 90, 0.8) 50%, rgba(139, 154, 122, 0.8) 100%);
     color: white;
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 15px 40px;
-    border-radius: 50px;
+    border-radius: 12px;
     font-weight: 600;
     font-size: 1.1rem;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 20px rgba(125, 143, 105, 0.4);
+    box-shadow: 0 8px 32px rgba(125, 143, 105, 0.4), inset 0 1px 0 rgba(255, 255, 255, 0.2);
     width: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .climatizzazione-btn-ebay i {
@@ -2170,21 +2184,79 @@ body {
     text-shadow: 0 0 15px rgba(225, 48, 108, 0.5);
 }
 
-.alcol-btn-home,
-.casa-btn-home,
-.elettronica-btn-home,
-.animali-btn-home,
-.climatizzazione-btn-home {
-    background: linear-gradient(135deg, #3B82F6 0%, #EC4899 50%, #D4C4A8 100%);
+.alcol-btn-home {
+    background: linear-gradient(135deg, rgba(139, 69, 19, 0.8) 0%, rgba(204, 85, 0, 0.8) 50%, rgba(212, 165, 116, 0.8) 100%);
     color: #FFFFFF;
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     padding: 10px 25px;
     border-radius: 25px;
     font-weight: 600;
     font-size: 0.9rem;
     transition: all 0.3s ease;
     display: inline-block;
-    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.casa-btn-home {
+    background: linear-gradient(135deg, rgba(0, 168, 232, 0.8) 0%, rgba(0, 119, 182, 0.8) 50%, rgba(0, 180, 216, 0.8) 100%);
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(0, 168, 232, 0.3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.elettronica-btn-home {
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.8) 0%, rgba(30, 41, 59, 0.8) 50%, rgba(51, 65, 85, 0.8) 100%);
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.animali-btn-home {
+    background: linear-gradient(135deg, rgba(255, 140, 66, 0.8) 0%, rgba(255, 107, 53, 0.8) 50%, rgba(247, 147, 30, 0.8) 100%);
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(255, 140, 66, 0.3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+}
+
+.climatizzazione-btn-home {
+    background: linear-gradient(135deg, rgba(125, 143, 105, 0.8) 0%, rgba(107, 122, 90, 0.8) 50%, rgba(139, 154, 122, 0.8) 100%);
+    color: #FFFFFF;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 25px;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(125, 143, 105, 0.3);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 .alcol-btn-home i,
@@ -2195,13 +2267,29 @@ body {
     transition: transform 0.3s ease;
 }
 
-.alcol-btn-home:hover,
-.casa-btn-home:hover,
-.elettronica-btn-home:hover,
-.animali-btn-home:hover,
+.alcol-btn-home:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(139, 69, 19, 0.5);
+}
+
+.casa-btn-home:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 168, 232, 0.5);
+}
+
+.elettronica-btn-home:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.5);
+}
+
+.animali-btn-home:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 140, 66, 0.5);
+}
+
 .climatizzazione-btn-home:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.5);
+    box-shadow: 0 8px 25px rgba(125, 143, 105, 0.5);
 }
 
 .alcol-btn-home:hover i,
@@ -2212,13 +2300,29 @@ body {
     transform: translateX(2px);
 }
 
-.alcol-btn-home:active,
-.casa-btn-home:active,
-.elettronica-btn-home:active,
-.animali-btn-home:active,
+.alcol-btn-home:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
+}
+
+.casa-btn-home:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(0, 168, 232, 0.3);
+}
+
+.elettronica-btn-home:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.3);
+}
+
+.animali-btn-home:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(255, 140, 66, 0.3);
+}
+
 .climatizzazione-btn-home:active {
     transform: translateY(-1px);
-    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+    box-shadow: 0 4px 15px rgba(125, 143, 105, 0.3);
 }
 
 /* eBay Disclaimer Styling */

@@ -1854,7 +1854,7 @@ body {
     color: #1A365D;
     border: 2px solid rgba(26, 54, 93, 0.5);
     padding: 15px 40px;
-    border-radius: 6px;
+    border-radius: 30px;
     font-weight: 600;
     font-size: 1.1rem;
     transition: all 0.3s ease;

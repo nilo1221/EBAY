@@ -92,6 +92,39 @@
     <!-- Bento Grid Section -->
     <div class="container my-5">
         <h2 class="section-title">Le Nostre Categorie</h2>
+        
+        <!-- Category Filter -->
+        <div class="category-filter mb-5">
+            <button class="filter-btn active" data-category="all">
+                <i class="fas fa-th-large me-2"></i>Tutte
+            </button>
+            <button class="filter-btn" data-category="casa">
+                <i class="fas fa-home me-2"></i>Casa
+            </button>
+            <button class="filter-btn" data-category="elettronica">
+                <i class="fas fa-laptop me-2"></i>Elettronica
+            </button>
+            <button class="filter-btn" data-category="salotto">
+                <i class="fas fa-wine-glass-alt me-2"></i>Distillati
+            </button>
+            <button class="filter-btn" data-category="animali">
+                <i class="fas fa-paw me-2"></i>Animali
+            </button>
+            <button class="filter-btn" data-category="moda">
+                <i class="fas fa-tshirt me-2"></i>Moda
+            </button>
+            <button class="filter-btn" data-category="sport">
+                <i class="fas fa-futbol me-2"></i>Sport
+            </button>
+        </div>
+
+        <!-- Subcategories Display -->
+        <div class="subcategories-display" id="subcategoriesDisplay">
+            <div class="subcategory-grid" id="subcategoryGrid">
+                <!-- Subcategories will be loaded here via JS -->
+            </div>
+        </div>
+
         <div class="bento-grid">
             <!-- Large Item - Distillati -->
             <div class="bento-item bento-large">

@@ -18,6 +18,9 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Split Screen Navigation
     initSplitScreenNav();
+    
+    // Category Filter
+    initCategoryFilter();
 });
 
 // Lazy Loading per immagini
@@ -205,5 +208,97 @@ function initSplitScreenNav() {
             });
         });
     });
+}
+
+// Category Filter
+function initCategoryFilter() {
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const subcategoryGrid = document.getElementById('subcategoryGrid');
+    const subcategoriesDisplay = document.getElementById('subcategoriesDisplay');
+
+    // Dati sottocategorie per il filtro
+    const subcategoriesData = {
+        casa: [
+            { name: 'Cucina', icon: 'fa-utensils', link: 'casa/cucina/index.html' },
+            { name: 'Soggiorno', icon: 'fa-couch', link: 'casa/soggiorno/index.html' },
+            { name: 'Bagno', icon: 'fa-bath', link: 'casa/bagno/index.html' },
+            { name: 'Camera', icon: 'fa-bed', link: 'casa/camera/index.html' },
+            { name: 'Pulizia', icon: 'fa-broom', link: 'casa/home-cleaning/index.html' },
+            { name: 'Climatizzazione', icon: 'fa-wind', link: 'casa/climatizzazione/index.html' },
+            { name: 'Arredamento', icon: 'fa-chair', link: 'casa/arredamento/index.html' }
+        ],
+        elettronica: [
+            { name: 'RAM', icon: 'fa-memory', link: 'elettronica/index.html#ram' },
+            { name: 'GPU', icon: 'fa-microchip', link: 'elettronica/index.html#gpu' },
+            { name: 'SSD', icon: 'fa-hdd', link: 'elettronica/index.html#ssd' },
+            { name: 'CPU Ryzen', icon: 'fa-server', link: 'elettronica/index.html#cpu-ryzen' },
+            { name: 'CPU Intel', icon: 'fa-server', link: 'elettronica/index.html#cpu-intel' }
+        ],
+        salotto: [
+            { name: 'Rum Entry', icon: 'fa-wine-bottle', link: 'salotto-distillati/index.html#rum-entry' },
+            { name: 'Rum Top', icon: 'fa-wine-bottle', link: 'salotto-distillati/index.html#rum-top' },
+            { name: 'Rum Premium', icon: 'fa-wine-bottle', link: 'salotto-distillati/index.html#rum-premium' },
+            { name: 'Vodka 1', icon: 'fa-glass-cheers', link: 'salotto-distillati/index.html#vodka-1' },
+            { name: 'Vodka 2', icon: 'fa-glass-cheers', link: 'salotto-distillati/index.html#vodka-2' },
+            { name: 'Vodka 3', icon: 'fa-glass-cheers', link: 'salotto-distillati/index.html#vodka-3' }
+        ],
+        animali: [
+            { name: 'Gatti', icon: 'fa-cat', link: 'animali/index.html#gatti' },
+            { name: 'Cani', icon: 'fa-dog', link: 'animali/index.html#cani' }
+        ],
+        moda: [
+            { name: 'Abbigliamento', icon: 'fa-tshirt', link: 'moda/index.html#abbigliamento' },
+            { name: 'Scarpe', icon: 'fa-shoe-prints', link: 'moda/index.html#scarpe' },
+            { name: 'Accessori', icon: 'fa-gem', link: 'moda/index.html#accessori' }
+        ],
+        sport: [
+            { name: 'Fitness', icon: 'fa-dumbbell', link: 'sport/index.html#fitness' },
+            { name: 'Ciclismo', icon: 'fa-bicycle', link: 'sport/index.html#ciclismo' },
+            { name: 'Calcio', icon: 'fa-futbol', link: 'sport/index.html#calcio' }
+        ],
+        all: [
+            { name: 'Casa', icon: 'fa-home', link: 'casa/home-cleaning/index.html' },
+            { name: 'Elettronica', icon: 'fa-laptop', link: 'elettronica/index.html' },
+            { name: 'Distillati', icon: 'fa-wine-glass-alt', link: 'salotto-distillati/index.html' },
+            { name: 'Animali', icon: 'fa-paw', link: 'animali/index.html' },
+            { name: 'Moda', icon: 'fa-tshirt', link: 'moda/index.html' },
+            { name: 'Sport', icon: 'fa-futbol', link: 'sport/index.html' }
+        ]
+    };
+
+    // Click su filtro
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            const category = this.dataset.category;
+            
+            // Rimuovi active da tutti
+            filterBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
+
+            // Mostra sottocategorie
+            const subcategories = subcategoriesData[category] || [];
+            subcategoryGrid.innerHTML = '';
+
+            if (subcategories.length > 0) {
+                subcategoriesDisplay.style.display = 'block';
+                subcategories.forEach((sub, index) => {
+                    const subItem = document.createElement('a');
+                    subItem.className = 'subcategory-card';
+                    subItem.href = sub.link;
+                    subItem.style.transitionDelay = `${index * 0.05}s`;
+                    subItem.innerHTML = `
+                        <i class="fas ${sub.icon}"></i>
+                        <span>${sub.name}</span>
+                    `;
+                    subcategoryGrid.appendChild(subItem);
+                });
+            } else {
+                subcategoriesDisplay.style.display = 'none';
+            }
+        });
+    });
+
+    // Nascondi sottocategorie inizialmente
+    subcategoriesDisplay.style.display = 'none';
 }
 

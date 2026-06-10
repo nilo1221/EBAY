@@ -1,0 +1,80 @@
+{
+  "arredamento": {
+    "category": "Tavoli da Pranzo",
+    "products": [
+      {
+        "id": "entry-level",
+        "tier": "Entry Level",
+        "title": "Tavolo da Pranzo Entry Level",
+        "description": "Il tuo tavolo da pranzo è troppo piccolo? Non riesci a ospitare tutti gli ospiti? Questo tavolo entry level risolve il problema dello spazio limitato, offrendo una soluzione pratica ed economica per pranzi in famiglia senza spendere troppo.",
+        "price": "99.99 EUR",
+        "url": "https://ebay.us/PA7cAp",
+        "image": "https://via.placeholder.com/400x300/8D6E63/FFFFFF?text=Tavolo+Entry+Level",
+        "badge": "Entry Level",
+        "badge_class": "badge-low"
+      },
+      {
+        "id": "top-quality",
+        "tier": "Top Quality",
+        "title": "Tavolo da Pranzo Top Quality",
+        "description": "Il tavolo si graffia facilmente? Stanco di vedere segni di usura dopo ogni pasto? Questo tavolo top quality offre superficie resistente e finiture durevoli, mantenendo l'aspetto nuovo nel tempo. La scelta intelligente per chi vuole qualità senza complicazioni.",
+        "price": "199.99 EUR",
+        "url": "https://ebay.us/tjJgQa",
+        "image": "https://via.placeholder.com/400x300/FF8A65/FFFFFF?text=Tavolo+Top+Quality",
+        "badge": "Consigliato",
+        "badge_class": "badge-middle",
+        "featured": true
+      },
+      {
+        "id": "high",
+        "tier": "High",
+        "title": "Tavolo da Pranzo High Performance",
+        "description": "Vuoi un tavolo che faccia figurare? Sei stanco di tavoli instabili o che dondolano? Questo tavolo high performance offre stabilità eccellente, design esclusivo e materiali premium. Per chi non accetta compromessi sull'estetica e la funzionalità del proprio spazio pranzo.",
+        "price": "399.99 EUR",
+        "url": "https://ebay.us/SZkYZt",
+        "image": "https://via.placeholder.com/400x300/1A1A1A/FFFFFF?text=Tavolo+High",
+        "badge": "Top Performance",
+        "badge_class": "badge-high"
+      }
+    ]
+  },
+  "animali": {
+    "category": "Prodotti per Animali",
+    "products": [
+      {
+        "id": "gatti-entry",
+        "tier": "Entry Level",
+        "title": "Lettiera per Gatti Entry Level",
+        "description": "La lettiera si sporca troppo facilmente? Odori persistenti in casa? Questa lettiera entry level offre una soluzione pratica e economica per mantenere l'ambiente pulito senza spendere troppo.",
+        "price": "29.99 EUR",
+        "url": "https://ebay.us/link1",
+        "image": "https://via.placeholder.com/400x300/7CB342/FFFFFF?text=Lettiera+Entry",
+        "badge": "Entry Level",
+        "badge_class": "badge-low"
+      },
+      {
+        "id": "gatti-top",
+        "tier": "Top Quality",
+        "title": "Lettiera per Gatti Top Quality",
+        "description": "La lettira si graffia facilmente? I tuoi gatti la rovinano in poco tempo? Questa lettiera top quality offre materiali resistenti e design duraturo, mantenendo l'aspetto nuovo nel tempo.",
+        "price": "59.99 EUR",
+        "url": "https://ebay.us/link2",
+        "image": "https://via.placeholder.com/400x300/8D6E63/FFFFFF?text=Lettiera+Top",
+        "badge": "Consigliato",
+        "badge_class": "badge-middle",
+        "featured": true
+      },
+      {
+        "id": "gatti-high",
+        "tier": "High",
+        "title": "Lettiera per Gatti High Performance",
+        "description": "Vuoi il massimo comfort per i tuoi gatti? Cerchi una soluzione premium che faccia figurare? Questa lettiera high performance offre design esclusivo, materiali premium e funzionalità avanzate.",
+        "price": "129.99 EUR",
+        "url": "https://ebay.us/link3",
+        "image": "https://via.placeholder.com/400x300/FF8A65/FFFFFF?text=Lettiera+High",
+        "badge": "Top Performance",
+        "badge_class": "badge-high"
+      }
+    ]
+  }
+}

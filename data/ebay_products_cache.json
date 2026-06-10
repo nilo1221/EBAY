@@ -1,0 +1,39 @@
+{
+  "timestamp": "2026-06-10T23:08:59.661993",
+  "products": [
+    {
+      "id": "entry-level",
+      "tier": "Entry Level",
+      "title": "Tavolo da Pranzo Entry Level",
+      "description": "Il tuo tavolo da pranzo \u00e8 troppo piccolo? Non riesci a ospitare tutti gli ospiti? Questo tavolo entry level risolve il problema dello spazio limitato, offrendo una soluzione pratica ed economica per pranzi in famiglia senza spendere troppo.",
+      "price": "99.99 EUR",
+      "url": "https://ebay.us/PA7cAp",
+      "image": "https://via.placeholder.com/400x300/8D6E63/FFFFFF?text=Tavolo+Entry+Level",
+      "badge": "Entry Level",
+      "badge_class": "badge-low"
+    },
+    {
+      "id": "top-quality",
+      "tier": "Top Quality",
+      "title": "Tavolo da Pranzo Top Quality",
+      "description": "Il tavolo si graffia facilmente? Stanco di vedere segni di usura dopo ogni pasto? Questo tavolo top quality offre superficie resistente e finiture durevoli, mantenendo l'aspetto nuovo nel tempo. La scelta intelligente per chi vuole qualit\u00e0 senza complicazioni.",
+      "price": "199.99 EUR",
+      "url": "https://ebay.us/tjJgQa",
+      "image": "https://via.placeholder.com/400x300/FF8A65/FFFFFF?text=Tavolo+Top+Quality",
+      "badge": "Consigliato",
+      "badge_class": "badge-middle",
+      "featured": true
+    },
+    {
+      "id": "high",
+      "tier": "High",
+      "title": "Tavolo da Pranzo High Performance",
+      "description": "Vuoi un tavolo che faccia figurare? Sei stanco di tavoli instabili o che dondolano? Questo tavolo high performance offre stabilit\u00e0 eccellente, design esclusivo e materiali premium. Per chi non accetta compromessi sull'estetica e la funzionalit\u00e0 del proprio spazio pranzo.",
+      "price": "399.99 EUR",
+      "url": "https://ebay.us/SZkYZt",
+      "image": "https://via.placeholder.com/400x300/1A1A1A/FFFFFF?text=Tavolo+High",
+      "badge": "Top Performance",
+      "badge_class": "badge-high"
+    }
+  ]
+}

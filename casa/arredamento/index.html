@@ -38,58 +38,8 @@
     <!-- Products Section -->
     <div class="products-section" id="products">
         <div class="container">
-            <div class="row g-4">
-                
-                <!-- Entry Level -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="product-card">
-                        <div class="text-center">
-                            <i class="fas fa-table product-icon"></i>
-                            <span class="badge-low mb-3 d-inline-block">Entry Level</span>
-                        </div>
-                        <p class="text-muted mb-4">Il tuo tavolo da pranzo è troppo piccolo? Non riesci a ospitare tutti gli ospiti? Questo tavolo entry level risolve il problema dello spazio limitato, offrendo una soluzione pratica ed economica per pranzi in famiglia senza spendere troppo.</p>
-                        <div class="text-center">
-                            <a href="https://ebay.us/PA7cAp" target="_blank" rel="noopener noreferrer" class="btn btn-ebay">
-                                <i class="fab fa-ebay me-2"></i>Scopri su eBay
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Top Quality -->
-                <div class="col-lg-4 col-md-6">
-                    <div class="product-card featured">
-                        <div class="text-center">
-                            <i class="fas fa-table product-icon"></i>
-                            <h3 class="mb-3">Top Quality</h3>
-                            <span class="badge-middle mb-3 d-inline-block">Consigliato</span>
-                        </div>
-                        <p class="text-muted mb-4">Il tavolo si graffia facilmente? Stanco di vedere segni di usura dopo ogni pasto? Questo tavolo top quality offre superficie resistente e finiture durevoli, mantenendo l'aspetto nuovo nel tempo. La scelta intelligente per chi vuole qualità senza complicazioni.</p>
-                        <div class="text-center">
-                            <a href="https://ebay.us/tjJgQa" target="_blank" rel="noopener noreferrer" class="btn btn-ebay">
-                                <i class="fab fa-ebay me-2"></i>Vai all'Offerta Consigliata
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- High -->
-                <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
-                    <div class="product-card">
-                        <div class="text-center">
-                            <i class="fas fa-table product-icon"></i>
-                            <h3 class="mb-3">High</h3>
-                            <span class="badge-high mb-3 d-inline-block">Top Performance</span>
-                        </div>
-                        <p class="text-muted mb-4">Vuoi un tavolo che faccia figurare? Sei stanco di tavoli instabili o che dondolano? Questo tavolo high performance offre stabilità eccellente, design esclusivo e materiali premium. Per chi non accetta compromessi sull'estetica e la funzionalità del proprio spazio pranzo.</p>
-                        <div class="text-center">
-                            <a href="https://ebay.us/SZkYZt" target="_blank" rel="noopener noreferrer" class="btn btn-ebay">
-                                <i class="fab fa-ebay me-2"></i>Vedi le Caratteristiche Esclusive
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
+            <div class="row g-4" id="products-container">
+                <!-- Products will be loaded dynamically from JSON -->
             </div>
         </div>
     </div>
@@ -132,6 +82,8 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Products Loader -->
+    <script src="../../js/products-loader.js"></script>
     <!-- eBay Partner Network Tracking -->
     <script>window._epn = {campaign: 5339156223, smartPopover:false};</script>
     <script src="https://epnt.ebay.com/static/epn-smart-tools.js"></script>

@@ -649,12 +649,13 @@ body {
 }
 
 .casa-hero {
-    background: #F0F4F8;
+    background: #FFFFFF;
     padding: 80px 20px;
     text-align: left;
-    color: #1A2B3C;
+    color: #1A1A1A;
     position: relative;
     overflow: hidden;
+    border-left: 100px solid #00A8E8;
 }
 
 .casa-hero-icon {
@@ -759,14 +760,14 @@ body {
 }
 
 .casa-footer {
-    background: #F0F4F8;
-    color: #1A2B3C;
+    background: #FFFFFF;
+    color: #1A1A1A;
     padding: 60px 0 30px;
     margin-top: 80px;
 }
 
 .casa-footer a {
-    color: #1A2B3C;
+    color: #1A1A1A;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -782,8 +783,8 @@ body {
 }
 
 .casa-footer-glass {
-    color: #1A2B3C;
-    background: rgba(255, 255, 255, 0.5);
+    color: #1A1A1A;
+    background: rgba(0, 168, 232, 0.1);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     padding: 15px 20px;
@@ -1010,18 +1011,19 @@ body {
 }
 
 .animali-hero {
-    background: #E8F6F3;
+    background: #FFFFFF;
     padding: 80px 20px;
     text-align: left;
-    color: #333333;
+    color: #1A1A1A;
     position: relative;
     overflow: hidden;
+    border-left: 100px solid #FF8C42;
 }
 
 .animali-hero-icon {
     font-size: 5rem;
     margin-bottom: 20px;
-    color: #4A90E2;
+    color: #FF8C42;
     position: relative;
     z-index: 2;
 }
@@ -1120,14 +1122,14 @@ body {
 }
 
 .animali-footer {
-    background: #E8F6F3;
-    color: #333333;
+    background: #FFFFFF;
+    color: #1A1A1A;
     padding: 60px 0 30px;
     margin-top: 80px;
 }
 
 .animali-footer a {
-    color: #333333;
+    color: #1A1A1A;
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -1143,13 +1145,13 @@ body {
 }
 
 .animali-footer-glass {
-    color: #333333;
-    background: rgba(255, 255, 255, 0.5);
+    color: #1A1A1A;
+    background: rgba(255, 140, 66, 0.1);
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     padding: 15px 20px;
     border-radius: 10px;
-    border: 1px solid rgba(74, 144, 226, 0.25);
+    border: 1px solid rgba(255, 140, 66, 0.25);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     margin-top: 15px;
 }

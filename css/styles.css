@@ -664,7 +664,7 @@ body {
 }
 
 .elettronica-product-card {
-    background: #FFFFFF;
+    background: #FAF9F6;
     border-radius: var(--radius-lg);
     padding: 40px 30px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -685,7 +685,7 @@ body {
 
 .elettronica-product-card.featured {
     border: 2px solid var(--elettronica-accent);
-    background: #FFFFFF;
+    background: #FAF9F6;
 }
 
 .elettronica-product-icon {

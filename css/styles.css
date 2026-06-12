@@ -440,6 +440,59 @@ body {
     }
 }
 
+/* Guide Section Styles */
+.guide-section {
+    padding: 40px 0;
+}
+
+.guide-card {
+    background: var(--gradient-card);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: var(--radius-lg);
+    padding: 30px;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    height: 100%;
+}
+
+.guide-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.guide-icon {
+    width: 70px;
+    height: 70px;
+    background: var(--gradient-hero);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-md);
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.3);
+}
+
+.guide-icon i {
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+
+.guide-card h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--home-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.guide-card p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
 /* Bento Grid */
 .bento-grid {
     display: grid;

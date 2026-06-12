@@ -3399,6 +3399,59 @@ body {
     margin-top: 40px;
 }
 
+/* Mobile Optimization for Filters */
+@media (max-width: 768px) {
+    .filters-container {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .filters-container .row {
+        gap: 10px;
+    }
+    
+    .filters-container .col-md-4,
+    .filters-container .col-md-3 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .filters-container .form-control,
+    .filters-container .form-select {
+        font-size: 16px; /* Prevents zoom on iOS */
+        padding: 12px;
+    }
+    
+    .filters-container .btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+    }
+    
+    .pagination {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .pagination .page-link {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    
+    .guide-card {
+        padding: 20px;
+    }
+    
+    .guide-icon {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .guide-icon i {
+        font-size: 1.5rem;
+    }
+}
+
 .pagination .page-link {
     color: var(--casa-accent);
     border: 2px solid var(--casa-accent);

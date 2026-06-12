@@ -9,7 +9,19 @@
     --text-muted: #888888;
     --accent-gold: #C5A059;
     
-    /* Palette Nicchia Alcol (Crema Avorio + Marrone Cuoio) */
+    /* Homepage Palette - Moderna & Elegante */
+    --home-primary: #1E293B;      /* Slate scuro - elegante */
+    --home-secondary: #3B82F6;    /* Blu moderno - trust */
+    --home-accent: #F59E0B;       /* Ambra - calda */
+    --home-light: #F8FAFC;        /* Grigio chiaro - pulito */
+    --home-dark: #0F172A;         /* Slate molto scuro - contrasto */
+    
+    /* Homepage Gradients */
+    --gradient-hero: linear-gradient(135deg, #1E293B 0%, #3B82F6 50%, #6366F1 100%);
+    --gradient-card: linear-gradient(180deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.7) 100%);
+    --gradient-accent: linear-gradient(135deg, #F59E0B 0%, #F97316 100%);
+    
+    /* Palette Nicchia Alcol (Crema Avorio + Marrone Cuoio) - NON TOCCARE */
     --alcol-hero-bg: #F4EFEA;
     --alcol-accent: #8B4513;
     --alcol-gold: #D4AF37;
@@ -57,6 +69,13 @@
     --animali-secondary: #F5F5DC;
     --animali-text: #1A1A1A;
     
+    /* Palette Nicchia Sport (Nuova - Verde Energico) */
+    --sport-primary: #10B981;    /* Verde energico */
+    --sport-accent: #F59E0B;     /* Arancio dinamico */
+    --sport-dark: #064E3B;       /* Verde scuro */
+    --sport-light: #D1FAE5;      /* Verde chiaro */
+    --sport-text: #1A1A1A;
+    
     /* Spaziature */
     --spacing-xs: 0.5rem;
     --spacing-sm: 1rem;
@@ -97,23 +116,255 @@ body {
 
 /* Homepage Styles */
 .hero-section {
-    background: linear-gradient(135deg, #0F172A 0%, #1E3A8A 50%, #3B82F6 100%);
+    background: var(--gradient-hero);
     color: #FFFFFF;
-    padding: 120px 20px;
+    padding: 140px 20px 100px;
     text-align: center;
     margin-bottom: var(--spacing-xl);
-    border-bottom: 1px solid #1E3A8A;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 50%, rgba(99, 102, 241, 0.3) 0%, transparent 50%);
+    pointer-events: none;
 }
 
 .hero-section h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: var(--spacing-sm);
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: var(--spacing-md);
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 1;
 }
 
 .hero-section p {
-    font-size: 1.3rem;
-    opacity: 0.9;
+    font-size: 1.4rem;
+    opacity: 0.95;
+    max-width: 700px;
+    margin: 0 auto var(--spacing-lg);
+    position: relative;
+    z-index: 1;
+}
+
+.btn-ebay {
+    background: var(--gradient-accent);
+    color: #FFFFFF;
+    border: none;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: var(--radius-lg);
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(245, 158, 11, 0.4);
+    position: relative;
+    z-index: 1;
+}
+
+.btn-ebay:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(245, 158, 11, 0.5);
+    color: #FFFFFF;
+}
+
+/* Featured Banner Section */
+.featured-banner {
+    background: var(--gradient-card);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    margin: var(--spacing-xl) 0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    overflow: hidden;
+}
+
+.featured-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1) 0%, rgba(99, 102, 241, 0.1) 100%);
+    pointer-events: none;
+}
+
+.featured-banner-content {
+    flex: 1;
+    position: relative;
+    z-index: 1;
+}
+
+.featured-badge {
+    display: inline-block;
+    background: var(--gradient-accent);
+    color: #FFFFFF;
+    padding: 8px 16px;
+    border-radius: var(--radius-md);
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-sm);
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+}
+
+.featured-banner h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--home-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.featured-banner p {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-md);
+}
+
+.featured-banner-image {
+    flex: 0 0 300px;
+    height: 200px;
+    background: var(--gradient-hero);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    box-shadow: var(--shadow-md);
+}
+
+.featured-banner-image i {
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+@media (max-width: 768px) {
+    .featured-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+    
+    .featured-banner-image {
+        flex: 0 0 100%;
+        width: 100%;
+        height: 150px;
+    }
+}
+
+/* Trust Section */
+.trust-section {
+    background: var(--home-light);
+    padding: 60px 20px;
+    margin: var(--spacing-xl) 0;
+    border-radius: var(--radius-lg);
+}
+
+.trust-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.trust-item {
+    text-align: center;
+    padding: 30px;
+    background: #FFFFFF;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+}
+
+.trust-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.trust-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--gradient-hero);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-md);
+    box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+}
+
+.trust-icon i {
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+
+.trust-item h4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--home-primary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.trust-item p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Footer Disclaimer - EPN Compliance */
+.disclaimer {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.1) 0%, rgba(249, 115, 22, 0.1) 100%);
+    border: 2px solid var(--home-accent);
+    border-radius: var(--radius-md);
+    padding: 20px;
+    margin-top: var(--spacing-lg);
+    position: relative;
+    overflow: hidden;
+}
+
+.disclaimer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.05) 0%, rgba(249, 115, 22, 0.05) 100%);
+    pointer-events: none;
+}
+
+.disclaimer p {
+    position: relative;
+    z-index: 1;
+}
+
+.disclaimer p:first-child {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--home-accent);
+    margin-bottom: var(--spacing-sm);
+}
+
+.disclaimer p:last-child {
+    font-size: 0.95rem;
+    color: var(--text-primary);
+    line-height: 1.6;
 }
 
 /* Bento Grid */
@@ -126,21 +377,36 @@ body {
 }
 
 .bento-item {
-    background: #F8FAFC;
+    background: var(--gradient-card);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-radius: var(--radius-lg);
     padding: 30px;
     box-shadow: var(--shadow-md);
-    transition: all 0.3s ease;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
-    border: 2px solid #E2E8F0;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.bento-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.05) 0%, rgba(99, 102, 241, 0.05) 100%);
+    pointer-events: none;
 }
 
 .bento-item:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(1.02);
     box-shadow: var(--shadow-lg);
+    border-color: var(--home-secondary);
 }
 
+/* Alcolici - NON TOCCARE */
 .bento-item[data-category="alcol"]:hover {
     border-color: var(--alcol-accent);
 }
@@ -149,28 +415,49 @@ body {
     color: var(--alcol-accent);
 }
 
+/* Moda - NON TOCCARE */
+.bento-item[data-category="moda"]:hover {
+    border-color: var(--accent-gold);
+}
+
+.bento-item[data-category="moda"]:hover h4 {
+    color: var(--accent-gold);
+}
+
+/* Tech - Aggiornato */
 .bento-item[data-category="elettronica"]:hover {
     border-color: var(--elettronica-accent);
 }
 
-.bento-item[data-category="elettronica"]:hover h3 {
+.bento-item[data-category="elettronica"]:hover h4 {
     color: var(--elettronica-accent);
 }
 
+/* Casa - Aggiornato */
 .bento-item[data-category="casa"]:hover {
     border-color: var(--casa-accent);
 }
 
-.bento-item[data-category="casa"]:hover h3 {
+.bento-item[data-category="casa"]:hover h5 {
     color: var(--casa-accent);
 }
 
+/* Animali - Aggiornato */
 .bento-item[data-category="animali"]:hover {
     border-color: var(--animali-accent);
 }
 
-.bento-item[data-category="animali"]:hover h3 {
+.bento-item[data-category="animali"]:hover h5 {
     color: var(--animali-accent);
+}
+
+/* Sport - Nuovo */
+.bento-item[data-category="sport"]:hover {
+    border-color: var(--sport-primary);
+}
+
+.bento-item[data-category="sport"]:hover h5 {
+    color: var(--sport-primary);
 }
 
 /* Bento Icon Gradients */
@@ -189,21 +476,21 @@ body {
 }
 
 .bento-icon-casa {
-    background: linear-gradient(135deg, #87CEEB 0%, #5F9EA0 100%);
+    background: linear-gradient(135deg, var(--casa-accent) 0%, var(--casa-brown) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .bento-icon-animali {
-    background: linear-gradient(135deg, #FF69B4 0%, #DB7093 100%);
+    background: linear-gradient(135deg, var(--animali-accent) 0%, var(--animali-olive) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
 .bento-icon-sport {
-    background: linear-gradient(135deg, #3B82F6 0%, #1E3A8A 100%);
+    background: linear-gradient(135deg, var(--sport-primary) 0%, var(--sport-dark) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

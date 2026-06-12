@@ -2689,7 +2689,7 @@ body {
 .elettronica-footer p,
 .animali-footer p,
 .climatizzazione-footer p {
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(255, 255, 255, 1);
 }
 
 .salotto-footer a,
@@ -2697,7 +2697,7 @@ body {
 .elettronica-footer a,
 .animali-footer a,
 .climatizzazione-footer a {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.95);
     text-decoration: none;
     transition: all 0.3s ease;
 }

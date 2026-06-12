@@ -363,7 +363,7 @@ body {
 
 .disclaimer p:last-child {
     font-size: 0.95rem;
-    color: var(--text-primary);
+    color: rgba(255, 255, 255, 1);
     line-height: 1.6;
 }
 

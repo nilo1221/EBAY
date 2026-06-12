@@ -76,15 +76,59 @@
     </div>
 
     <!-- Hero Section -->
-    <div class="hero-section hero-with-bg reveal">
+    <div class="hero-section hero-with-bg reveal" id="heroSection">
+        <!-- Floating Particles -->
+        <div class="particles">
+            <div class="particle particle-1"></div>
+            <div class="particle particle-2"></div>
+            <div class="particle particle-3"></div>
+            <div class="particle particle-4"></div>
+            <div class="particle particle-5"></div>
+        </div>
+        
+        <!-- Decorative Icons -->
+        <div class="decorative-icons">
+            <i class="fas fa-circle decorative-icon icon-1"></i>
+            <i class="fas fa-star decorative-icon icon-2"></i>
+            <i class="fas fa-circle decorative-icon icon-3"></i>
+        </div>
+        
         <div class="container text-center">
-            <h1><i class="fas fa-shopping-cart me-3"></i>Smart Choices Guide</h1>
-            <p>Scopri le migliori offerte su eBay - La tua guida per acquisti intelligenti</p>
+            <h1 class="hero-title" id="heroTitle"><i class="fas fa-shopping-cart me-3"></i>Smart Choices Guide</h1>
+            <p class="hero-subtitle">Scopri le migliori offerte su eBay - La tua guida per acquisti intelligenti</p>
+            
+            <!-- Counter Section -->
+            <div class="hero-counters mb-4">
+                <div class="counter-item">
+                    <span class="counter-number" data-target="10">0</span>
+                    <span class="counter-label">Categorie</span>
+                </div>
+                <div class="counter-item">
+                    <span class="counter-number" data-target="1000">0</span>
+                    <span class="counter-label">Prodotti</span>
+                </div>
+                <div class="counter-item">
+                    <span class="counter-number" data-target="5000">0</span>
+                    <span class="counter-label">Utenti</span>
+                </div>
+            </div>
+            
+            <!-- Social Proof -->
+            <div class="social-proof mb-4">
+                <i class="fas fa-check-circle"></i>
+                <span>Consigliato da 5000+ utenti soddisfatti</span>
+            </div>
+            
             <div class="mt-4">
-                <button class="btn btn-ebay" id="openSplitNav">
+                <button class="btn btn-ebay btn-glow" id="openSplitNav">
                     <i class="fas fa-compass me-2"></i>Esplora le Categorie
                 </button>
             </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <i class="fas fa-chevron-down"></i>
         </div>
     </div>
 

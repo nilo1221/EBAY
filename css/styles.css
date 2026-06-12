@@ -623,40 +623,12 @@ body {
     position: relative;
 }
 
-/* Glassmorphism Effect for Hero */
+/* Glassmorphism Effect for Hero - REMOVED */
 .hero-section.hero-with-bg .container {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-radius: 30px;
     padding: 60px 40px;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     margin-top: 80px;
     margin-bottom: 80px;
     position: relative;
-    overflow: hidden;
-}
-
-/* Gradient Border Animation */
-.hero-section.hero-with-bg .container::before {
-    content: '';
-    position: absolute;
-    top: -2px;
-    left: -2px;
-    right: -2px;
-    bottom: -2px;
-    background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1, #96ceb4, #ffeaa7, #dfe6e9, #ff6b6b);
-    background-size: 400% 400%;
-    border-radius: 32px;
-    z-index: -1;
-    animation: gradientBorder 8s ease infinite;
-}
-
-@keyframes gradientBorder {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
 }
 
 /* Hero Title with Staggered Reveal */

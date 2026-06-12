@@ -55,34 +55,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    // Counter Animation
-    const counters = document.querySelectorAll('.counter-number');
-    const speed = 200;
-    
-    const animateCounter = (counter) => {
-        const target = +counter.getAttribute('data-target');
-        const count = +counter.innerText;
-        const increment = target / speed;
-        
-        if (count < target) {
-            counter.innerText = Math.ceil(count + increment);
-            setTimeout(() => animateCounter(counter), 1);
-        } else {
-            counter.innerText = target + '+';
-        }
-    };
-    
-    const counterObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                animateCounter(entry.target);
-                counterObserver.unobserve(entry.target);
-            }
-        });
-    }, { threshold: 0.5 });
-    
-    counters.forEach(counter => counterObserver.observe(counter));
-    
     // Typing Effect for Hero Title
     const heroTitle = document.getElementById('heroTitle');
     if (heroTitle) {
@@ -138,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Staggered Reveal for Hero Elements
-    const heroElements = document.querySelectorAll('.hero-title, .hero-subtitle, .hero-counters, .social-proof, .btn-glow');
+    const heroElements = document.querySelectorAll('.hero-title, .hero-subtitle, .btn-glow');
     heroElements.forEach((el, index) => {
         el.style.opacity = '0';
         el.style.transform = 'translateY(20px)';

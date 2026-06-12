@@ -367,6 +367,79 @@ body {
     line-height: 1.6;
 }
 
+/* EPN Disclaimer Banner - Per tutte le pagine prodotto */
+.epn-disclaimer-banner {
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(249, 115, 22, 0.15) 100%);
+    border: 2px solid var(--home-accent);
+    border-radius: var(--radius-md);
+    padding: 20px 30px;
+    margin: var(--spacing-lg) 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.2);
+}
+
+.epn-disclaimer-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(245, 158, 11, 0.05) 0%, rgba(249, 115, 22, 0.05) 100%);
+    pointer-events: none;
+}
+
+.epn-disclaimer-banner-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.epn-disclaimer-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--gradient-accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+}
+
+.epn-disclaimer-icon i {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+}
+
+.epn-disclaimer-text h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--home-accent);
+    margin-bottom: 5px;
+}
+
+.epn-disclaimer-text p {
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    line-height: 1.5;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .epn-disclaimer-banner-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .epn-disclaimer-banner {
+        padding: 20px;
+    }
+}
+
 /* Bento Grid */
 .bento-grid {
     display: grid;
